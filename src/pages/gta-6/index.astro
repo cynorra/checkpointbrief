@@ -4,7 +4,9 @@ import HubLayout from "../../layouts/HubLayout.astro";
 import Countdown from "../../components/widgets/Countdown.tsx";
 import { UPDATED, RELEASE_DATE, FACTS, EDITIONS, PREORDER_BONUSES, LOCATIONS, TIMELINE, RUMORS, countdownParts, daysUntil } from "../../lib/data/gta6.js";
 import { SOURCES, src } from "../../lib/data/sources.js";
-import { launchEventSchema } from "../../lib/schema.js";
+import { launchEventSchema, faqSchema } from "../../lib/schema.js";
+import Faq from "../../components/Faq.astro";
+import { GTA6_FAQ } from "../../lib/data/faqs.js";
 
 const d = pageDates("/gta-6/");
 const days = daysUntil(RELEASE_DATE, new Date(`${UPDATED}T12:00:00`));
@@ -29,7 +31,7 @@ const cite = (k: string) => src(k);
     { label: "PC version", value: "Not announced" },
   ]}
   sources={usedSources}
-  extraSchema={[launchEventSchema({ name: "Grand Theft Auto VI launch", date: RELEASE_DATE, path: "/gta-6/", description: "Grand Theft Auto VI releases on PlayStation 5 and Xbox Series X|S." })]}
+  extraSchema={[faqSchema(GTA6_FAQ), launchEventSchema({ name: "Grand Theft Auto VI launch", date: RELEASE_DATE, path: "/gta-6/", description: "Grand Theft Auto VI releases on PlayStation 5 and Xbox Series X|S." })]}
 >
   <div slot="app" class="bg-card rounded-xl border p-5 md:p-6">
     <p class="text-muted-foreground mb-3 text-xs font-semibold tracking-wider uppercase">Countdown to launch · your time zone</p>
@@ -105,15 +107,5 @@ const cite = (k: string) => src(k);
     </table>
   </div>
 
-  <h2>Questions people ask</h2>
-  <h3>When does GTA 6 come out?</h3>
-  <p>November 19, 2026, on PlayStation 5 and Xbox Series X|S.</p>
-  <h3>How much is GTA 6?</h3>
-  <p>$79.99 for the Standard Edition and $99.99 for the Ultimate Edition in the US.</p>
-  <h3>Is GTA 6 on PC?</h3>
-  <p>Not at launch. No PC version has been announced.</p>
-  <h3>Is GTA 6 on PS4 or Xbox One?</h3>
-  <p>No. It's only on PS5 and Xbox Series X|S.</p>
-  <h3>Does the physical edition have a disc?</h3>
-  <p>No. The box contains a download code for your console.</p>
+  <Faq items={GTA6_FAQ} />
 </HubLayout>

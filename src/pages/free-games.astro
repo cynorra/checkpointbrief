@@ -3,7 +3,9 @@ import { pageDates } from "../page-dates.js";
 import HubLayout from "../layouts/HubLayout.astro";
 import { fetchFreeGames, fmtWhen } from "../lib/data/epic.js";
 import { src } from "../lib/data/sources.js";
-import { itemListSchema } from "../lib/schema.js";
+import { itemListSchema, faqSchema } from "../lib/schema.js";
+import Faq from "../components/Faq.astro";
+import { FREE_GAMES_FAQ } from "../lib/data/faqs.js";
 
 const d = pageDates("/free-games/");
 // Read at build time. The deploy workflow rebuilds daily and right after
@@ -29,7 +31,7 @@ const updatedDate = new Date(built.toISOString().slice(0, 10));
   published={d.published}
   updated={updatedDate}
   sources={[src("epicStore")]}
-  extraSchema={current.length || upcoming.length ? [itemListSchema({ name: "Free games on the Epic Games Store", path: "/free-games/", items: [...current, ...upcoming].map((g) => ({ name: g.title, url: g.url })) })] : []}
+  extraSchema={[faqSchema(FREE_GAMES_FAQ), ...(current.length || upcoming.length ? [itemListSchema({ name: "Free games on the Epic Games Store", path: "/free-games/", items: [...current, ...upcoming].map((g) => ({ name: g.title, url: g.url })) })] : [])]}
 >
   <div slot="app" class="grid gap-6 md:grid-cols-2">
     <section class="bg-card rounded-xl border p-5" aria-labelledby="now-h">
@@ -77,11 +79,5 @@ const updatedDate = new Date(built.toISOString().slice(0, 10));
     <li>Click <strong>Place Order</strong>. The game is now in your library.</li>
   </ol>
 
-  <h2>Questions people ask</h2>
-  <h3>Do I keep Epic's free games forever?</h3>
-  <p>Yes. Games claimed during the offer stay in your library after the offer ends.</p>
-  <h3>Are the free games on PC only?</h3>
-  <p>The weekly giveaways are on the PC store. Epic's mobile store has run separate mobile giveaways in some regions.</p>
-  <h3>How often does this page update?</h3>
-  <p>Every day, and again shortly after the Thursday rotation. The time of the last read is shown under the list.</p>
+  <Faq items={FREE_GAMES_FAQ} />
 </HubLayout>

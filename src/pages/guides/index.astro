@@ -2,7 +2,7 @@
 import Base from "../../layouts/Base.astro";
 import Breadcrumbs from "../../components/Breadcrumbs.astro";
 import { getCollection } from "astro:content";
-import { breadcrumbSchema } from "../../lib/schema.js";
+import { breadcrumbSchema, collectionSchema } from "../../lib/schema.js";
 import { TOPICS } from "../../lib/topics.js";
 
 const all = (await getCollection("guides", (g) => !g.data.draft))
@@ -15,7 +15,7 @@ const crumbs = [{ name: "Home", path: "/" }, { name: "Guides", path: "/guides/" 
 <Base
   title="Gaming Guides"
   description="Guides to GTA 6, release dates, free games and console setup: editions, pre-loading, storage and accounts, each with sources and dates."
-  schema={[breadcrumbSchema(crumbs)]}
+  schema={[breadcrumbSchema(crumbs), collectionSchema({ name: "Guides", description: "Guides to GTA 6, release dates, free games and console setup.", path: "/guides/", items: all.map((g) => ({ name: g.data.title, path: `/guides/${g.id}/` })) })]}
 >
   <div class="mx-auto max-w-6xl px-4 pt-6">
     <Breadcrumbs crumbs={crumbs} />

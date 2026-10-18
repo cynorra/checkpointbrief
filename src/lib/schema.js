@@ -78,3 +78,33 @@ export function launchEventSchema({ name, date, path, description }) {
     organizer: { "@type": "Organization", name: "Rockstar Games", url: "https://www.rockstargames.com/" },
   };
 }
+
+/** FAQPage for a visible "Questions people ask" section (answers are plain text). */
+export function faqSchema(items) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map(({ q, a }) => ({
+      "@type": "Question",
+      name: q,
+      acceptedAnswer: { "@type": "Answer", text: a },
+    })),
+  };
+}
+
+/** The guides index: a collection of articles. */
+export function collectionSchema({ name, description, path, items }) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name,
+    description,
+    url: abs(path),
+    publisher: orgRef,
+    inLanguage: SITE.language,
+    mainEntity: {
+      "@type": "ItemList",
+      itemListElement: items.map((it, i) => ({ "@type": "ListItem", position: i + 1, url: abs(it.path), name: it.name })),
+    },
+  };
+}
