@@ -1,0 +1,171 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@import "@fontsource-variable/archivo";
+@import "@fontsource-variable/geist";
+@import "@fontsource-variable/geist-mono";
+
+/* Dark mode follows a .dark class on <html>, set before first paint by the
+   inline script in Base.astro (system preference unless the visitor chose). */
+@custom-variant dark (&:is(.dark *));
+
+/* Checkpoint Brief on shadcn tokens. Concept: a game's save-point HUD.
+   Graphite ground, crisp type, one signal color (--brand, a hot magenta)
+   reserved for dates and numbers that matter, and a segmented progress bar
+   (.tick-rule) as the recurring mark. Dark is the default look. */
+:root {
+  --radius: 0.5rem;
+  --background: oklch(0.98 0.004 300);
+  --foreground: oklch(0.2 0.02 285);
+  --card: oklch(1 0 0);
+  --card-foreground: var(--foreground);
+  --popover: oklch(1 0 0);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(0.22 0.025 285);
+  --primary-foreground: oklch(0.985 0.003 300);
+  --secondary: oklch(0.95 0.008 300);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(0.955 0.007 300);
+  --muted-foreground: oklch(0.48 0.02 285);
+  --accent: oklch(0.945 0.01 300);
+  --accent-foreground: var(--foreground);
+  --destructive: oklch(0.55 0.2 27);
+  --border: oklch(0.9 0.01 300);
+  --input: oklch(0.88 0.012 300);
+  --ring: oklch(0.6 0.2 350);
+  --brand: oklch(0.57 0.22 355);
+  --brand-foreground: oklch(0.99 0.01 350);
+  --brand-soft: oklch(0.96 0.03 350);
+  --link: oklch(0.45 0.13 300);
+  --note: oklch(0.97 0.045 90);
+  --note-foreground: oklch(0.42 0.08 75);
+}
+
+.dark {
+  --background: oklch(0.155 0.018 285);
+  --foreground: oklch(0.95 0.006 300);
+  --card: oklch(0.2 0.022 285);
+  --card-foreground: var(--foreground);
+  --popover: oklch(0.215 0.022 285);
+  --popover-foreground: var(--foreground);
+  --primary: oklch(0.95 0.006 300);
+  --primary-foreground: oklch(0.2 0.02 285);
+  --secondary: oklch(0.255 0.022 285);
+  --secondary-foreground: var(--foreground);
+  --muted: oklch(0.245 0.02 285);
+  --muted-foreground: oklch(0.72 0.02 290);
+  --accent: oklch(0.27 0.024 285);
+  --accent-foreground: var(--foreground);
+  --destructive: oklch(0.7 0.17 25);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.72 0.19 350);
+  --brand: oklch(0.72 0.19 350);
+  --brand-foreground: oklch(0.18 0.03 350);
+  --brand-soft: oklch(0.27 0.06 350);
+  --link: oklch(0.82 0.1 310);
+  --note: oklch(0.27 0.04 85);
+  --note-foreground: oklch(0.88 0.1 90);
+}
+
+@theme inline {
+  --font-display: "Archivo Variable", "Arial Narrow", Arial, sans-serif;
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, Menlo, monospace;
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-brand: var(--brand);
+  --color-brand-foreground: var(--brand-foreground);
+  --color-brand-soft: var(--brand-soft);
+  --color-link: var(--link);
+  --color-note: var(--note);
+  --color-note-foreground: var(--note-foreground);
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  html { color-scheme: light; scroll-padding-top: 5rem; }
+  html.dark { color-scheme: dark; }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    font-feature-settings: "ss01", "cv11";
+  }
+  h1, h2, h3, h4 { font-family: var(--font-display); text-wrap: balance; letter-spacing: -0.015em; }
+  p { text-wrap: pretty; }
+  a { color: var(--link); text-underline-offset: 3px; text-decoration-thickness: 1px; }
+  a:hover { color: var(--brand); }
+}
+
+@layer components {
+  /* Tape-measure tick rule: the site's recurring mark. */
+  /* Segmented save bar: filled segments in the brand color, then empty ones. */
+  .tick-rule {
+    height: 8px;
+    background-image:
+      repeating-linear-gradient(90deg, var(--brand) 0 22px, transparent 22px 28px),
+      repeating-linear-gradient(90deg, color-mix(in oklch, var(--foreground) 18%, transparent) 0 22px, transparent 22px 28px);
+    background-size: 40% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 2px;
+  }
+
+  /* Scanline backdrop for hero areas. */
+  .plan-grid {
+    background-image:
+      repeating-linear-gradient(to bottom, color-mix(in oklch, var(--foreground) 5%, transparent) 0 1px, transparent 1px 4px),
+      radial-gradient(ellipse 70% 60% at 85% 0%, color-mix(in oklch, var(--brand) 18%, transparent), transparent 70%);
+    mask-image: linear-gradient(to bottom, black 40%, transparent 100%);
+  }
+
+  .num { font-family: var(--font-mono); font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+
+  /* Long-form text */
+  .prose-site { max-width: 68ch; }
+  .prose-site :where(h2, h3) { font-weight: 800; scroll-margin-top: 5rem; }
+  .prose-site :where(h2) { font-size: 1.65rem; line-height: 1.2; margin-top: 2.6rem; margin-bottom: 0.7rem; }
+  .prose-site :where(h3) { font-size: 1.2rem; margin-top: 1.8rem; margin-bottom: 0.4rem; }
+  .prose-site :where(p, ul, ol, figure) { margin-bottom: 1rem; }
+  .prose-site :where(ul) { list-style: disc; padding-left: 1.3rem; }
+  .prose-site :where(ol) { list-style: decimal; padding-left: 1.3rem; }
+  .prose-site :where(li) { margin-bottom: 0.35rem; }
+  .prose-site :where(li)::marker { color: var(--muted-foreground); }
+  .prose-site :where(strong) { font-weight: 650; }
+  .prose-site :where(code) { font-family: var(--font-mono); font-size: 0.9em; background: var(--muted); padding: 0.1em 0.35em; border-radius: 4px; }
+  .prose-site :where(blockquote) { border-left: 3px solid var(--brand); padding-left: 1rem; color: var(--muted-foreground); }
+
+  /* Data tables: always inside .table-wrap so wide tables scroll on phones */
+  .table-wrap { overflow-x: auto; margin: 1.25rem 0 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--card); }
+  .table-wrap table, .prose-site table { width: 100%; border-collapse: collapse; font-size: 0.94rem; font-variant-numeric: tabular-nums; }
+  .table-wrap th, .table-wrap td { text-align: left; padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
+  .table-wrap th { font-family: var(--font-display); font-weight: 700; font-size: 0.74rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted-foreground); background: var(--muted); }
+  .table-wrap tbody tr:hover { background: color-mix(in oklch, var(--muted) 60%, transparent); }
+  .table-wrap tr:last-child td { border-bottom: 0; }
+  .table-wrap caption { caption-side: bottom; text-align: left; padding: 0.55rem 0.85rem; color: var(--muted-foreground); font-size: 0.84rem; border-top: 1px solid var(--border); }
+  .table-wrap td.num, .table-wrap td:has(> .num) { font-family: var(--font-mono); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

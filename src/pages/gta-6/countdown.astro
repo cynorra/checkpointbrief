@@ -1,0 +1,55 @@
+---
+import { pageDates } from "../../page-dates.js";
+import HubLayout from "../../layouts/HubLayout.astro";
+import Countdown from "../../components/widgets/Countdown.tsx";
+import { UPDATED, RELEASE_DATE, PRELOAD_DATE, countdownParts, daysUntil } from "../../lib/data/gta6.js";
+import { src } from "../../lib/data/sources.js";
+
+const d = pageDates("/gta-6/countdown/");
+const now = new Date(`${UPDATED}T12:00:00`);
+const days = daysUntil(RELEASE_DATE, now);
+const preDays = daysUntil(PRELOAD_DATE, now);
+const crumbs = [{ name: "Home", path: "/" }, { name: "GTA 6", path: "/gta-6/" }, { name: "Countdown", path: "/gta-6/countdown/" }];
+---
+<HubLayout
+  topic="gta6"
+  title="GTA 6 Countdown: Days Until Release"
+  h1="GTA 6 countdown"
+  description="A live countdown to GTA 6's November 19, 2026 release in your own time zone, plus the pre-load date and what happens on launch week."
+  lead={`GTA 6 releases on November 19, 2026. This live countdown ticks to midnight on launch day in your time zone; pre-loading and physical copies arrive a week earlier, on November 12.`}
+  published={d.published}
+  updated={d.updated}
+  checked={UPDATED}
+  crumbs={crumbs}
+  sources={[src("rockstarVI"), src("wikiVI")]}
+>
+  <div slot="app" class="bg-card rounded-xl border p-5 md:p-8">
+    <Countdown client:load date={RELEASE_DATE} label="GTA 6" initial={countdownParts(RELEASE_DATE, now)} />
+    <div class="mt-6 grid gap-2 text-sm sm:grid-cols-2">
+      <p><span class="text-muted-foreground">Pre-load and physical copies:</span> <strong>Thu, Nov 12, 2026</strong></p>
+      <p><span class="text-muted-foreground">Launch:</span> <strong>Thu, Nov 19, 2026</strong></p>
+    </div>
+  </div>
+
+  <h2>Key dates</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>What</th><th>Date</th><th>Days left as of Oct 18</th></tr></thead>
+      <tbody>
+        <tr><td>Pre-load opens, physical copies (code in box) in stores</td><td>November 12, 2026</td><td class="num">{preDays}</td></tr>
+        <tr><td>Launch on PS5 and Xbox Series X|S</td><td>November 19, 2026</td><td class="num">{days}</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>How this countdown works</h2>
+  <p>It counts to 12:00 a.m. on November 19 in the time zone your device is set to, which is how most people think about "launch day." Console games often unlock at midnight local time, but some launches unlock at the same moment worldwide. Rockstar had not published GTA 6's unlock times when we last checked; when it does, this page will switch to the official times.</p>
+
+  <h2>Get ready before launch day</h2>
+  <ul>
+    <li><strong>Pre-order digitally</strong> if you want to pre-load: the download can start a week early, so you can play at unlock instead of waiting for a huge download.</li>
+    <li><strong>Make space.</strong> Rockstar had not announced the install size when we checked. Large open-world games can need well over 100 GB, so clear room early.</li>
+    <li><strong>Physical buyers:</strong> the box contains a code, not a disc, so you'll still download the game. Redeem the code when you get it.</li>
+  </ul>
+  <p>Everything else confirmed about the game, from price to the map, is on our <a href="/gta-6/">GTA 6 hub</a>.</p>
+</HubLayout>

@@ -1,0 +1,87 @@
+---
+import { pageDates } from "../page-dates.js";
+import HubLayout from "../layouts/HubLayout.astro";
+import { fetchFreeGames, fmtWhen } from "../lib/data/epic.js";
+import { src } from "../lib/data/sources.js";
+import { itemListSchema } from "../lib/schema.js";
+
+const d = pageDates("/free-games/");
+// Read at build time. The deploy workflow rebuilds daily and right after
+// Epic's Thursday rotation.
+const epic = await fetchFreeGames();
+const built = new Date();
+const builtLabel = built.toLocaleString("en-US", { month: "short", day: "numeric", hour: "numeric", minute: "2-digit", timeZone: "America/New_York", timeZoneName: "short" });
+const current = epic?.current ?? [];
+const upcoming = epic?.upcoming ?? [];
+const lead = epic
+  ? current.length
+    ? `Free on the Epic Games Store right now: ${current.map((g) => g.title).join(" and ")}, until ${fmtWhen(current[0].end)}. Claim them and they're yours to keep.${upcoming.length ? ` Next up: ${upcoming.map((g) => g.title).join(" and ")}.` : ""}`
+    : "Epic has no free game live at this moment; the next ones are listed below when Epic has announced them."
+  : "The Epic Games Store gives away games every week. Our live list couldn't load in the last update, so check the store's free games page directly; this page refreshes daily.";
+const updatedDate = new Date(built.toISOString().slice(0, 10));
+---
+<HubLayout
+  topic="deals"
+  title="Free Epic Games This Week (and Next Week)"
+  h1="Free games on Epic this week"
+  description="Which games are free on the Epic Games Store right now, when the offer ends and what's free next week. Updated every day and after each Thursday rotation."
+  lead={lead}
+  published={d.published}
+  updated={updatedDate}
+  sources={[src("epicStore")]}
+  extraSchema={current.length || upcoming.length ? [itemListSchema({ name: "Free games on the Epic Games Store", path: "/free-games/", items: [...current, ...upcoming].map((g) => ({ name: g.title, url: g.url })) })] : []}
+>
+  <div slot="app" class="grid gap-6 md:grid-cols-2">
+    <section class="bg-card rounded-xl border p-5" aria-labelledby="now-h">
+      <h2 id="now-h" class="font-display text-xl font-extrabold">Free now</h2>
+      {current.length ? (
+        <ul class="mt-3 grid gap-3">
+          {current.map((g) => (
+            <li class="border-brand/40 rounded-lg border p-3">
+              <a href={g.url} rel="noopener" class="font-semibold">{g.title}</a>
+              <p class="text-muted-foreground mt-1 text-sm">Free until <strong class="text-foreground">{fmtWhen(g.end)}</strong>{g.originalPrice && g.originalPrice !== "0" ? <> · normally {g.originalPrice}</> : null}</p>
+            </li>
+          ))}
+        </ul>
+      ) : <p class="text-muted-foreground mt-3 text-sm">{epic ? "Nothing is free at this moment." : "Live list unavailable in this update."} <a href="https://store.epicgames.com/en-US/free-games" rel="noopener">Check Epic's free games page</a>.</p>}
+    </section>
+    <section class="bg-card rounded-xl border p-5" aria-labelledby="next-h">
+      <h2 id="next-h" class="font-display text-xl font-extrabold">Coming next</h2>
+      {upcoming.length ? (
+        <ul class="mt-3 grid gap-3">
+          {upcoming.map((g) => (
+            <li class="rounded-lg border p-3">
+              <a href={g.url} rel="noopener" class="font-semibold">{g.title}</a>
+              <p class="text-muted-foreground mt-1 text-sm">Free from <strong class="text-foreground">{fmtWhen(g.start)}</strong> to {fmtWhen(g.end)}</p>
+            </li>
+          ))}
+        </ul>
+      ) : <p class="text-muted-foreground mt-3 text-sm">Epic hasn't announced the next free games yet, or the list couldn't load.</p>}
+    </section>
+    <p class="text-muted-foreground text-xs md:col-span-2">{epic ? `List read from Epic's store data on ${builtLabel}.` : `Last update attempt: ${builtLabel}.`} Times shown in US Eastern time. Always confirm the price shows $0 before you check out.</p>
+  </div>
+
+  <h2>How Epic's free games work</h2>
+  <p>Every week the Epic Games Store makes one or more PC games free for a limited time. "Claiming" a game means adding it to your account at $0 during the offer; once claimed, it stays in your library permanently, even after the offer ends. You don't need to download or play it during the week.</p>
+  <ul>
+    <li><strong>When it changes:</strong> the free games usually rotate on Thursdays at 11 a.m. Eastern, and Epic shows the next week's games in advance. Holiday periods sometimes switch to a new game every day.</li>
+    <li><strong>What you need:</strong> a free Epic Games account. Claiming works from the website or the Epic Games Launcher.</li>
+    <li><strong>The catch:</strong> there isn't one beyond the account. You're not signing up for a subscription and nothing renews.</li>
+  </ul>
+
+  <h2>How to claim a free game</h2>
+  <ol>
+    <li>Open the game's store page from the list above, or the Epic Games Store's free games section.</li>
+    <li>Sign in to your Epic Games account, or create one.</li>
+    <li>Click <strong>Get</strong>. The checkout should show a total of $0.00.</li>
+    <li>Click <strong>Place Order</strong>. The game is now in your library.</li>
+  </ol>
+
+  <h2>Questions people ask</h2>
+  <h3>Do I keep Epic's free games forever?</h3>
+  <p>Yes. Games claimed during the offer stay in your library after the offer ends.</p>
+  <h3>Are the free games on PC only?</h3>
+  <p>The weekly giveaways are on the PC store. Epic's mobile store has run separate mobile giveaways in some regions.</p>
+  <h3>How often does this page update?</h3>
+  <p>Every day, and again shortly after the Thursday rotation. The time of the last read is shown under the list.</p>
+</HubLayout>

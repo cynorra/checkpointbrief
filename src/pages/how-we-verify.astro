@@ -1,0 +1,41 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SOURCES } from "../lib/data/sources.js";
+import { UPDATED } from "../lib/data/gta6.js";
+import { CHECKED } from "../lib/data/releases.js";
+import { FEED_URL } from "../lib/data/epic.js";
+const fmt = (s: string) => new Date(`${s}T12:00:00Z`).toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+---
+<PageLayout
+  title="How We Verify"
+  description="How Checkpoint Brief checks GTA 6 facts, release dates and free game listings: the sources we use, what counts as confirmed and how often each page is checked."
+  updated={pageDates("/how-we-verify/").updated ?? pageDates("/how-we-verify/").published}
+>
+  <p>This page explains what "confirmed" means on this site, where each kind of fact comes from and how often it's checked.</p>
+
+  <h2>What counts as confirmed</h2>
+  <ul>
+    <li><strong>Confirmed:</strong> stated by the publisher or developer (an announcement, a store listing, an official site or an on-record interview), or by the platform holder.</li>
+    <li><strong>Reported:</strong> published by a named outlet but not confirmed by the publisher. Shown only when useful, always labeled, and never mixed with confirmed facts.</li>
+    <li><strong>Not used:</strong> leaks, anonymous social posts and "insider" claims without a named outlet standing behind them.</li>
+  </ul>
+
+  <h2>GTA 6 hub</h2>
+  <p>Every fact on the <a href="/gta-6/">GTA 6 hub</a> is stored with the source it came from, and the page shows those sources. Facts last checked: <strong>{fmt(UPDATED)}</strong>. When Rockstar announces something new, the hub and its date change.</p>
+
+  <h2>Release calendar</h2>
+  <p>The <a href="/release-dates/">release calendar</a> lists only games with an exact day. Dates are compiled from published release schedules and publisher announcements. Dates last checked: <strong>{fmt(CHECKED)}</strong>. The page rebuilds daily, so past releases drop off automatically.</p>
+
+  <h2>Free games tracker</h2>
+  <p>The <a href="/free-games/">free games tracker</a> reads the Epic Games Store's own promotions data each time the site builds: every day, and again after Epic's Thursday rotation. Only games discounted to 100% are listed; ordinary sales in the same data are ignored. If the data can't be read, the page says so and links to Epic's free games page instead of showing an old list.</p>
+  <p class="text-sm text-muted-foreground">Data feed: <code class="break-all">{FEED_URL}</code></p>
+
+  <h2>Sources we cite</h2>
+  <ul>
+    {Object.values(SOURCES).map((s) => <li><a href={s.href} rel="noopener">{s.label}</a> (checked {fmt(s.checked)})</li>)}
+  </ul>
+
+  <h2>Corrections</h2>
+  <p>If you find an error, please <a href="/contact/">tell us</a>. Confirmed corrections are made promptly and the page's updated date changes.</p>
+</PageLayout>

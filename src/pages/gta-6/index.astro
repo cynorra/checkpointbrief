@@ -1,0 +1,119 @@
+---
+import { pageDates } from "../../page-dates.js";
+import HubLayout from "../../layouts/HubLayout.astro";
+import Countdown from "../../components/widgets/Countdown.tsx";
+import { UPDATED, RELEASE_DATE, FACTS, EDITIONS, PREORDER_BONUSES, LOCATIONS, TIMELINE, RUMORS, countdownParts, daysUntil } from "../../lib/data/gta6.js";
+import { SOURCES, src } from "../../lib/data/sources.js";
+import { launchEventSchema } from "../../lib/schema.js";
+
+const d = pageDates("/gta-6/");
+const days = daysUntil(RELEASE_DATE, new Date(`${UPDATED}T12:00:00`));
+const usedSources = [...new Set([...FACTS, ...EDITIONS, ...PREORDER_BONUSES, ...LOCATIONS, ...TIMELINE, ...RUMORS].map((x) => x.source))].map((k) => SOURCES[k]);
+const fmt = (s: string, approx = false) =>
+  new Date(`${s}T12:00:00Z`).toLocaleDateString("en-US", approx ? { month: "long", year: "numeric", timeZone: "UTC" } : { month: "long", day: "numeric", year: "numeric", timeZone: "UTC" });
+const cite = (k: string) => src(k);
+---
+<HubLayout
+  topic="gta6"
+  title="GTA 6: Release Date, Price, Map and Everything Confirmed"
+  h1="GTA 6: everything confirmed"
+  description="GTA 6 comes out November 19, 2026 on PS5 and Xbox Series X|S for $79.99. Every confirmed fact about price, editions, map and timeline, with sources."
+  lead={`Grand Theft Auto VI launches on November 19, 2026, on PlayStation 5 and Xbox Series X|S. The Standard Edition costs $79.99 and the Ultimate Edition $99.99, and no PC version has been announced. Below is everything Rockstar has confirmed, with a source for each fact and rumors kept separate.`}
+  published={d.published}
+  updated={d.updated}
+  checked={UPDATED}
+  facts={[
+    { label: "Release date", value: "Nov 19, 2026" },
+    { label: "Platforms", value: "PS5 · Xbox Series X|S" },
+    { label: "Price (Standard)", value: "$79.99" },
+    { label: "PC version", value: "Not announced" },
+  ]}
+  sources={usedSources}
+  extraSchema={[launchEventSchema({ name: "Grand Theft Auto VI launch", date: RELEASE_DATE, path: "/gta-6/", description: "Grand Theft Auto VI releases on PlayStation 5 and Xbox Series X|S." })]}
+>
+  <div slot="app" class="bg-card rounded-xl border p-5 md:p-6">
+    <p class="text-muted-foreground mb-3 text-xs font-semibold tracking-wider uppercase">Countdown to launch · your time zone</p>
+    <Countdown client:load date={RELEASE_DATE} label="GTA 6" initial={countdownParts(RELEASE_DATE, new Date(`${UPDATED}T12:00:00`))} />
+    <p class="text-muted-foreground mt-3 text-sm">Counts to midnight on November 19 where you are. Rockstar had not published regional unlock times when we last checked. <a href="/gta-6/countdown/">Full-screen countdown</a></p>
+  </div>
+
+  <h2>The confirmed facts</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Fact</th><th>Confirmed</th><th>Source</th></tr></thead>
+      <tbody>
+        {FACTS.map((f) => <tr><td>{f.label}</td><td>{f.value}</td><td><a href={cite(f.source).href} rel="noopener">{cite(f.source).label.split(":")[0]}</a></td></tr>)}
+      </tbody>
+      <caption>Checked {fmt(UPDATED)}. If something here changes, this table changes first.</caption>
+    </table>
+  </div>
+
+  <h2>Release date and launch week</h2>
+  <p>Rockstar's official page lists GTA 6 as "Coming November 19, 2026." It's the third date the game has had: Rockstar first aimed for fall 2025, then moved it to May 26, 2026, and then to November 19, 2026, saying the extra time was for polish. In an October 2026 interview with Famitsu, studio head Rob Nelson said the game "will definitely be released on time."</p>
+  <p>Physical copies reach stores on November 12, a week early, but there's no disc in the box: it holds a download code. Pre-loading opens the same week, so the game can be on your console before launch day. That leaves {days} days from when we last checked these facts.</p>
+
+  <h2>Price and editions</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Edition</th><th>Price (US)</th><th>What's included</th></tr></thead>
+      <tbody>
+        {EDITIONS.map((e) => <tr><td><strong>{e.name}</strong></td><td class="num">{e.price}</td><td>{e.includes.join("; ")}</td></tr>)}
+      </tbody>
+    </table>
+  </div>
+  <p>The Ultimate Edition's extras are in-game items, not extra story. GamesRadar reports that Standard owners can upgrade to the Ultimate Edition later, so the choice doesn't have to be final on launch day. Our <a href="/guides/">guides</a> cover the edition choice in detail.</p>
+  <h3>Pre-order bonuses</h3>
+  <ul>
+    {PREORDER_BONUSES.map((b) => <li><strong>{b.item}</strong>: {b.detail} (<a href={cite(b.source).href} rel="noopener">source</a>)</li>)}
+  </ul>
+
+  <h2>Platforms, and what about PC?</h2>
+  <p>GTA 6 is coming to PlayStation 5 and Xbox Series X|S only. There is no version for PS4 or Xbox One. Rockstar's site labels PS5 as the platform it "plays best on". That's a marketing label; Rockstar hasn't detailed any difference between the two versions.</p>
+  <p>No PC version has been announced. Rockstar has released its last three big games on consoles first and on PC later, and Take-Two's CEO has said PC players are not the launch audience. Anything you read about a PC date is a guess until Rockstar says otherwise.</p>
+
+  <h2>The map: Leonida and Vice City</h2>
+  <p>GTA 6 is set in Leonida, a fictional state based on Florida. Rockstar calls it "the darkest side of the sunniest place in America." These are the places Rockstar has named so far:</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Place</th><th>Real-world inspiration (widely reported)</th></tr></thead>
+      <tbody>
+        {LOCATIONS.map((l) => <tr><td><strong>{l.name}</strong></td><td>{l.inspiredBy ?? "Not stated"}</td></tr>)}
+      </tbody>
+    </table>
+  </div>
+  <p>Rockstar has not shown the full map. Leaked maps circulated in 2026; we don't reproduce them, and Rockstar has had leaked material taken down.</p>
+
+  <h2>Jason and Lucia</h2>
+  <p>The game has two playable leads, Jason Duval and Lucia Caminos, a couple pulled into a criminal conspiracy across Leonida after a job goes wrong. Rockstar's official description says they "have always known the deck is stacked against them." The voice actors have not been officially confirmed.</p>
+
+  <h2>Timeline</h2>
+  <ol>
+    {TIMELINE.map((t) => <li><strong>{fmt(t.date, t.approx)}</strong>: {t.event}</li>)}
+  </ol>
+
+  <h2>Rating</h2>
+  <p>GTA 6 is a mature game. Rockstar's page lists the ESRB content descriptors, including intense violence, strong language, strong sexual content, nudity and use of drugs and alcohol, plus in-game purchases. Parents can find the full rating on the ESRB's site.</p>
+
+  <h2>Reported but not confirmed</h2>
+  <p>These claims appear in coverage, but Rockstar has not confirmed them. We list them so you know where they stand.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Claim</th><th>Status</th></tr></thead>
+      <tbody>
+        {RUMORS.map((r) => <tr><td>{r.claim}</td><td>{r.status} (<a href={cite(r.source).href} rel="noopener">source</a>)</td></tr>)}
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Questions people ask</h2>
+  <h3>When does GTA 6 come out?</h3>
+  <p>November 19, 2026, on PlayStation 5 and Xbox Series X|S.</p>
+  <h3>How much is GTA 6?</h3>
+  <p>$79.99 for the Standard Edition and $99.99 for the Ultimate Edition in the US.</p>
+  <h3>Is GTA 6 on PC?</h3>
+  <p>Not at launch. No PC version has been announced.</p>
+  <h3>Is GTA 6 on PS4 or Xbox One?</h3>
+  <p>No. It's only on PS5 and Xbox Series X|S.</p>
+  <h3>Does the physical edition have a disc?</h3>
+  <p>No. The box contains a download code for your console.</p>
+</HubLayout>

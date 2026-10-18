@@ -1,0 +1,38 @@
+---
+import Logo from "./Logo.astro";
+import { SITE, FOOTER_LINKS } from "../site.config.js";
+import { TOPICS } from "../lib/topics.js";
+const year = new Date().getFullYear();
+---
+<footer class="mt-20 border-t border-border bg-card">
+  <div class="mx-auto max-w-6xl px-4 py-10 grid gap-8 md:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)_minmax(0,1fr)]">
+    <div class="flex flex-col gap-2">
+      <a href="/" class="flex items-center gap-2 no-underline text-foreground">
+        <Logo size={22} />
+        <span class="font-display font-extrabold">{SITE.name}</span>
+      </a>
+      <p class="text-sm text-muted-foreground max-w-xs">
+        Gaming facts with their sources attached: GTA 6, release dates and free games, each page dated.
+      </p>
+    </div>
+    <nav aria-label="Sections">
+      <h2 class="text-xs uppercase tracking-wider text-muted-foreground mb-3">Sections</h2>
+      <ul class="grid gap-1 text-sm">
+        {TOPICS.map((t) => <li><a href={t.href}>{t.name}</a></li>)}
+        <li><a href="/gta-6/countdown/">GTA 6 countdown</a></li>
+        <li><a href="/rss.xml">RSS feed</a></li>
+      </ul>
+    </nav>
+    <nav aria-label="Site information">
+      <h2 class="text-xs uppercase tracking-wider text-muted-foreground mb-3">About this site</h2>
+      <ul class="grid grid-cols-2 gap-1 text-sm">
+        {FOOTER_LINKS.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+  <div class="border-t border-border">
+    <p class="mx-auto max-w-6xl px-4 py-4 text-xs text-muted-foreground">
+      © {year} {SITE.name}. An independent site, not affiliated with or endorsed by Rockstar Games, Take-Two Interactive, Epic Games or any other publisher. Game names and trademarks belong to their owners.
+    </p>
+  </div>
+</footer>

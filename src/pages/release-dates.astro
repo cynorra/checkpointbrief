@@ -1,0 +1,57 @@
+---
+import { pageDates } from "../page-dates.js";
+import HubLayout from "../layouts/HubLayout.astro";
+import ReleaseFilter from "../components/widgets/ReleaseFilter.tsx";
+import { CHECKED, RELEASES, upcomingByMonth, fmtDay } from "../lib/data/releases.js";
+import { src } from "../lib/data/sources.js";
+import { itemListSchema } from "../lib/schema.js";
+import { SITE } from "../site.config.js";
+
+const d = pageDates("/release-dates/");
+// Built daily: the calendar always starts from the build date.
+const today = new Date().toISOString().slice(0, 10);
+const groups = upcomingByMonth(RELEASES, today).map((g) => ({ ...g, items: g.items.map((r) => ({ ...r, day: fmtDay(r.date) })) }));
+const all = groups.flatMap((g) => g.items);
+const big = all.filter((r) => r.big);
+const next = all[0];
+const counts = groups.map((g) => `${g.label}: ${g.items.length}`).join(" · ");
+---
+<HubLayout
+  topic="releases"
+  title="Video Game Release Dates: Upcoming Games Calendar"
+  h1="Upcoming game release dates"
+  description="Every upcoming game with an exact release date, by month, for PS5, Xbox Series X|S, PC and Switch 2. Dates checked against published schedules and updated daily."
+  lead={`${all.length} upcoming games with confirmed release dates, sorted by day and filterable by platform. ${next ? `Next up: ${next.title} on ${next.day}.` : ""} The biggest launch on the calendar is Grand Theft Auto VI on November 19, 2026.`}
+  published={d.published}
+  updated={d.updated}
+  checked={CHECKED}
+  facts={[
+    { label: "Dated releases listed", value: String(all.length) },
+    { label: "Big releases", value: String(big.length) },
+    { label: "Biggest launch", value: "GTA 6 · Nov 19" },
+    { label: "Dates checked", value: new Date(`${CHECKED}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", timeZone: "UTC" }) },
+  ]}
+  sources={[src("vgcReleases"), src("rockstarVI")]}
+  extraSchema={[itemListSchema({ name: "Upcoming video game release dates", path: "/release-dates/", items: all.map((r) => ({ name: r.title, date: r.date, platforms: r.platforms, url: r.href ? new URL(r.href, SITE.url).href : undefined })) })]}
+>
+  <div slot="app">
+    <ReleaseFilter client:visible groups={groups} />
+  </div>
+
+  <h2>How this calendar works</h2>
+  <p>Only games with an exact day are listed. "Fall 2026" or "2027" windows don't make the cut, because a window isn't a date you can plan around. Each date is checked against published release schedules, and the check date is shown at the top of the page. The page rebuilds every day, so games drop off once their release day has passed.</p>
+  <p>Release dates move. When a publisher delays a game, we update the entry and its date. If you spot a date that has changed before we do, <a href="/contact/">tell us</a>.</p>
+
+  <h2>What "release date" means here</h2>
+  <ul>
+    <li><strong>Platform-specific:</strong> a date applies to the platforms listed next to it. A game that's already out elsewhere and is coming to Switch 2 is marked as a Switch 2 version.</li>
+    <li><strong>Day, not hour:</strong> games often unlock at midnight local time, but some unlock at one moment worldwide, which can be the evening before in the Americas.</li>
+    <li><strong>US-focused:</strong> regional dates are usually the same, but not always. Check the store in your country.</li>
+  </ul>
+
+  <h2>Biggest releases on the calendar</h2>
+  <ul>
+    {big.map((r) => <li><strong>{r.href ? <a href={r.href}>{r.title}</a> : r.title}</strong>: {r.day} ({r.platforms.join(", ")})</li>)}
+  </ul>
+  <p>Releases per month: {counts}.</p>
+</HubLayout>

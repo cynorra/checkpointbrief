@@ -1,0 +1,32 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+---
+<PageLayout
+  title={`About ${SITE.name}`}
+  description={`${SITE.name} tracks GTA 6, game release dates and free games, with a source for every fact and a date on every page. Who runs it and how.`}
+  updated={pageDates("/about/").updated ?? pageDates("/about/").published}
+>
+  <p>{SITE.name} answers the practical questions players ask before a game comes out or goes free: when exactly, on what, for how much, and what's actually been confirmed. Every fact links to where it came from, and every page shows when it was last checked.</p>
+
+  <h2>Why this site exists</h2>
+  <p>Big releases attract a lot of noise. Leaks, guesses and recycled rumors get repeated until they look like facts, and it's hard to tell what the publisher actually said. {SITE.name} separates the two: confirmed facts go in one place with their sources, rumors are labeled as rumors, and dates are only listed when they're real dates.</p>
+
+  <h2>What you'll find here</h2>
+  <ul>
+    <li><a href="/gta-6/">The GTA 6 hub</a>: release date, price, editions, platforms, map and timeline, each with a source.</li>
+    <li><a href="/release-dates/">A release calendar</a> of upcoming games with exact dates, filterable by platform.</li>
+    <li><a href="/free-games/">A free games tracker</a> for the Epic Games Store, refreshed every day.</li>
+    <li><a href="/guides/">Guides</a> that explain things in more depth: editions, pre-loading, storage, accounts.</li>
+  </ul>
+
+  <h2>Who runs it</h2>
+  <p>{SITE.name} is built and written by <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a>, a software engineer. It's an independent site with no affiliation to Rockstar Games, Take-Two Interactive, Epic Games or any other publisher, and no publisher pays for coverage.</p>
+
+  <h2>How it's funded</h2>
+  <p>The site is free to read. It may show advertising to cover hosting and development; advertisers have no influence over what we publish. See the <a href="/editorial-policy/">editorial policy</a>.</p>
+
+  <h2>Get in touch</h2>
+  <p>Spotted a date that changed or a fact that's wrong? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or use the <a href="/contact/">contact page</a>.</p>
+</PageLayout>

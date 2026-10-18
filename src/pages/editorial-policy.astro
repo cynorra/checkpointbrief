@@ -1,0 +1,34 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE, AUTHOR } from "../site.config.js";
+---
+<PageLayout
+  title="Editorial Policy"
+  description={`How ${SITE.name} sources, checks and updates its pages, how it handles leaks and rumors, how AI tools are used, and how corrections work.`}
+  updated={pageDates("/editorial-policy/").updated ?? pageDates("/editorial-policy/").published}
+>
+  <p>Every page on {SITE.name} is written and reviewed by <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a>. This page explains the rules we follow.</p>
+
+  <h2>Sources first</h2>
+  <ul>
+    <li>Facts come from publishers' and platform holders' own announcements, store pages and official channels wherever possible.</li>
+    <li>When we rely on a news report instead, we link it and name it.</li>
+    <li>Each data page lists its sources at the bottom and shows the date its facts were last checked.</li>
+  </ul>
+
+  <h2>Leaks and rumors</h2>
+  <p>We don't publish leaked footage, leaked maps or stolen material, and we don't link to it. When an unconfirmed claim is widely reported and readers are asking about it, we may mention it, clearly labeled as unconfirmed, in a separate section from confirmed facts.</p>
+
+  <h2>Images</h2>
+  <p>We use official press material where we use game imagery at all, and our own diagrams and graphics otherwise. We avoid graphic images even when a game contains graphic content.</p>
+
+  <h2>Use of AI tools</h2>
+  <p>We use AI tools to help research, outline and draft. A person reviews every page before it's published, rewrites it where needed and checks every date, price and claim against a source. No page is published automatically. The trackers (release dates, free games) are built by code from listed sources and checked by a person.</p>
+
+  <h2>Independence</h2>
+  <p>{SITE.name} is independent. No publisher, store or platform pays for coverage or reviews pages before publication. The site may show advertising; advertisers have no say in the content. If we ever add affiliate links, pages that contain them will say so.</p>
+
+  <h2>Updates and corrections</h2>
+  <p>Data pages are checked regularly and whenever a publisher announces a change. Each page shows when it was last updated. To report an error, use the <a href="/contact/">contact page</a>; confirmed corrections are made promptly.</p>
+</PageLayout>

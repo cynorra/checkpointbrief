@@ -1,0 +1,52 @@
+---
+import { pageDates } from "../../page-dates.js";
+import PageLayout from "../../layouts/PageLayout.astro";
+import { getCollection } from "astro:content";
+import { AUTHOR, SITE } from "../../site.config.js";
+
+const guides = (await getCollection("guides", (g) => !g.data.draft))
+  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+
+const person = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${SITE.url}/author/${AUTHOR.slug}/#person`,
+  name: AUTHOR.name,
+  url: `${SITE.url}/author/${AUTHOR.slug}/`,
+  jobTitle: AUTHOR.role,
+  sameAs: [AUTHOR.linkedin, AUTHOR.github],
+  worksFor: { "@id": `${SITE.url}/#organization` },
+};
+---
+<PageLayout
+  title={AUTHOR.name}
+  description={`${AUTHOR.name} builds the trackers on ${SITE.name} and writes its guides. Background, how he works and how to reach him.`}
+  updated={pageDates("/author/eren-simsir/").updated ?? pageDates("/author/eren-simsir/").published}
+  extraSchema={[person]}
+>
+  <p><strong>{AUTHOR.name}</strong> is the founder and editor of {SITE.name}. He builds the site's trackers, the release calendar and the free games list, and writes its guides.</p>
+
+  <h2>Background</h2>
+  <ul>
+    <li>B.Sc. in Computer Engineering, Düzce University (2025)</li>
+    <li>M.Sc. student in Computer Engineering, Kocaeli University</li>
+    <li>Is completing a double major in Industrial Engineering</li>
+    <li>Works as a software developer; previously worked as a data scientist</li>
+  </ul>
+
+  <h2>How he works</h2>
+  <p>Eren is a software engineer and a player, not a games industry insider, and the site doesn't pretend otherwise. His job here is checking: finding what a publisher actually announced, linking it, and keeping it current. The trackers are built from code that reads published data, and every page shows when its facts were last checked. See <a href="/how-we-verify/">how we verify</a> and the <a href="/editorial-policy/">editorial policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Found a wrong date, or a game you'd like tracked? Email <a href={`mailto:${SITE.email}`}>{SITE.email}</a> or use the <a href="/contact/">contact page</a>.</p>
+  <p>Elsewhere: <a href={AUTHOR.linkedin} rel="me noopener" target="_blank">LinkedIn</a> · <a href={AUTHOR.github} rel="me noopener" target="_blank">GitHub</a></p>
+
+  {guides.length > 0 && (
+    <>
+      <h2>Guides by {AUTHOR.name}</h2>
+      <ul>
+        {guides.map((g) => <li><a href={`/guides/${g.id}/`}>{g.data.title}</a></li>)}
+      </ul>
+    </>
+  )}
+</PageLayout>

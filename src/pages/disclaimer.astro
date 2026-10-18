@@ -1,0 +1,22 @@
+---
+import { pageDates } from "../page-dates.js";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE } from "../site.config.js";
+---
+<PageLayout
+  title="Disclaimer"
+  description={`${SITE.name} is independent and not affiliated with game publishers. How release dates, prices and free game offers can change, and what that means for you.`}
+  updated={pageDates("/disclaimer/").updated ?? pageDates("/disclaimer/").published}
+>
+  <h2>Not affiliated</h2>
+  <p>{SITE.name} is an independent site. It is not affiliated with, endorsed by or sponsored by Rockstar Games, Take-Two Interactive, Epic Games, Sony, Microsoft, Nintendo or any other company mentioned. Game titles, logos and trademarks belong to their owners and are used here only to identify the games we write about.</p>
+
+  <h2>Dates and prices change</h2>
+  <p>Release dates move, prices vary by store and region, and free game offers end on the publisher's schedule. We check our pages regularly and show when they were last checked, but always confirm the date or price in the official store before you buy or pre-order.</p>
+
+  <h2>Mature games</h2>
+  <p>Some games we cover, including Grand Theft Auto VI, are rated for mature audiences. Our coverage describes these games without graphic material, but the games themselves contain mature content. Check the official age rating before buying for someone else.</p>
+
+  <h2>Advertising</h2>
+  <p>The site may show ads. Advertisers do not review or influence our pages, and an ad on a page is not an endorsement.</p>
+</PageLayout>
