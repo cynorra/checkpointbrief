@@ -11,56 +11,86 @@ const featuredGuide = guides[0];
 const recentGuides = guides.slice(1);
 ---
 <Base title={SITE.name} description={SITE.description}>
-  {/* Hero / Header Section: Professional Gaming Publication */}
-  <section class="relative overflow-hidden border-b bg-card/20">
+  {/* Premium 2026+ Cyberpunk/Gaming Hero with Ambient Mesh & Micro-Badge */}
+  <section class="relative overflow-hidden border-b">
     <div class="plan-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
-    <div class="relative mx-auto max-w-6xl px-4 pt-12 pb-14 md:pt-16 md:pb-16">
+    
+    {/* Subtle floating glow orbs */}
+    <div class="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-brand/10 rounded-full blur-3xl" aria-hidden="true"></div>
+
+    <div class="relative mx-auto max-w-6xl px-4 pt-14 pb-16 md:pt-20 md:pb-20">
       <div class="max-w-3xl">
-        <div class="flex items-center gap-2 text-brand text-xs font-bold tracking-wider uppercase">
-          <span>Editorial Gaming Journal</span>
-          <span>·</span>
-          <span>Verified & Sourced</span>
+        {/* Magic UI / Linear Style Pill Badge */}
+        <div class="inline-flex items-center gap-2.5 rounded-full border border-brand/30 bg-brand-soft/50 px-3.5 py-1 text-xs font-semibold text-brand backdrop-blur-md transition-all hover:border-brand/60">
+          <span class="pulse-dot h-2 w-2 rounded-full bg-brand"></span>
+          <span class="tracking-wide uppercase">2026 Gaming Verification Hub</span>
+          <span class="text-brand/50">|</span>
+          <span class="text-foreground/80 font-medium">Zero speculation, 100% verified</span>
         </div>
-        <h1 class="mt-3 text-4xl leading-[1.08] font-extrabold tracking-tight md:text-5xl lg:text-6xl">
-          Fact-checked gaming analysis, release dates & guides.
+
+        <h1 class="mt-5 text-4xl leading-[1.06] font-extrabold tracking-tight md:text-6xl lg:text-7xl">
+          The verified <span class="bg-gradient-to-r from-foreground via-foreground to-brand bg-clip-text text-transparent">gaming journal</span> with the receipts.
         </h1>
-        <p class="text-muted-foreground mt-4 text-lg md:text-xl leading-relaxed">
-          {SITE.description}
+        
+        <p class="text-muted-foreground mt-5 text-lg md:text-xl leading-relaxed max-w-[55ch]">
+          Primary-source GTA 6 intelligence, exact launch calendars, and live free game trackers — dated and fact-checked daily.
         </p>
-        <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
-          <a href="/guides/" class="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2 font-semibold no-underline transition-colors">
-            Browse All Guides →
+
+        <div class="mt-8 flex flex-wrap items-center gap-3.5 text-sm">
+          <a href="/guides/" class="group relative inline-flex items-center gap-2 overflow-hidden rounded-xl bg-foreground px-5 py-3 font-semibold text-background shadow-lg transition-all hover:bg-foreground/90 hover:shadow-brand/20 hover:shadow-xl no-underline">
+            <span>Explore All Guides</span>
+            <span class="transition-transform group-hover:translate-x-0.5">→</span>
           </a>
-          <a href="/about/" class="hover:bg-accent rounded-md border px-4 py-2 font-medium no-underline transition-colors">
-            About Our Newsroom
+          <a href="/gta-6/" class="glow-card inline-flex items-center gap-2 rounded-xl border border-border/80 px-5 py-3 font-medium text-foreground no-underline transition-colors hover:bg-accent/40">
+            <span class="h-1.5 w-1.5 rounded-full bg-emerald-500"></span>
+            <span>GTA 6 Live Hub</span>
+          </a>
+          <a href="/about/" class="text-muted-foreground hover:text-foreground text-xs font-medium px-2 py-3 transition-colors no-underline">
+            Our Newsroom Policy →
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  {/* Main Magazine Layout: Featured Story + Sidebar Tools */}
-  <section class="mx-auto max-w-6xl px-4 py-12">
-    <div class="grid gap-10 lg:grid-cols-12">
-      {/* Left Column: Featured Article & Latest Stories */}
+  {/* Main Magazine Layout: Lead Story Card + Interactive Hub Sidebar */}
+  <section class="mx-auto max-w-6xl px-4 py-12 md:py-16">
+    <div class="grid gap-10 lg:grid-cols-12 items-start">
+      
+      {/* Left Column (8 cols): Hero Feature & Story Feed */}
       <div class="lg:col-span-8 space-y-12">
         {featuredGuide && (
           <div>
             <div class="flex items-center justify-between border-b pb-3 mb-6">
-              <span class="text-xs font-bold tracking-wider uppercase text-muted-foreground">Lead Story</span>
-              <span class="text-xs text-muted-foreground">{featuredGuide.data.published.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</span>
+              <div class="flex items-center gap-2">
+                <span class="h-2 w-2 rounded-full bg-brand"></span>
+                <span class="text-xs font-bold tracking-wider uppercase text-foreground">Featured Analysis</span>
+              </div>
+              <time datetime={featuredGuide.data.published.toISOString()} class="text-xs text-muted-foreground num font-mono">
+                {featuredGuide.data.published.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}
+              </time>
             </div>
-            <article class="group">
+
+            {/* Aceternity Style Interactive Featured Card */}
+            <article class="glow-card group rounded-2xl border border-border/80 p-6 md:p-8">
               <a href={`/guides/${featuredGuide.id}/`} class="no-underline block">
-                <span class="text-brand text-xs font-semibold tracking-wider uppercase">{TOPIC_BY_KEY[featuredGuide.data.tool].topic}</span>
-                <h2 class="font-display group-hover:text-brand mt-2 text-2xl md:text-3xl font-extrabold text-foreground transition-colors leading-tight">
+                <div class="flex items-center gap-2 text-xs">
+                  <span class="rounded-md bg-brand/10 border border-brand/20 px-2.5 py-0.5 font-bold uppercase tracking-wider text-brand">
+                    {TOPIC_BY_KEY[featuredGuide.data.tool].topic}
+                  </span>
+                  <span class="text-muted-foreground text-xs">· Fact-checked</span>
+                </div>
+                
+                <h2 class="font-display group-hover:text-brand mt-4 text-2xl md:text-4xl font-extrabold text-foreground transition-colors leading-[1.15]">
                   {featuredGuide.data.title}
                 </h2>
-                <p class="text-muted-foreground mt-3 text-base md:text-lg leading-relaxed">
+                
+                <p class="text-muted-foreground mt-4 text-base md:text-lg leading-relaxed">
                   {featuredGuide.data.description}
                 </p>
-                <div class="mt-4 flex items-center gap-2 text-sm text-brand font-semibold">
-                  <span>Read full analysis</span>
+                
+                <div class="mt-6 flex items-center gap-2 text-sm text-brand font-semibold group-hover:gap-3 transition-all">
+                  <span>Read full breakdown</span>
                   <span>→</span>
                 </div>
               </a>
@@ -70,27 +100,36 @@ const recentGuides = guides.slice(1);
 
         {/* Recent Articles Stream */}
         {recentGuides.length > 0 && (
-          <div class="border-t pt-8">
-            <h2 class="text-xl font-extrabold tracking-tight mb-6">Recent Articles & Explanations</h2>
-            <div class="divide-y border-y">
+          <div class="border-t pt-10">
+            <div class="flex items-baseline justify-between mb-6">
+              <h2 class="text-xl md:text-2xl font-extrabold tracking-tight">Recent Dispatches & Guides</h2>
+              <a href="/guides/" class="text-xs font-semibold text-brand hover:underline">View archive ({guides.length}) →</a>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
               {recentGuides.map((g) => {
                 const dateStr = g.data.published.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
                 return (
-                  <article class="py-6 group">
+                  <article class="glow-card group rounded-xl border border-border/70 p-5 flex flex-col justify-between">
                     <a href={`/guides/${g.id}/`} class="no-underline block">
-                      <div class="flex items-center gap-2 text-xs text-muted-foreground mb-1.5">
-                        <span class="font-semibold text-foreground uppercase tracking-wide">{TOPIC_BY_KEY[g.data.tool].topic}</span>
-                        <span>·</span>
-                        <time datetime={g.data.published.toISOString()} class="num">{dateStr}</time>
+                      <div class="flex items-center justify-between text-xs text-muted-foreground mb-2">
+                        <span class="font-semibold text-foreground uppercase tracking-wider text-[11px]">{TOPIC_BY_KEY[g.data.tool].topic}</span>
+                        <time datetime={g.data.published.toISOString()} class="num font-mono">{dateStr}</time>
                       </div>
-                      <h3 class="font-display group-hover:text-brand text-xl font-bold text-foreground transition-colors leading-snug">
+                      
+                      <h3 class="font-display group-hover:text-brand text-lg font-bold text-foreground transition-colors leading-snug line-clamp-2">
                         {g.data.title}
                       </h3>
-                      <p class="text-muted-foreground mt-2 text-sm leading-relaxed line-clamp-2">
+                      
+                      <p class="text-muted-foreground mt-2 text-xs leading-relaxed line-clamp-2">
                         {g.data.description}
                       </p>
-                      <span class="text-brand text-xs font-semibold mt-3 inline-block">Read article →</span>
                     </a>
+
+                    <div class="mt-4 pt-3 border-t border-border/50 flex items-center justify-between text-xs">
+                      <span class="text-muted-foreground">Eren Şimşir</span>
+                      <a href={`/guides/${g.id}/`} class="text-brand font-semibold hover:underline">Read →</a>
+                    </div>
                   </article>
                 );
               })}
@@ -99,89 +138,104 @@ const recentGuides = guides.slice(1);
         )}
       </div>
 
-      {/* Right Column / Sidebar: Hub Trackers, Verification & Author Bio */}
-      <aside class="lg:col-span-4 space-y-8" aria-label="Explore and about">
-        {/* Hub Trackers Card */}
-        <div class="bg-card rounded-xl border p-6">
-          <h3 class="font-display text-base font-bold uppercase tracking-wider text-muted-foreground text-xs">Coverage Hubs & Tools</h3>
-          <p class="text-xs text-muted-foreground mt-1">Our dedicated trackers with live updates and verified dates:</p>
-          <ul class="mt-4 space-y-3 text-sm">
-            <li class="border-b pb-3">
-              <a href="/gta-6/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline">
-                <span>GTA 6 Knowledge Hub</span>
-                <span class="text-muted-foreground text-xs">→</span>
+      {/* Right Column (4 cols): HUD Tools & Author Verification Box */}
+      <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-20" aria-label="Explore and tools">
+        
+        {/* Live Trackers Card */}
+        <div class="glow-card rounded-2xl border border-border/80 p-6">
+          <div class="flex items-center justify-between pb-3 border-b">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-muted-foreground">Live Data Trackers</span>
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+          </div>
+          
+          <ul class="mt-4 divide-y divide-border/60 text-sm">
+            <li class="py-3 first:pt-0">
+              <a href="/gta-6/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline group">
+                <span class="group-hover:translate-x-0.5 transition-transform">GTA 6 Confirmed Hub</span>
+                <span class="text-brand font-mono text-xs">2026 →</span>
               </a>
-              <p class="text-xs text-muted-foreground mt-0.5">Every verified detail, release window, and edition facts.</p>
+              <p class="text-xs text-muted-foreground mt-1">Full pricing, edition bonus breakdown & confirmed facts.</p>
             </li>
-            <li class="border-b pb-3">
-              <a href="/release-dates/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline">
-                <span>Release Dates Calendar</span>
-                <span class="text-muted-foreground text-xs">→</span>
+            
+            <li class="py-3">
+              <a href="/release-dates/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline group">
+                <span class="group-hover:translate-x-0.5 transition-transform">Release Date Calendar</span>
+                <span class="text-brand font-mono text-xs">Dated →</span>
               </a>
-              <p class="text-xs text-muted-foreground mt-0.5">Filter upcoming games with confirmed launch dates.</p>
+              <p class="text-xs text-muted-foreground mt-1">Primary release schedule for PS5, Xbox Series & Switch 2.</p>
             </li>
-            <li>
-              <a href="/free-games/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline">
-                <span>Free Epic Games Tracker</span>
-                <span class="text-muted-foreground text-xs">→</span>
+
+            <li class="py-3 last:pb-0">
+              <a href="/free-games/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline group">
+                <span class="group-hover:translate-x-0.5 transition-transform">Free Epic Games Tracker</span>
+                <span class="text-brand font-mono text-xs">Weekly →</span>
               </a>
-              <p class="text-xs text-muted-foreground mt-0.5">Live updates on current and upcoming PC giveaways.</p>
+              <p class="text-xs text-muted-foreground mt-1">Current & incoming 100% off weekly PC giveaways.</p>
             </li>
           </ul>
         </div>
 
-        {/* Editorial Standards Box */}
-        <div class="bg-card rounded-xl border p-6">
-          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-brand">Editorial Policy</h3>
-          <p class="text-sm text-muted-foreground mt-2 leading-relaxed">
-            Every claim published on {SITE.name} is cited back to official announcements or primary filings. We do not publish unsubstantiated forum rumors as fact.
-          </p>
-          <div class="mt-4 flex flex-col gap-1.5 text-xs font-semibold">
-            <a href="/how-we-verify/" class="text-foreground hover:text-brand">How we verify our facts →</a>
-            <a href="/editorial-policy/" class="text-foreground hover:text-brand">Our editorial & advertising policy →</a>
+        {/* Author & Verification Card */}
+        <div class="glow-card rounded-2xl border border-border/80 p-6">
+          <div class="flex gap-4 items-center">
+            <img
+              src={AUTHOR.photo}
+              alt={AUTHOR.name}
+              class="w-14 h-14 rounded-full object-cover border-2 border-brand/40 shadow-sm shrink-0"
+              width="56"
+              height="56"
+              loading="lazy"
+            />
+            <div>
+              <h4 class="font-bold text-sm text-foreground">{AUTHOR.name}</h4>
+              <p class="text-xs text-muted-foreground">{AUTHOR.role}</p>
+              <div class="flex gap-2.5 text-xs font-semibold mt-1.5">
+                <a href={AUTHOR.linkedin} rel="me noopener" target="_blank" class="text-brand hover:underline">LinkedIn ↗</a>
+                <a href={AUTHOR.github} rel="me noopener" target="_blank" class="text-brand hover:underline">GitHub ↗</a>
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Author Bio Box */}
-        <div class="bg-card rounded-xl border p-6 flex gap-3.5 items-start">
-          <img
-            src={AUTHOR.photo}
-            alt={AUTHOR.name}
-            class="w-12 h-12 rounded-full object-cover border border-brand/40 shadow-2xs shrink-0"
-            width="48"
-            height="48"
-            loading="lazy"
-          />
-          <div>
-            <h4 class="font-bold text-sm text-foreground">Edited by <a href={`/author/${AUTHOR.slug}/`} class="text-foreground hover:text-brand">{AUTHOR.name}</a></h4>
-            <p class="text-xs text-muted-foreground mt-1 leading-relaxed">
-              Software engineer and gaming researcher. Tracking releases and verifying industry claims since 2026.
+          
+          <div class="mt-4 pt-4 border-t border-border/60 text-xs text-muted-foreground space-y-2">
+            <p>
+              Independent documentation project. Every fact references official announcements, SEC filings or direct store data.
             </p>
+            <div class="pt-1 flex flex-col gap-1 font-medium">
+              <a href="/how-we-verify/" class="text-foreground hover:text-brand">How we verify claims →</a>
+              <a href="/editorial-policy/" class="text-foreground hover:text-brand">Editorial standards →</a>
+            </div>
           </div>
         </div>
       </aside>
     </div>
   </section>
 
-  {/* In-depth Editorial Mission Section (Substantive Content for AdSense Quality Standards) */}
-  <section aria-labelledby="editorial-mission-h" class="border-t bg-card/40">
-    <div class="mx-auto max-w-6xl px-4 py-14">
+  {/* Substantive Editorial Mission (AdSense E-E-A-T Quality Section) */}
+  <section aria-labelledby="editorial-mission-h" class="border-t bg-card/30 backdrop-blur-xs">
+    <div class="mx-auto max-w-6xl px-4 py-16">
       <div class="grid gap-8 lg:grid-cols-3">
         <div>
-          <p class="text-brand text-xs font-semibold tracking-wider uppercase">Publication Standards</p>
-          <h2 id="editorial-mission-h" class="mt-2 text-2xl font-extrabold md:text-3xl">Why we verify every gaming claim</h2>
+          <span class="text-brand text-xs font-bold tracking-wider uppercase">Editorial Charter</span>
+          <h2 id="editorial-mission-h" class="mt-2 text-2xl font-extrabold md:text-3xl tracking-tight">
+            Why we hold every claim to primary receipts
+          </h2>
         </div>
-        <div class="lg:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
+        
+        <div class="lg:col-span-2 space-y-4 text-muted-foreground leading-relaxed text-sm md:text-base">
           <p>
-            Major game releases and storefront giveaways create massive waves of recycled rumors, clickbait headlines, and speculative release dates. Players looking for basic answers — when a game actually launches, whether a physical edition contains a disc, or how an account bonus works — often have to dig through unsubstantiated forum claims.
+            Major AAA releases and storefront promotions generate enormous volumes of recycled rumors, clickbait estimates, and unverified leaks. Players looking for definitive answers — such as confirmed launch days, console pre-load schedules, or physical edition disc inclusions — are frequently met with forum conjecture presented as truth.
           </p>
           <p>
-            <strong>{SITE.name}</strong> was built to solve that noise. We treat gaming data with the discipline of documentation: every date is cross-referenced with primary publisher announcements, regulatory filings, or verified retail listings. When details remain unannounced (such as the GTA 6 PC release window), we state clearly what is unknown rather than guessing.
+            <strong>{SITE.name}</strong> operates with the strict verification discipline of software documentation: every date is checked against original publisher press statements, financial disclosures, and official distributor feeds. What remains unannounced is explicitly marked as unconfirmed.
           </p>
-          <div class="pt-2 flex flex-wrap gap-4 text-sm font-medium">
-            <a href="/how-we-verify/" class="text-foreground underline decoration-border hover:decoration-brand">Read our verification process →</a>
-            <a href="/editorial-policy/" class="text-foreground underline decoration-border hover:decoration-brand">Review our editorial policy →</a>
-            <a href={`/author/${AUTHOR.slug}/`} class="text-foreground underline decoration-border hover:decoration-brand">Meet the author →</a>
+          
+          <div class="pt-3 flex flex-wrap gap-4 text-xs md:text-sm font-semibold">
+            <a href="/how-we-verify/" class="text-brand hover:underline">Detailed Verification Protocol →</a>
+            <a href="/editorial-policy/" class="text-foreground hover:text-brand">Advertising & Independence Policy →</a>
+            <a href={`/author/${AUTHOR.slug}/`} class="text-foreground hover:text-brand">Author Dossier →</a>
           </div>
         </div>
       </div>
