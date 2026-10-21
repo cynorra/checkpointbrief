@@ -22,7 +22,7 @@ export const SITE = {
   adsensePublisherId: "",
 
   verification: {
-    google: "",
+    google: "ZXbBkYYd6WoI9LO49putdxLhcXIy10iFGsGSHb6uvnI",
     bing: "",
     yandex: "",
   },
