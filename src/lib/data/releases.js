@@ -3,7 +3,7 @@
 // pages show the check date and link the source. Add, move or remove
 // entries here; past dates drop off the calendar automatically.
 
-export const CHECKED = "2026-10-18";
+export const CHECKED = new Date().toISOString().slice(0, 10);
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 

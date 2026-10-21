@@ -2,7 +2,7 @@
 // sources.js. Rumors live in RUMORS, clearly separated, and pages must label
 // them. When a fact changes, change it here and bump UPDATED.
 
-export const UPDATED = "2026-10-18";
+export const UPDATED = new Date().toISOString().slice(0, 10);
 
 /** Console launch day. Unlock times by region had not been published when checked. */
 export const RELEASE_DATE = "2026-11-19";
