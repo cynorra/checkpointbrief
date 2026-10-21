@@ -1,122 +1,190 @@
 ---
 import Base from "../layouts/Base.astro";
-import Countdown from "../components/widgets/Countdown.tsx";
 import { getCollection } from "astro:content";
 import { SITE, AUTHOR } from "../site.config.js";
 import { TOPIC_BY_KEY } from "../lib/topics.js";
-import { RELEASE_DATE, countdownParts, FACTS } from "../lib/data/gta6.js";
-import { RELEASES, upcomingByMonth, fmtDay } from "../lib/data/releases.js";
-import { fetchFreeGames, fmtWhen } from "../lib/data/epic.js";
 
-const now = new Date();
-const today = now.toISOString().slice(0, 10);
-const nextReleases = upcomingByMonth(RELEASES, today).flatMap((g) => g.items).slice(0, 6);
-const epic = await fetchFreeGames();
 const guides = (await getCollection("guides", (g) => !g.data.draft))
-  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf())
-  .slice(0, 6);
-const quick = FACTS.filter((f) => ["Release date", "Platforms", "Standard Edition", "PC version"].includes(f.label));
+  .sort((a, b) => b.data.published.valueOf() - a.data.published.valueOf());
+
+const featuredGuide = guides[0];
+const recentGuides = guides.slice(1);
 ---
 <Base title={SITE.name} description={SITE.description}>
-  <section class="relative overflow-hidden border-b">
+  {/* Hero / Header Section: Professional Gaming Publication */}
+  <section class="relative overflow-hidden border-b bg-card/20">
     <div class="plan-grid pointer-events-none absolute inset-0" aria-hidden="true"></div>
-    <div class="relative mx-auto grid max-w-6xl gap-10 px-4 pt-12 pb-12 md:pt-16 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:items-center">
-      <div>
-        <p class="text-brand text-sm font-semibold tracking-wider uppercase">Checked · sourced · dated</p>
-        <h1 class="mt-3 text-4xl leading-[1.05] font-extrabold md:text-6xl">The gaming facts you need, with the receipts.</h1>
-        <p class="text-muted-foreground mt-5 max-w-[52ch] text-lg">
-          GTA 6's confirmed details, a release calendar with real dates, and this week's free games. Every fact links to where it came from, and every page shows when it was last checked.
-        </p>
-        <div class="tick-rule mt-8 max-w-xs"></div>
-      </div>
-      <div class="bg-card rounded-xl border p-5 shadow-sm md:p-6">
-        <p class="text-muted-foreground text-xs font-semibold tracking-wider uppercase">GTA 6 launches Nov 19, 2026</p>
-        <div class="mt-3"><Countdown client:load date={RELEASE_DATE} label="GTA 6" compact initial={countdownParts(RELEASE_DATE, now)} /></div>
-        <dl class="mt-5 grid grid-cols-2 gap-x-4 gap-y-2 text-sm">
-          {quick.map((f) => <><dt class="text-muted-foreground">{f.label}</dt><dd class="text-right font-medium">{f.value}</dd></>)}
-        </dl>
-        <a href="/gta-6/" class="mt-5 inline-block text-sm font-semibold">Everything confirmed about GTA 6 →</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="mx-auto grid max-w-6xl gap-8 px-4 py-14 lg:grid-cols-2" aria-label="This week">
-    <div>
-      <div class="flex items-baseline justify-between gap-4">
-        <h2 class="text-2xl font-extrabold">Free on Epic now</h2>
-        <a href="/free-games/" class="text-sm font-medium">Free games tracker →</a>
-      </div>
-      {epic?.current?.length ? (
-        <ul class="mt-4 grid gap-3">
-          {epic.current.map((g) => (
-            <li class="bg-card rounded-lg border p-4">
-              <a href={g.url} rel="noopener" class="font-semibold">{g.title}</a>
-              <p class="text-muted-foreground mt-1 text-sm">Free until {fmtWhen(g.end)}</p>
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p class="text-muted-foreground mt-4">See the <a href="/free-games/">free games tracker</a> for this week's giveaway and how to claim it.</p>
-      )}
-    </div>
-    <div>
-      <div class="flex items-baseline justify-between gap-4">
-        <h2 class="text-2xl font-extrabold">Releasing next</h2>
-        <a href="/release-dates/" class="text-sm font-medium">Full calendar →</a>
-      </div>
-      <ul class="bg-card mt-4 divide-y rounded-lg border">
-        {nextReleases.map((r) => (
-          <li class="flex items-baseline justify-between gap-4 px-4 py-3">
-            <span class="min-w-0">{r.href ? <a href={r.href} class="font-semibold">{r.title}</a> : <span class="font-semibold">{r.title}</span>}<span class="text-muted-foreground block text-xs">{r.platforms.join(" · ")}</span></span>
-            <time datetime={r.date} class="num text-muted-foreground shrink-0 text-sm">{fmtDay(r.date)}</time>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  {guides.length > 0 && (
-    <section aria-labelledby="guides-h" class="border-t">
-      <div class="mx-auto max-w-6xl px-4 py-14">
-        <div class="flex items-baseline justify-between gap-4">
-          <h2 id="guides-h" class="text-3xl font-extrabold">Latest guides</h2>
-          <a href="/guides/" class="text-sm font-medium">All guides →</a>
+    <div class="relative mx-auto max-w-6xl px-4 pt-12 pb-14 md:pt-16 md:pb-16">
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-2 text-brand text-xs font-bold tracking-wider uppercase">
+          <span>Editorial Gaming Journal</span>
+          <span>·</span>
+          <span>Verified & Sourced</span>
         </div>
-        <ul class="mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          {guides.map((g) => (
-            <li>
-              <a href={`/guides/${g.id}/`} class="bg-card hover:border-brand group text-foreground flex h-full flex-col gap-3 rounded-xl border p-5 no-underline transition-colors">
-                <span class="text-muted-foreground text-xs font-semibold tracking-wider uppercase">{TOPIC_BY_KEY[g.data.tool].topic}</span>
-                <span class="font-display group-hover:text-brand text-lg leading-snug font-bold">{g.data.title}</span>
-                <span class="text-muted-foreground text-sm">{g.data.description}</span>
-              </a>
-            </li>
-          ))}
-        </ul>
+        <h1 class="mt-3 text-4xl leading-[1.08] font-extrabold tracking-tight md:text-5xl lg:text-6xl">
+          Fact-checked gaming analysis, release dates & guides.
+        </h1>
+        <p class="text-muted-foreground mt-4 text-lg md:text-xl leading-relaxed">
+          {SITE.description}
+        </p>
+        <div class="mt-6 flex flex-wrap items-center gap-3 text-sm">
+          <a href="/guides/" class="bg-primary text-primary-foreground hover:bg-primary/90 rounded-md px-4 py-2 font-semibold no-underline transition-colors">
+            Browse All Guides →
+          </a>
+          <a href="/about/" class="hover:bg-accent rounded-md border px-4 py-2 font-medium no-underline transition-colors">
+            About Our Newsroom
+          </a>
+        </div>
       </div>
-    </section>
-  )}
-
-  <section aria-labelledby="how-h" class="border-t">
-    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-14 md:grid-cols-3">
-      <div class="md:col-span-1">
-        <h2 id="how-h" class="text-2xl font-extrabold">How we work</h2>
-        <p class="text-muted-foreground mt-2">Rules we hold every page to. Details on <a href="/how-we-verify/">how we verify</a>.</p>
-      </div>
-      <ol class="grid gap-4 md:col-span-2 sm:grid-cols-3">
-        {[
-          ["Sourced", "Every fact links to the official announcement or the report it came from."],
-          ["Separated", "Confirmed facts and rumors never share a table. Rumors are labeled."],
-          ["Dated", "Pages show when their facts were last checked, and trackers rebuild daily."],
-        ].map(([t, b], i) => (
-          <li class="bg-card rounded-xl border p-5">
-            <span class="num text-brand text-sm font-semibold">{String(i + 1).padStart(2, "0")}</span>
-            <h3 class="mt-1 text-base font-bold">{t}</h3>
-            <p class="text-muted-foreground mt-1 text-sm">{b}</p>
-          </li>
-        ))}
-      </ol>
     </div>
-    <p class="mx-auto max-w-6xl px-4 pb-14 text-sm text-muted-foreground">Written and built by <a href={`/author/${AUTHOR.slug}/`}>{AUTHOR.name}</a>. {SITE.name} is independent and not affiliated with any game publisher.</p>
+  </section>
+
+  {/* Main Magazine Layout: Featured Story + Sidebar Tools */}
+  <section class="mx-auto max-w-6xl px-4 py-12">
+    <div class="grid gap-10 lg:grid-cols-12">
+      {/* Left Column: Featured Article & Latest Stories */}
+      <div class="lg:col-span-8 space-y-12">
+        {featuredGuide && (
+          <div>
+            <div class="flex items-center justify-between border-b pb-3 mb-6">
+              <span class="text-xs font-bold tracking-wider uppercase text-muted-foreground">Lead Story</span>
+              <span class="text-xs text-muted-foreground">{featuredGuide.data.published.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}</span>
+            </div>
+            <article class="group">
+              <a href={`/guides/${featuredGuide.id}/`} class="no-underline block">
+                <span class="text-brand text-xs font-semibold tracking-wider uppercase">{TOPIC_BY_KEY[featuredGuide.data.tool].topic}</span>
+                <h2 class="font-display group-hover:text-brand mt-2 text-2xl md:text-3xl font-extrabold text-foreground transition-colors leading-tight">
+                  {featuredGuide.data.title}
+                </h2>
+                <p class="text-muted-foreground mt-3 text-base md:text-lg leading-relaxed">
+                  {featuredGuide.data.description}
+                </p>
+                <div class="mt-4 flex items-center gap-2 text-sm text-brand font-semibold">
+                  <span>Read full analysis</span>
+                  <span>→</span>
+                </div>
+              </a>
+            </article>
+          </div>
+        )}
+
+        {/* Recent Articles Stream */}
+        {recentGuides.length > 0 && (
+          <div class="border-t pt-8">
+            <h2 class="text-xl font-extrabold tracking-tight mb-6">Recent Articles & Explanations</h2>
+            <div class="divide-y border-y">
+              {recentGuides.map((g) => {
+                const dateStr = g.data.published.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+                return (
+                  <article class="py-6 group">
+                    <a href={`/guides/${g.id}/`} class="no-underline block">
+                      <div class="flex items-center gap-2 text-xs text-muted-foreground mb-1.5">
+                        <span class="font-semibold text-foreground uppercase tracking-wide">{TOPIC_BY_KEY[g.data.tool].topic}</span>
+                        <span>·</span>
+                        <time datetime={g.data.published.toISOString()} class="num">{dateStr}</time>
+                      </div>
+                      <h3 class="font-display group-hover:text-brand text-xl font-bold text-foreground transition-colors leading-snug">
+                        {g.data.title}
+                      </h3>
+                      <p class="text-muted-foreground mt-2 text-sm leading-relaxed line-clamp-2">
+                        {g.data.description}
+                      </p>
+                      <span class="text-brand text-xs font-semibold mt-3 inline-block">Read article →</span>
+                    </a>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {/* Right Column / Sidebar: Hub Trackers, Verification & Author Bio */}
+      <aside class="lg:col-span-4 space-y-8" aria-label="Explore and about">
+        {/* Hub Trackers Card */}
+        <div class="bg-card rounded-xl border p-6">
+          <h3 class="font-display text-base font-bold uppercase tracking-wider text-muted-foreground text-xs">Coverage Hubs & Tools</h3>
+          <p class="text-xs text-muted-foreground mt-1">Our dedicated trackers with live updates and verified dates:</p>
+          <ul class="mt-4 space-y-3 text-sm">
+            <li class="border-b pb-3">
+              <a href="/gta-6/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline">
+                <span>GTA 6 Knowledge Hub</span>
+                <span class="text-muted-foreground text-xs">→</span>
+              </a>
+              <p class="text-xs text-muted-foreground mt-0.5">Every verified detail, release window, and edition facts.</p>
+            </li>
+            <li class="border-b pb-3">
+              <a href="/release-dates/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline">
+                <span>Release Dates Calendar</span>
+                <span class="text-muted-foreground text-xs">→</span>
+              </a>
+              <p class="text-xs text-muted-foreground mt-0.5">Filter upcoming games with confirmed launch dates.</p>
+            </li>
+            <li>
+              <a href="/free-games/" class="font-semibold text-foreground hover:text-brand flex items-center justify-between no-underline">
+                <span>Free Epic Games Tracker</span>
+                <span class="text-muted-foreground text-xs">→</span>
+              </a>
+              <p class="text-xs text-muted-foreground mt-0.5">Live updates on current and upcoming PC giveaways.</p>
+            </li>
+          </ul>
+        </div>
+
+        {/* Editorial Standards Box */}
+        <div class="bg-card rounded-xl border p-6">
+          <h3 class="font-display text-sm font-bold uppercase tracking-wider text-brand">Editorial Policy</h3>
+          <p class="text-sm text-muted-foreground mt-2 leading-relaxed">
+            Every claim published on {SITE.name} is cited back to official announcements or primary filings. We do not publish unsubstantiated forum rumors as fact.
+          </p>
+          <div class="mt-4 flex flex-col gap-1.5 text-xs font-semibold">
+            <a href="/how-we-verify/" class="text-foreground hover:text-brand">How we verify our facts →</a>
+            <a href="/editorial-policy/" class="text-foreground hover:text-brand">Our editorial & advertising policy →</a>
+          </div>
+        </div>
+
+        {/* Author Bio Box */}
+        <div class="bg-card rounded-xl border p-6 flex gap-3.5 items-start">
+          <img
+            src={AUTHOR.photo}
+            alt={AUTHOR.name}
+            class="w-12 h-12 rounded-full object-cover border border-brand/40 shadow-2xs shrink-0"
+            width="48"
+            height="48"
+            loading="lazy"
+          />
+          <div>
+            <h4 class="font-bold text-sm text-foreground">Edited by <a href={`/author/${AUTHOR.slug}/`} class="text-foreground hover:text-brand">{AUTHOR.name}</a></h4>
+            <p class="text-xs text-muted-foreground mt-1 leading-relaxed">
+              Software engineer and gaming researcher. Tracking releases and verifying industry claims since 2026.
+            </p>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  {/* In-depth Editorial Mission Section (Substantive Content for AdSense Quality Standards) */}
+  <section aria-labelledby="editorial-mission-h" class="border-t bg-card/40">
+    <div class="mx-auto max-w-6xl px-4 py-14">
+      <div class="grid gap-8 lg:grid-cols-3">
+        <div>
+          <p class="text-brand text-xs font-semibold tracking-wider uppercase">Publication Standards</p>
+          <h2 id="editorial-mission-h" class="mt-2 text-2xl font-extrabold md:text-3xl">Why we verify every gaming claim</h2>
+        </div>
+        <div class="lg:col-span-2 space-y-4 text-muted-foreground leading-relaxed">
+          <p>
+            Major game releases and storefront giveaways create massive waves of recycled rumors, clickbait headlines, and speculative release dates. Players looking for basic answers — when a game actually launches, whether a physical edition contains a disc, or how an account bonus works — often have to dig through unsubstantiated forum claims.
+          </p>
+          <p>
+            <strong>{SITE.name}</strong> was built to solve that noise. We treat gaming data with the discipline of documentation: every date is cross-referenced with primary publisher announcements, regulatory filings, or verified retail listings. When details remain unannounced (such as the GTA 6 PC release window), we state clearly what is unknown rather than guessing.
+          </p>
+          <div class="pt-2 flex flex-wrap gap-4 text-sm font-medium">
+            <a href="/how-we-verify/" class="text-foreground underline decoration-border hover:decoration-brand">Read our verification process →</a>
+            <a href="/editorial-policy/" class="text-foreground underline decoration-border hover:decoration-brand">Review our editorial policy →</a>
+            <a href={`/author/${AUTHOR.slug}/`} class="text-foreground underline decoration-border hover:decoration-brand">Meet the author →</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 </Base>

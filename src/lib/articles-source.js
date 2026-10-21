@@ -1,8 +1,8 @@
 // Where guides come from.
 // - SUPABASE_URL and SUPABASE_ANON_KEY set: live articles are fetched from
 //   Supabase at build time and rendered to static HTML.
-// - Not set: the Markdown files in src/content/guides/ are used (local work,
-//   first launch before the database exists).
+// - Not set: the Markdown files in src/content/guides/ are used (local work
+//   only; a deploy build (CI / Cloudflare Pages) fails instead).
 // Either way, only "live" guides are built: not drafts, and not guides whose
 // publish date is still in the future. Set PREVIEW_FUTURE=1 to see
 // scheduled local guides while writing them (never in a deploy).
@@ -17,6 +17,10 @@ export const SUPABASE_URL = env.SUPABASE_URL?.replace(/\/$/, "") ?? "";
 const SUPABASE_ANON_KEY = env.SUPABASE_ANON_KEY ?? "";
 export const useSupabase = Boolean(SUPABASE_URL && SUPABASE_ANON_KEY);
 export const previewFuture = env.PREVIEW_FUTURE === "1";
+
+// A deploy build (GitHub Actions or Cloudflare Pages) must read the database.
+// Falling back to the local Markdown there would publish stale copies.
+const isDeploy = Boolean(env.CI || env.GITHUB_ACTIONS || env.CF_PAGES);
 
 const COLUMNS = "slug,title,description,body_md,tool,published_at,content_updated_at,author_slug";
 
@@ -67,6 +71,9 @@ export function localLiveArticles(now = new Date()) {
 
 /** Live articles from whichever source is active. */
 export async function liveArticles() {
+  if (isDeploy && !useSupabase) {
+    throw new Error("SUPABASE_URL and SUPABASE_ANON_KEY are required in a deploy build; refusing to publish local Markdown.");
+  }
   return useSupabase ? fetchLiveArticles() : localLiveArticles();
 }
 

@@ -43,10 +43,10 @@ export const AUTHOR = {
 };
 
 export const NAV = [
+  { href: "/guides/", label: "Guides" },
   { href: "/gta-6/", label: "GTA 6" },
   { href: "/release-dates/", label: "Release dates" },
   { href: "/free-games/", label: "Free games" },
-  { href: "/guides/", label: "Guides" },
   { href: "/about/", label: "About" },
 ];
 

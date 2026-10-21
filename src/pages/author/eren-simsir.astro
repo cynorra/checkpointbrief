@@ -13,6 +13,7 @@ const person = {
   "@id": `${SITE.url}/author/${AUTHOR.slug}/#person`,
   name: AUTHOR.name,
   url: `${SITE.url}/author/${AUTHOR.slug}/`,
+  image: `${SITE.url}${AUTHOR.photo}`,
   jobTitle: AUTHOR.role,
   sameAs: [AUTHOR.linkedin, AUTHOR.github],
   worksFor: { "@id": `${SITE.url}/#organization` },
@@ -24,6 +25,25 @@ const person = {
   updated={pageDates("/author/eren-simsir/").updated ?? pageDates("/author/eren-simsir/").published}
   extraSchema={[person]}
 >
+  <div class="not-prose flex items-center gap-5 my-6 p-4 rounded-xl border bg-card/60">
+    <img
+      src={AUTHOR.photo}
+      alt={AUTHOR.name}
+      class="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover border-2 border-brand/40 shadow-xs shrink-0"
+      width="96"
+      height="96"
+      loading="eager"
+    />
+    <div>
+      <h2 class="text-xl font-bold m-0 font-display text-foreground">{AUTHOR.name}</h2>
+      <p class="text-sm text-muted-foreground m-0 mt-0.5">{AUTHOR.role}</p>
+      <div class="flex gap-3 text-xs font-medium mt-2">
+        <a href={AUTHOR.linkedin} rel="me noopener" target="_blank" class="text-brand hover:underline">LinkedIn ↗</a>
+        <a href={AUTHOR.github} rel="me noopener" target="_blank" class="text-brand hover:underline">GitHub ↗</a>
+      </div>
+    </div>
+  </div>
+
   <p><strong>{AUTHOR.name}</strong> is the founder and editor of {SITE.name}. He builds the site's trackers, the release calendar and the free games list, and writes its guides.</p>
 
   <h2>Background</h2>
