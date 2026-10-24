@@ -16,7 +16,7 @@ All pre-orders, regardless of edition, include the Vintage Vice City Pack, which
 
 ## What Each GTA 6 Edition Includes: A Detailed Breakdown
 
-The core difference between the Standard and Ultimate Editions lies in the additional content provided for GTA Online, alongside a digital artbook and soundtrack. The single-player campaign, featuring protagonists Lucia and Jason, is identical across both versions. For more on their story, see our guide on [GTA 6 Dual Protagonists: Lucia and Jason](/guides/gta-6-lucia-and-jason-story/).
+The core difference between the Standard and Ultimate Editions lies in the additional content provided for GTA Online, alongside a digital artbook and soundtrack. The single-player campaign, featuring protagonists Lucia and Jason, is identical across both versions. For more on the launch details, see our guide on [GTA 6 Release Date: November 19, 2026, and How We Got Here](/guides/gta-6-release-date/).
 
 <div class="table-wrap">
 <table>
@@ -116,7 +116,7 @@ Considering that all physical copies are digital download vouchers, there is no 
 
 For the most dedicated fans looking to dominate Vice City's online scene from the moment pre-load finishes on November 12, 2026, and the game officially launches on November 19, 2026, the Ultimate Edition offers a compelling package. For everyone else, the Standard Edition remains an excellent entry point into the world of Grand Theft Auto VI.
 
-For more information on the game, visit our [GTA 6 hub](/gta-6/) and stay tuned for our full [GTA 6 Online: Is There Multiplayer at Launch?](/guides/gta-6-online/) guide.
+For more information on the game, visit our [GTA 6 hub](/gta-6/) and check our [GTA 6 countdown](/gta-6/countdown/).
 
 **Sources:**
 *   [Rockstar Games Official Website](https://www.rockstargames.com/)
