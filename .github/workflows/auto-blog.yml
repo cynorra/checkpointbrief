@@ -52,6 +52,13 @@ jobs:
           if git diff --staged --quiet; then
             echo "No new guide changes to commit."
           else
-            git commit -m "content: auto-generated daily zero-click guide [skip ci]"
+            git commit -m "content: auto-generated daily zero-click guide"
             git push origin main
           fi
+
+      - name: Trigger and verify deploy
+        run: |
+          echo "Triggering site deployment to Cloudflare Pages..."
+          gh workflow run deploy.yml --ref main
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

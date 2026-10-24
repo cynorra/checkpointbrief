@@ -105,7 +105,7 @@ console.log(`Scheduled Date: ${targetDate}`);
 console.log(`==================================================\n`);
 
 const relevantGuides = existingGuidesSummary
-  .filter((g) => g.tool === targetTopic.tool || g.tool === "gta6")
+  .filter((g) => (g.tool === targetTopic.tool || g.tool === "gta6") && g.date <= targetDate)
   .slice(-6);
 
 const internalLinksContext = relevantGuides
