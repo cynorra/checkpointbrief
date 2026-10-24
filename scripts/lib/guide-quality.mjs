@@ -38,7 +38,7 @@ export function stripMarkdown(md = "") {
     .trim();
 }
 
-export function validateGuide(frontmatter, markdownBody) {
+export function validateGuide(frontmatter, markdownBody, options = {}) {
   const errors = [];
   const warnings = [];
 
@@ -117,6 +117,32 @@ export function validateGuide(frontmatter, markdownBody) {
   const hasLinks = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/.test(markdownBody);
   if (!hasLinks) {
     warnings.push("No external source citations found. High quality guides cite official sources (Rockstar, Sony, Xbox, Epic Games).");
+  }
+
+  // Check for repetitive/cookie-cutter formula titles
+  const formulaRe = /^(the ultimate guide to|complete guide to|everything you need to know about|all you need to know about)\b/i;
+  if (formulaRe.test(frontmatter.title)) {
+    errors.push(`Cookie-cutter title detected: "${frontmatter.title}". Avoid generic formulas like 'The Ultimate Guide to' or 'Everything You Need to Know'. Use specific, high-intent titles.`);
+  }
+
+  // 3. Duplicate content and similarity check against existing articles
+  if (Array.isArray(options.existingArticles) && options.existingArticles.length > 0) {
+    const newTitleWords = new Set(frontmatter.title.toLowerCase().replace(/[^a-z0-9\s]/g, "").split(/\s+/).filter((w) => w.length > 3));
+    
+    for (const existing of options.existingArticles) {
+      if (existing.slug === frontmatter.slug) continue;
+      
+      const existingTitleWords = new Set(existing.title.toLowerCase().replace(/[^a-z0-9\s]/g, "").split(/\s+/).filter((w) => w.length > 3));
+      let common = 0;
+      for (const word of newTitleWords) {
+        if (existingTitleWords.has(word)) common++;
+      }
+      const similarity = common / Math.max(newTitleWords.size, existingTitleWords.size);
+      if (similarity > 0.75) {
+        errors.push(`Duplicate topic detected: Title "${frontmatter.title}" is ${Math.round(similarity * 100)}% similar to existing guide "${existing.title}".`);
+        break;
+      }
+    }
   }
 
   return {

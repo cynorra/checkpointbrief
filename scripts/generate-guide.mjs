@@ -136,12 +136,16 @@ EDITORIAL QUALITY MANDATES:
    - Immediately follow it with why the decision/nuance requires reading the full comparison matrix below.
 5. MANDATORY COMPARISON TABLE & HEADINGS:
    - You MUST structure the article using at least 4 distinct '## Section Heading' markdown headers (e.g. ## Standard vs Ultimate Edition Comparison, ## What Each Edition Includes, ## Who Should Buy the Standard Edition, ## The Verdict: Is the Upgrade Worth It?).
-   - Must include a complete Markdown/HTML table wrapped in <div class="table-wrap"><table>...</table></div>.
-6. INTERNAL LINKING:
+6. STRICT ANTI-DUPLICATION & TEMPLATE DIVERSITY:
+   - NEVER repeat or paraphrase any topic already written. Here are existing published titles to AVOID overlapping with:
+   ${existingGuidesSummary.slice(-15).map((g) => `- "${g.title}"`).join("\n   ")}
+   - NEVER use generic formula titles like "The Ultimate Guide to...", "Complete Guide to...", "Everything You Need to Know".
+   - You MUST tailor the headings and structure specifically to this topic's Format Type ("${targetTopic.formatType || 'Actionable Guide'}"). Do NOT use cookie-cutter section headers.
+7. INTERNAL LINKING:
    - Naturally integrate 1-2 relevant internal links to existing Checkpoint Brief pages from this list:
    ${internalLinksContext}
    - Reference site hubs where appropriate: [GTA 6 hub](/gta-6/), [GTA 6 countdown](/gta-6/countdown/), [Release date calendar](/release-dates/), [Free games tracker](/free-games/).
-7. EXTERNAL CITATIONS:
+8. EXTERNAL CITATIONS:
    - Use direct Markdown links to official sources (Rockstar Games, PlayStation, Xbox, Epic Games).
 
 FORMAT REQUIRED:
@@ -257,9 +261,16 @@ async function generateWithRetry(maxAttempts = 3) {
         const kv = line.match(/^(\w+):\s*(.*)$/);
         if (kv) fm[kv[1]] = kv[2].trim().replace(/^["']|["']$/g, "");
       }
+      // Auto-trim description if model returned slightly above 165 chars
+      if (fm.description && fm.description.length > 165) {
+        fm.description = fm.description.slice(0, 160).replace(/\s+\S*$/, "") + ".";
+      }
+      // Auto-trim title if model returned slightly above 80 chars
+      if (fm.title && fm.title.length > 80) {
+        fm.title = fm.title.slice(0, 77).replace(/\s+\S*$/, "");
+      }
       const body = fmMatch[2].replace(/\r\n/g, "\n").trim();
-
-      const validation = validateGuide(fm, body);
+      const validation = validateGuide(fm, body, { existingArticles: existingGuidesSummary });
       if (!validation.valid) {
         console.warn(`[Quality Reject] Guide failed validation:`);
         for (const err of validation.errors) {
