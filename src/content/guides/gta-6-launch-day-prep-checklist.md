@@ -3,6 +3,7 @@ title: "GTA 6 Launch Day Checklist: Pre-Load, Storage, and Account Setup"
 description: "Prepare for GTA 6's November 19 launch with our essential checklist: pre-load dates, clearing 150GB+ console storage safely, and Rockstar Social Club 2FA setup."
 published: 2026-11-15
 tool: gta6
+draft: true
 ---
 **To ensure a smooth Grand Theft Auto VI launch on November 19, 2026, players must pre-load the game starting November 12, clear at least 150GB of console storage, and verify their Rockstar Social Club account with Two-Factor Authentication (2FA).** These critical steps prevent common day-one issues like slow downloads, insufficient space, and account access problems, which can significantly delay your entry into Leonida.
 

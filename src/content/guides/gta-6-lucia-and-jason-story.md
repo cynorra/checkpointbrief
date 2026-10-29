@@ -3,6 +3,7 @@ title: "GTA 6 Dual Protagonists: Lucia and Jason's Roles"
 description: "Explore the confirmed dynamic and story roles of Lucia and Jason, Grand Theft Auto VI's dual protagonists, based on official Rockstar Games information."
 published: 2026-11-11
 tool: gta6
+draft: true
 ---
 **Lucia and Jason are the confirmed dual protagonists of Grand Theft Auto VI, set to release on November 19, 2026, for PlayStation 5 and Xbox Series X|S. Their narrative focuses on a criminal partnership within the modern-day Vice City, with Lucia's experience and Jason's more reserved demeanor driving the core story.**
 

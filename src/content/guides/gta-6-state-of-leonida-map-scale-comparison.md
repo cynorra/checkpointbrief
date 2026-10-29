@@ -3,6 +3,7 @@ title: "GTA 6 Leonida Map Scale: Confirmed Size vs GTA 5 and RDR2"
 description: "Compare GTA 6's Leonida map to GTA 5's San Andreas and RDR2's vast landscapes. We analyze confirmed landmass, biome diversity, underwater zones, and interior."
 published: 2026-11-16
 tool: gta6
+draft: true
 ---
 **The State of Leonida in Grand Theft Auto 6 is confirmed to be significantly larger and more diverse than GTA 5's San Andreas, incorporating a vast landmass that blends dense urban environments with extensive natural biomes, including the Everglades.** This expansion prioritizes not just raw square mileage but also verticality, interactive interiors, and dynamic environmental elements, distinguishing its design philosophy from the expansive wilderness of Red Dead Redemption 2.
 

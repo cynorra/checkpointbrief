@@ -3,6 +3,7 @@ title: "GTA 6 PC Release Window: Historical Data Analysis"
 description: "Analyze Rockstar's past console-to-PC delays for GTA 4, GTA 5, and RDR2 to calculate the most probable GTA 6 PC launch window."
 published: 2026-11-13
 tool: gta6
+draft: true
 ---
 **Based on Rockstar Games' historical console-to-PC release patterns, Grand Theft Auto 6 is statistically most likely to launch on PC between June 2027 and June 2028, with a strong probability centered around late 2027.** This extensive delay, averaging over a year from the initial console debut, is a consistent strategy by Rockstar to optimize the PC experience, maximize staggered revenue, and potentially fulfill console exclusivity agreements, making a day-and-date PC launch highly improbable.
 

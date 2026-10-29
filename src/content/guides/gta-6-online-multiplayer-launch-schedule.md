@@ -3,6 +3,7 @@ title: "GTA 6 Online Launch Timing: Day One Multiplayer?"
 description: "Analyze Rockstar's past online launches (GTA 5, Red Dead Redemption 2) to predict if GTA 6's multiplayer will be available on November 19, 2026, or later."
 published: 2026-11-17
 tool: gta6
+draft: true
 ---
 **Based on Rockstar Games' historical release patterns, it is highly improbable that GTA 6's online multiplayer component will be available on the single-player launch day, November 19, 2026.** Past titles like Grand Theft Auto V and Red Dead Redemption 2 saw their online modes debut weeks to a month after the main game, often starting with a beta phase to manage server load and gather feedback.
 
