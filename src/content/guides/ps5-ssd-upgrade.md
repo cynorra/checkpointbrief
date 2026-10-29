@@ -2,6 +2,7 @@
 title: "How to Add Storage to a PS5: M.2 SSD Requirements and Steps"
 description: "Sony's exact M.2 SSD requirements for PS5, the right size to buy, the heatsink rule and how to install one, plus what a USB drive can and can't do."
 published: 2026-10-22
+updated: 2026-10-29
 tool: general
 ---
 
@@ -44,6 +45,28 @@ With new games regularly passing 100 GB, a 250 GB or 500 GB drive fills up quick
 
 The formatting step erases anything already on the SSD. After that, the PS5 shows a read speed test, and you can choose where new games install.
 
+## Check before you buy
+
+1. **PCIe Gen4 x4 NVMe.** If the box says Gen3 or SATA, it won't work.
+2. **Heatsink included or not?** If it isn't, buy a PS5-compatible one. If it is, check it fits the dimensions above.
+3. **Speed.** Sony recommends 5,500 MB/s sequential read or better.
+4. **Warranty and return policy.** If the drive isn't recognized, you'll want to return it.
+
+## How many big games fit?
+
+Using the reported 210 GB for GTA 6 as an example, a drive with about 900 GB of usable space (a typical 1 TB model) holds about four games that size. A 2 TB drive roughly doubles that. This is just arithmetic to help you size the purchase; real space depends on formatting and what else is installed.
+
+## Moving games between drives
+
+On the PS5 you can move games between the console storage and the M.2 SSD in **Settings → Storage**. Pick the source, select the games and choose **Move**. You can also choose where new games install by default. Games run the same from the M.2 SSD as from the internal drive.
+
+## If the PS5 doesn't detect the SSD
+
+- Power the console fully off, unplug it, and reseat the drive. A drive that isn't pressed flat is the most common cause.
+- Check the heatsink isn't touching other parts or blocking the cover.
+- Update the system software, then try again.
+- If it still isn't recognized, try the drive in a PC to see if it works at all.
+
 ## What about a USB drive?
 
 A USB drive is cheaper and needs no tools, but it has a limit: you can **store** PS5 games on it, but you can't **play** them from it. You have to copy them back to the internal drive or the M.2 SSD first. PS4 games can play directly from USB.
@@ -52,4 +75,4 @@ That still makes USB useful: park games you're not playing there, and copying th
 
 ## Is it worth doing for GTA 6?
 
-If your free space is under 200 GB, yes, or at least clear space now. Rockstar hasn't published a size, but it will be large. See [GTA 6 file size](/guides/gta-6-file-size/) for estimates and the real usable space on each console.
+If your free space is under 200 GB, yes, or at least clear space now. Rockstar hasn't confirmed a size, but PS5 store data points to about 210 GB. See [GTA 6 file size](/guides/gta-6-file-size/) for the numbers and the real usable space on each console.

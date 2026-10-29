@@ -1,20 +1,22 @@
 ---
-title: "Video Game Releases in November 2026: Every Confirmed Date"
-description: "Every game with a confirmed November 2026 release date, by platform, led by GTA 6 on November 19. Switch 2 versions, ports and what's worth watching."
+title: "Video Game Releases in November 2026: Confirmed Dates"
+description: "Confirmed November 2026 game release dates by platform, led by GTA 6 on November 19. Switch 2 versions, ports and what's worth watching, with sources."
 published: 2026-10-18
+updated: 2026-10-29
 tool: releases
 ---
 
-**November 2026 is dominated by one date: Grand Theft Auto VI on November 19, for PS5 and Xbox Series X|S.** Around it, most other publishers have kept clear, so the rest of the month is mostly Nintendo Switch 2 releases and ports of games that already exist on other systems. Below is every game with a confirmed day in November, compiled from the [VGC release schedule](https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/) and publisher announcements, checked October 18, 2026.
+**November 2026 is dominated by one date: Grand Theft Auto VI on November 19, for PS5 and Xbox Series X|S.** Around it, most other publishers have kept clear, so the rest of the month is mostly Nintendo Switch 2 releases and ports of games that already exist on other systems. Below are the games with a confirmed day in November that we've been able to check, compiled from the [VGC release schedule](https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/) and publisher announcements, first checked October 18, 2026. The Godzilla date was added and re-checked October 29.
 
 For a filterable version that updates as dates change, see the [release date calendar](/release-dates/).
 
-## Every November 2026 release
+## November 2026 releases
 
 <div class="table-wrap">
 <table>
 <thead><tr><th>Date</th><th>Game</th><th>Platforms</th></tr></thead>
 <tbody>
+<tr><td>Tue, Nov 3</td><td>Godzilla: Destroy All Monsters Melee Remastered</td><td>PS5, Xbox Series X|S, Switch 2, PC</td></tr>
 <tr><td>Thu, Nov 5</td><td>The Legend of Zelda: Ocarina of Time</td><td>Switch 2</td></tr>
 <tr><td>Thu, Nov 5</td><td>Edge of Memories</td><td>PS5, Xbox Series X|S, PC</td></tr>
 <tr><td>Thu, Nov 5</td><td>Marvel's Guardians of the Galaxy Encore Edition</td><td>Switch 2</td></tr>
@@ -43,6 +45,18 @@ If you're not playing GTA 6 at launch, November is a good month to catch up on O
 ## Switch 2 owners
 
 Nintendo's console gets the most November releases by count. Ocarina of Time on November 5 and the Pikmin 4 Switch 2 Edition on November 12 are the two first-party highlights. Use the Switch 2 filter on the [release calendar](/release-dates/) to see only those.
+
+## What Godzilla's date tells you
+
+Atari announced the Godzilla remaster for November 3, 2026, which is Godzilla Day, on PS5, Xbox Series X|S, Switch 2 and PC at $29.99 ([Gematsu](https://gematsu.com/2026/06/godzilla-destroy-all-monsters-melee-remastered-announced-for-ps5-xbox-series-switch-2-and-pc), [GamersHeroes](https://www.gamersheroes.com/gaming-news/godzilla-destroy-all-monsters-melee-remastered-launching-november-3/)). Outlets differ on the exact platform list, so confirm on your store's page. It's a good example of a smaller game scheduling itself well ahead of GTA 6.
+
+## Early access is not the release date
+
+Some publishers sell "advanced access" editions that start days before the official date. Warhammer 40,000: Dawn of War IV, for example, gives Commander Edition owners early access on November 30, but the game launches on December 3 ([GamingOnLinux](https://www.gamingonlinux.com/2026/08/warhammer-40-000-dawn-of-war-iv-delayed-until-december/)). We list the official launch date, so it appears in our December list.
+
+## What may be missing
+
+This list holds the dates we could confirm from publisher announcements and major schedules. Smaller games, early-access updates and region-specific releases won't all appear, and some lists include dates that only a single outlet reports. If a game is on another site's list but not ours, we haven't been able to confirm it from a publisher source yet.
 
 ## Dates move
 

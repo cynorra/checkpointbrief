@@ -2,6 +2,7 @@
 title: "How Epic Games Store Free Games Work: Times, Rules and Catches"
 description: "Epic gives away PC games every week. When the free games change, how to claim them, whether you keep them forever and the few catches worth knowing."
 published: 2026-10-18
+updated: 2026-10-29
 tool: deals
 ---
 
@@ -44,6 +45,25 @@ Yes. Once you've claimed a free game, it's tied to your account like any purchas
 - **Add-ons need the base game.** Sometimes the free item is DLC or an in-game bundle. It only works if you own the game it belongs to.
 - **Mystery games.** Around big sales and the holidays, Epic has in past years hidden upcoming free games behind "mystery" tiles, revealing one at a time. They're still free; you just don't know what's next until it unlocks.
 - **Your account security matters.** Because your library holds real games, turn on two-factor authentication for your Epic account.
+
+## Do you need the launcher?
+
+No. You can claim a free game on Epic's website and download it later through the Epic Games Launcher. The launcher is only needed to install and play. Claiming on a phone's browser works too, which is useful if you're away from your PC on Thursday morning.
+
+## Common problems
+
+- **The game shows "Get" but won't add to your library:** sign out and back in, or try the website instead of the launcher. If it's an age-restricted game, your account may need to confirm your date of birth.
+- **A claimed game doesn't appear:** check the order history on your Epic account. If the order is there, the game is in your library even if the launcher is slow to refresh.
+- **You claimed a DLC and can't use it:** add-ons only work with the base game, which you may need to buy or wait to be free.
+- **The promotion doesn't show in your country:** Epic's offers can vary by region, so check the free games page for your country.
+
+## How not to miss a week
+
+Set a Thursday reminder for the time in your time zone. The simplest rule is to check once a week, and claim both games if there are two. Because free games are kept forever, a library of claimed games is also useful later: you can install a free game years after you claimed it, even if it's no longer free.
+
+## Staying safe
+
+Only claim through Epic's own website or launcher. Emails or social media posts promising "free games" with a link to a different site are often phishing. Epic never asks for your password by email. Turn on two-factor authentication on your account, as noted above, because a stolen account loses every claimed game.
 
 ## Why does Epic give games away?
 

@@ -1,7 +1,8 @@
 ---
-title: "Video Game Releases in December 2026: Every Confirmed Date"
+title: "Video Game Releases in December 2026: Confirmed Dates"
 description: "Every game with a confirmed December 2026 release date, by platform: Dawn of War IV, Dragon Quest Monsters, Path of Exile 2's full release and more."
 published: 2026-11-07
+updated: 2026-10-29
 tool: releases
 ---
 
@@ -29,11 +30,33 @@ tool: releases
 </table>
 </div>
 
-Dates checked October 18, 2026.
+Dates first checked October 18, 2026. Dawn of War IV, Attack on Titan 3 and Path of Exile 2 were re-verified against publisher announcements on October 29.
+
+## Re-verified dates and what changed
+
+- **Warhammer 40,000: Dawn of War IV, December 3 (PC).** It was first set for September 17 and was delayed to December ([GamingOnLinux](https://www.gamingonlinux.com/2026/08/warhammer-40-000-dawn-of-war-iv-delayed-until-december/)). Some store pages still show the old September date. Commander Edition owners get early access from November 30, which is why some lists show that date.
+- **Attack on Titan 3, December 10.** Koei Tecmo announced December 10 for PS5, Xbox Series X|S, Switch 2 and PC via Steam ([Koei Tecmo America](https://www.koeitecmoamerica.com/news/koei-tecmo-locks-in-dec-10-2026-release-date-for-attack-on-titan-3/)). A list that shows December 4 is wrong.
+- **Path of Exile 2, December 11.** The full 1.0 release lands on PS5, Xbox Series X|S and PC. It is also reported to go free to play at that point and to add a new Duelist class ([RPG Site](https://www.rpgsite.net/news/21188-path-exile-2-reaches-its-10-full-release-on-december-11)).
+- **Monster Hunter Wilds on Switch 2, December 4.** Sources disagree on the platform label (Switch vs Switch 2), so check Capcom's store page.
 
 ## December 3 is the big day
 
 Five games land on Thursday, December 3, including Dawn of War IV, the first new entry in the real-time strategy series in years, and the latest Dragon Quest Monsters, which is on nearly every platform including both Switch consoles.
+
+## Which December games are worth watching
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>If you like…</th><th>Look at</th></tr></thead>
+<tbody>
+<tr><td>Strategy on PC</td><td>Warhammer 40,000: Dawn of War IV (Dec 3)</td></tr>
+<tr><td>Action RPGs that you play for years</td><td>Path of Exile 2 1.0 (Dec 11)</td></tr>
+<tr><td>Anime action</td><td>Attack on Titan 3 (Dec 10)</td></tr>
+<tr><td>Creature-collecting RPGs</td><td>Dragon Quest Monsters: The Withered World (Dec 3)</td></tr>
+<tr><td>A Switch 2 library filler</td><td>Xenoblade Chronicles 3 Switch 2 Edition (Dec 3)</td></tr>
+</tbody>
+</table>
+</div>
 
 ## Switch 2 keeps getting ports
 

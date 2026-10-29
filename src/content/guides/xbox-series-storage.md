@@ -2,6 +2,7 @@
 title: "Xbox Series X|S Storage: Expansion Cards vs USB Drives"
 description: "Which Xbox Series X|S games can run from a USB drive and which need the internal SSD or an expansion card, usable space by model and the best way to add more."
 published: 2026-10-23
+updated: 2026-10-29
 tool: general
 ---
 
@@ -49,6 +50,31 @@ Many players use both:
 
 To move a game: press the Xbox button, go to **My games & apps → Manage**, choose a storage device and select **Move or copy**.
 
+## Which option should you choose?
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>If you…</th><th>Choose</th></tr></thead>
+<tbody>
+<tr><td>Want to play new Xbox Series X|S games from the extra space</td><td>The official Storage Expansion Card</td></tr>
+<tr><td>Mostly want to park games you're not playing</td><td>A USB drive</td></tr>
+<tr><td>Play lots of older Xbox One games</td><td>A USB drive works fine, since those can run from USB</td></tr>
+<tr><td>Are on a 512 GB Series S</td><td>Both, ideally: an expansion card for current games and USB for the rest</td></tr>
+</tbody>
+</table>
+</div>
+
+## Common mistakes
+
+- **Buying a regular SSD and expecting it to fit.** The expansion slot needs an official, licensed Xbox card.
+- **Expecting a USB drive to play Series X|S games.** It can only store them.
+- **Forgetting that the drive formats when you connect it.** Setting a USB drive up for Xbox erases it, so copy any files off first.
+- **Letting storage fill up completely.** Leave some free space on the internal drive for updates and temporary files.
+
+## Checking space on the Xbox
+
+Press the Xbox button, then go to **My games & apps → Manage → Storage devices** (menu names can change with updates). It shows how much space each drive has and which games use the most. Sort by size and look at what you haven't played in months.
+
 ## Making room for GTA 6
 
-GTA 6 is a Series X|S game, so it has to be installed on the internal drive or an expansion card to play. Rockstar hasn't confirmed a file size. The PS5 store data points to about 210 GB, and a similar size is expected on Xbox, so plan for 200 GB or more ([file size guide](/guides/gta-6-file-size/)). Check [GTA 6 file size](/guides/gta-6-file-size/) for estimates, and if you're on PlayStation too, see [how to add storage to a PS5](/guides/ps5-ssd-upgrade/).
+GTA 6 is a Series X|S game, so it has to be installed on the internal drive or an expansion card to play. Rockstar hasn't confirmed a file size. The PS5 store data points to about 210 GB, and a similar size is expected on Xbox, so plan for 200 GB or more ([file size guide](/guides/gta-6-file-size/)). If you're on PlayStation too, see [how to add storage to a PS5](/guides/ps5-ssd-upgrade/).
