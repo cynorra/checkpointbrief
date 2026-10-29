@@ -269,6 +269,16 @@ async function generateWithRetry(maxAttempts = 3) {
       if (fm.title && fm.title.length > 80) {
         fm.title = fm.title.slice(0, 77).replace(/\s+\S*$/, "");
       }
+      // Write trimmed values back: the saved file and Supabase use the content, not `fm`
+      let finalContent = cleaned;
+      for (const key of ["description", "title"]) {
+        if (fm[key]) {
+          finalContent = finalContent.replace(
+            new RegExp(`^${key}:.*$`, "m"),
+            () => `${key}: "${fm[key].replace(/"/g, '\\"')}"`
+          );
+        }
+      }
       const body = fmMatch[2].replace(/\r\n/g, "\n").trim();
       const validation = validateGuide(fm, body, { existingArticles: existingGuidesSummary });
       if (!validation.valid) {
@@ -296,7 +306,7 @@ async function generateWithRetry(maxAttempts = 3) {
       return {
         frontmatter: fm,
         body,
-        fullContent: cleaned
+        fullContent: finalContent
       };
     } catch (err) {
       console.error(`[Attempt ${attempt} Failed]:`, err.message);
