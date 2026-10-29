@@ -2,6 +2,7 @@
 title: "Every Grand Theft Auto Game in Order of Release (1997–2026)"
 description: "Every Grand Theft Auto game in release order, from the 1997 original to GTA 6 in 2026, with the year each came out and the city it was set in."
 published: 2026-11-06
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -48,6 +49,36 @@ tool: gta6
 - **Grand Theft Auto: The Trilogy – The Definitive Edition** (2021): remastered GTA III, Vice City and San Andreas.
 - **GTA V on PS5 and Xbox Series X|S** (March 2022): upgraded version for current consoles.
 - **GTA V Enhanced on PC** (March 2025): the current-generation upgrade brought to PC.
+
+## How long between main games?
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>From</th><th>To</th><th>Gap</th></tr></thead>
+<tbody>
+<tr><td>Grand Theft Auto (1997)</td><td>Grand Theft Auto 2 (1999)</td><td>2 years</td></tr>
+<tr><td>Grand Theft Auto 2 (1999)</td><td>Grand Theft Auto III (2001)</td><td>2 years</td></tr>
+<tr><td>Grand Theft Auto III (2001)</td><td>Vice City (2002)</td><td>1 year</td></tr>
+<tr><td>Vice City (2002)</td><td>San Andreas (2004)</td><td>2 years</td></tr>
+<tr><td>San Andreas (2004)</td><td>Grand Theft Auto IV (2008)</td><td>4 years</td></tr>
+<tr><td>Grand Theft Auto IV (2008)</td><td>Grand Theft Auto V (2013)</td><td>5 years</td></tr>
+<tr><td>Grand Theft Auto V (2013)</td><td>Grand Theft Auto VI (2026)</td><td>13 years</td></tr>
+</tbody>
+</table>
+</div>
+
+The gaps grew as the games grew. The series went from one game a year in the PS2 era to a decade-plus between the last two entries.
+
+## The eras
+
+- **The 2D era (1997–1999):** top-down games with simple graphics.
+- **The 3D era (2001–2004):** GTA III, Vice City and San Andreas, which made the series famous.
+- **The HD era (2008–2013):** GTA IV and GTA V, with far more detailed worlds.
+- **The current era (2026):** GTA 6, built only for PS5 and Xbox Series X|S.
+
+## Do you need to play the earlier games first?
+
+No. Each main game tells its own story, and Rockstar hasn't said GTA 6 depends on earlier ones. Vice City returns as a place, but the characters are new. If you want a taste of the series before November 19, GTA V is the closest to the modern style and runs on current consoles, and the Trilogy remasters are a way to see how Vice City began. Our [Vice City guide](/guides/vice-city-then-and-now/) explains the difference between the original and the new one.
 
 ## The long wait for GTA 6
 

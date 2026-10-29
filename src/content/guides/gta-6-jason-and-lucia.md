@@ -2,6 +2,7 @@
 title: "GTA 6 Characters: Jason, Lucia and Who We've Met So Far"
 description: "GTA 6 stars Jason Duval and Lucia Caminos, the series' first two-hander lead. Their backgrounds as Rockstar describes them and the supporting characters revealed."
 published: 2026-10-30
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -37,9 +38,40 @@ GTA V had three protagonists you could switch between. GTA 6's marketing focuses
 
 Character list via [Wikipedia](https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI), which follows Rockstar's character profiles.
 
+## How the characters were introduced
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Video</th><th>What it added</th></tr></thead>
+<tbody>
+<tr><td>Trailer 1 (December 2023)</td><td>Introduced Lucia and the setting</td></tr>
+<tr><td>Trailer 2 (May 2025)</td><td>Introduced Jason as her partner and the supporting cast</td></tr>
+<tr><td>Launch trailer (October 15, 2026)</td><td>More of their backstory and the state of Leonida; coverage notes a hint that they share history before the game starts</td></tr>
+</tbody>
+</table>
+</div>
+
+The launch trailer detail comes from [Vice's coverage](https://www.vice.com/en/article/gta-6-launch-trailer-jason-lucia-story-details/). The full list of official videos is in our guide to every GTA 6 trailer.
+
+## How they compare with earlier leads
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Game</th><th>Playable leads</th></tr></thead>
+<tbody>
+<tr><td>Grand Theft Auto IV (2008)</td><td>One lead, Niko Bellic</td></tr>
+<tr><td>Grand Theft Auto V (2013)</td><td>Three, Michael, Franklin and Trevor, which you could switch between</td></tr>
+<tr><td>Red Dead Redemption 2 (2018)</td><td>One lead, Arthur Morgan, with John Marston in the epilogue</td></tr>
+<tr><td>Grand Theft Auto VI (2026)</td><td>Two, Jason Duval and Lucia Caminos</td></tr>
+</tbody>
+</table>
+</div>
+
+The change matters because a story built around one couple allows a different tone from GTA V's triangle of unrelated men. Rockstar hasn't explained how much you will control each character, so don't assume you can freely swap the way you could in GTA V.
+
 ## Who voices them?
 
-Rockstar hasn't officially confirmed the voice and motion-capture cast. Names circulating online are unconfirmed, so we don't list them.
+Rockstar hasn't officially confirmed the voice and motion-capture cast. Names circulating online are unconfirmed, and different sites name different people for the same character, so we don't list them. When Rockstar publishes credits, we'll add them.
 
 ## What we don't know
 

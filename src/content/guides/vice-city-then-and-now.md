@@ -2,6 +2,7 @@
 title: "Vice City Then and Now: From the 1980s to GTA 6"
 description: "Vice City first appeared in 1986-set GTA: Vice City in 2002. How the original, Vice City Stories and GTA 6's modern version compare, and what's changed."
 published: 2026-11-05
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -34,6 +35,29 @@ A prequel originally made for the PlayStation Portable, set two years earlier, i
 ## GTA 6: Vice City today
 
 GTA 6's Vice City is modern: social media, nightlife, condo towers and highway traffic, all shown in the trailers. It's much denser than the 2002 map, and it isn't the whole game. It sits within Leonida, with the Keys, the Grassrivers wetlands and inland towns around it. See [every Leonida location Rockstar has named](/guides/gta-6-map-leonida/).
+
+## Vice City 2002 vs GTA 6 side by side
+
+<div class="table-wrap">
+<table>
+<thead><tr><th></th><th>GTA: Vice City (2002)</th><th>GTA 6 (2026)</th></tr></thead>
+<tbody>
+<tr><td>Time period</td><td>1986</td><td>Present day</td></tr>
+<tr><td>Scope</td><td>One city on two islands</td><td>A whole state, Leonida, with Vice City at the center</td></tr>
+<tr><td>Lead</td><td>Tommy Vercetti, one protagonist</td><td>Jason Duval and Lucia Caminos, two protagonists</td></tr>
+<tr><td>Platform</td><td>PlayStation 2 first</td><td>PS5 and Xbox Series X|S</td></tr>
+<tr><td>Culture</td><td>1980s neon, film and music influences</td><td>Social media, influencers and modern nightlife in the trailers</td></tr>
+</tbody>
+</table>
+</div>
+
+## Why the 1980s still show up
+
+GTA 6 is set in the present, but it keeps nodding to the old city. The Vintage Vice City Pack, a pre-order bonus, includes retro outfits and a '55 Vapid Stanier ([bonus details](/guides/gta-6-pre-order-bonuses/)). That is a deliberate callback, a bridge between the 1986 original and the modern game.
+
+## Can you still play the original?
+
+The 2002 game was remastered in Grand Theft Auto: The Trilogy – The Definitive Edition (2021), which has had a mixed reception. Availability differs by platform and store, so check yours before planning around it. You do not need to play it before GTA 6: the new game has new characters and a new story.
 
 ## What's carried over
 
