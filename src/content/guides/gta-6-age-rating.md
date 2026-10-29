@@ -49,7 +49,7 @@ The ESRB rating is advice, not a law in the US, and the PEGI 18 rating is enforc
 
 1. **Set up a family account** on PlayStation or Xbox so the child has their own profile with an age limit.
 2. **Block purchases** or require a password for them, because the game is reported to have in-game purchases.
-3. **Limit play time and online chat.** Both consoles let you restrict communication with other players, relevant if an online mode arrives later (see [GTA 6 Online](/guides/gta-6-online/)).
+3. **Limit play time and online chat.** Both consoles let you restrict communication with other players, relevant if an online mode arrives later (if an online mode is announced).
 4. **Talk about it.** A short conversation about what the game contains is often more effective than a block alone.
 
 ## Parental controls on each console
