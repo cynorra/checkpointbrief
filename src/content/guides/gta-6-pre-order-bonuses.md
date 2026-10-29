@@ -2,6 +2,7 @@
 title: "GTA 6 Pre-Order Bonuses: Vintage Vice City Pack and GTA+ Month"
 description: "Pre-ordering GTA 6 gets you the Vintage Vice City Pack and, for digital orders, a free month of GTA+. What's in each, the deadline and whether it's worth it."
 published: 2026-10-18
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -12,8 +13,10 @@ tool: gta6
 The pack is cosmetic and convenience content with a retro Vice City theme:
 
 - Outfits and hairstyles for both protagonists, Jason and Lucia
-- A '55 Vapid Stanier classic sedan, with a garage and weapon locker
+- A '55 Vapid Stanier classic sedan, with the Shore Court garage and a weapon locker
 - A tropical palm-tree weapon pattern
+
+Coverage counts the pack as seven items in total. The pack is the same on Standard and Ultimate, so the Ultimate Edition only adds its own extra content on top.
 
 ([contents via PC Gamer](https://pcgamer.com/games/grand-theft-auto/gta-6-pre-order-editions-standard-ultimate/))
 
@@ -23,7 +26,7 @@ The pack is cosmetic and convenience content with a retro Vice City theme:
 
 GTA+ is Rockstar's subscription. The press release says digital pre-orders get a month free, and that it's redeemable right away, which means you can use it before GTA 6 is out. The main thing it gives you today is the GTA+ Games Library, a rotating set of older Rockstar games you can play while subscribed, including Grand Theft Auto V.
 
-**Who gets it:** digital pre-orders. Rockstar's announcement doesn't mention the GTA+ month for physical copies, so if that month matters to you, buy digital.
+**Who gets it:** digital pre-orders. Rockstar's announcement doesn't mention the GTA+ month for physical copies, so if that month matters to you, buy digital. One outlet reports that Xbox players won't get the GTA+ month, so check the listing on your platform before counting on it. Another notes that the free month renews automatically, so set a reminder to cancel if you don't want to pay for GTA+ afterwards.
 
 ## Deadlines at a glance
 
@@ -36,6 +39,30 @@ GTA+ is Rockstar's subscription. The press release says digital pre-orders get a
 </tbody>
 </table>
 </div>
+
+## Physical vs digital pre-order
+
+<div class="table-wrap">
+<table>
+<thead><tr><th></th><th>Digital</th><th>Physical (code in a box)</th></tr></thead>
+<tbody>
+<tr><td>Vintage Vice City Pack</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>Free month of GTA+</td><td>Yes (check your platform)</td><td>Not mentioned</td></tr>
+<tr><td>Pre-load from November 12</td><td>Yes</td><td>Yes, after redeeming the code</td></tr>
+<tr><td>Edition choice</td><td>Standard or Ultimate</td><td>Standard only</td></tr>
+<tr><td>Can be cheaper at a retailer</td><td>Rarely</td><td>Sometimes</td></tr>
+</tbody>
+</table>
+</div>
+
+The physical copy has no disc: the box holds a download code, so you still download the full game. See [why GTA 6 has no disc](/guides/gta-6-physical-edition-no-disc/).
+
+## Common mistakes
+
+- **Buying on November 20 or later** and missing the Vintage Vice City Pack. The cutoff is before November 20, 2026.
+- **Pre-ordering on the wrong account.** Buy it on the account you actually play on, because purchases are tied to it.
+- **Assuming you get early access.** No edition includes it. See the [release date guide](/guides/gta-6-release-date/).
+- **Skipping the storage check.** The reported install is 210 GB, so make sure you have room before November 12. See the [file size guide](/guides/gta-6-file-size/).
 
 ## Is it worth pre-ordering for these?
 

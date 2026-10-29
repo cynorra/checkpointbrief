@@ -2,6 +2,7 @@
 title: "GTA 6 on PS5 vs Xbox Series X|S: What's Actually Different"
 description: "GTA 6 is the same game, price and date on PS5 and Xbox. What Rockstar has confirmed for each console, the PS5 Pro label, the Series S question and how to choose."
 published: 2026-10-26
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -35,11 +36,50 @@ The label means the developer has done extra work for the more powerful PS5 Pro,
 
 ## 30 or 60 fps?
 
-Unknown. Rockstar hasn't said. A leak claimed there would be performance and quality modes, but not what frame rate performance mode targets. Some technical analysts have doubted that a stable 60 fps is realistic for a game this size, even on Pro. Wait for Rockstar or launch-day testing before buying hardware for it.
+Unknown. Rockstar hasn't said. What exists is rumor. A podcast report claimed Rockstar is testing a 30 fps quality mode and a 60 fps performance mode on PS5 and Xbox Series X ([OpenCritic's summary](https://opencritic.com/news/33900/rumor-gta-6-could-have-a-60-fps-performance-mode-on-all-platforms)), and one report said any 60 fps option might arrive after launch rather than on day one ([Digital Citizen](https://www.digitalcitizen.life/gta-6-may-offer-a-60-fps-mode-on-ps5-and-xbox-series-x-but-it-could-arrive-after-launch/)). Others doubt a stable 60 fps is realistic for a game this size, even on PS5 Pro ([HotHardware](https://hothardware.com/news/even-sonys-ps5-pro-may-struggle-to-run-gta-6-at-60-fps)). None of this is confirmed. Wait for Rockstar or launch-day testing before buying hardware for it.
+
+## Rumor vs confirmed
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Claim</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>Same release date and price on both consoles</td><td>Confirmed by Rockstar</td></tr>
+<tr><td>PS5 controller and 3D audio features</td><td>Confirmed by Rockstar</td></tr>
+<tr><td>"PS5 Pro Enhanced" on the store listing</td><td>Confirmed on the listing; what it means is not</td></tr>
+<tr><td>A 60 fps performance mode</td><td>Rumor only</td></tr>
+<tr><td>Resolution targets (4K, 1440p and so on)</td><td>Speculation; nothing announced</td></tr>
+<tr><td>Xbox Series X and S performance gap</td><td>Not announced</td></tr>
+</tbody>
+</table>
+</div>
+
+## What the trailers do and don't tell you
+
+Rockstar said the launch trailer was captured on a standard PlayStation 5, not a PS5 Pro ([Vice](https://www.vice.com/en/article/gta-6-launch-trailer-jason-lucia-story-details/)). That means the footage you've seen is how the game looks on the base console, but it doesn't tell you how it runs. Trailers are edited, and Rockstar hasn't shown the game running live on Xbox at all. So the comparison players are making is between a shown PS5 version and an unshown Xbox version. Don't read that as a quality gap.
 
 ## The Xbox Series S question
 
 The Series S is less powerful than the Series X and PS5, and has much less storage. GTA 6 is confirmed for it, so it will run, but expect lower resolution than the Series X. The bigger practical issue is space: a 512 GB Series S has about 364 GB usable. See [GTA 6 file size](/guides/gta-6-file-size/).
+
+## Storage: the practical difference
+
+The reported install is about 210 GB ([file size guide](/guides/gta-6-file-size/)), unconfirmed. On a base PS5 (about 667 GB usable) that is roughly a third of the drive; on a 512 GB Xbox Series S (about 364 GB usable) it is more than half. If you're on a Series S, storage will matter more than any graphical difference. See the [Xbox Series storage guide](/guides/xbox-series-storage/) and the [PS5 SSD upgrade guide](/guides/ps5-ssd-upgrade/).
+
+## Quick picks by player type
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>If you are…</th><th>Best choice</th></tr></thead>
+<tbody>
+<tr><td>Playing with friends already on one console</td><td>That console</td></tr>
+<tr><td>Already owning one of the consoles</td><td>Stay put; the game and price are identical</td></tr>
+<tr><td>Buying a console for GTA 6, wanting the most visual headroom</td><td>PS5 Pro, with the caveat that Rockstar hasn't said what its enhancements are</td></tr>
+<tr><td>Buying a console for GTA 6 on a budget</td><td>Base PS5 or Xbox Series X; avoid a 512 GB Series S unless you add storage</td></tr>
+<tr><td>Hoping for PC</td><td>Wait; there's no announcement ([PC release guide](/guides/gta-6-pc-release/))</td></tr>
+</tbody>
+</table>
+</div>
 
 ## Which should you buy it on?
 

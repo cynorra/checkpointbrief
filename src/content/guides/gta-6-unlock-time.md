@@ -2,6 +2,7 @@
 title: "What Time Does GTA 6 Unlock? Release Time by Time Zone"
 description: "Rockstar hasn't announced an official unlock time for GTA 6. What the PlayStation Store data suggests, US times by zone and how to be ready on November 19."
 published: 2026-10-28
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -27,11 +28,34 @@ Midnight Eastern on November 19 is 05:00 UTC. This table assumes the reported st
 
 ## Why "midnight" is complicated
 
-A staggered unlock means each region starts at its own midnight. The reported PlayStation data shows roughly fifteen regional unlock times spread across about nineteen hours, starting with the earliest time zones on November 18. Microsoft hasn't published an equivalent breakdown for Xbox. Usually the two stores line up closely, but not always to the minute.
+A staggered unlock means each region starts at its own midnight. The reported PlayStation data shows roughly fifteen regional unlock times spread across about nineteen hours, with New Zealand reported first and the US and Canada among the last ([Windows Report](https://windowsreport.com/gta-6-global-release-times-revealed-new-zealand-players-get-first-access/)). For Xbox, [Pure Xbox](https://www.purexbox.com/news/2026/09/gta-6-release-times-suggest-some-xbox-players-will-get-access-earlier-than-others) reports that store listings suggest a similar staggered rollout, while [GTA Intel](https://gtaintel.com/news/gta-6-preload-file-size-launch-times) notes Rockstar has not published an official schedule. The two stores usually line up closely, but not always to the minute.
+
+## Unlock times around the world, if it's midnight local
+
+This table converts "midnight local time on November 19" into US Eastern time. It is a calculation based on the reported rule, not a Rockstar schedule.
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Region</th><th>Unlocks at midnight local</th><th>In US Eastern time</th></tr></thead>
+<tbody>
+<tr><td>New Zealand (Auckland)</td><td>Nov 19, 12:00 a.m.</td><td>Nov 18, 6:00 a.m.</td></tr>
+<tr><td>Australia (Sydney)</td><td>Nov 19, 12:00 a.m.</td><td>Nov 18, 8:00 a.m.</td></tr>
+<tr><td>Japan and South Korea</td><td>Nov 19, 12:00 a.m.</td><td>Nov 18, 10:00 a.m.</td></tr>
+<tr><td>India</td><td>Nov 19, 12:00 a.m.</td><td>Nov 18, 1:30 p.m.</td></tr>
+<tr><td>Germany and Central Europe</td><td>Nov 19, 12:00 a.m.</td><td>Nov 18, 6:00 p.m.</td></tr>
+<tr><td>United Kingdom</td><td>Nov 19, 12:00 a.m.</td><td>Nov 18, 7:00 p.m.</td></tr>
+<tr><td>US East Coast</td><td>Nov 19, 12:00 a.m.</td><td>Nov 19, 12:00 a.m.</td></tr>
+</tbody>
+</table>
+</div>
+
+Daylight saving matters: in mid-November New Zealand and Sydney are on summer time, while Europe and the US are on winter time. Check your local time on the day if you're near a border or a time zone line.
 
 ## Can you play earlier by changing region?
 
 Don't rely on it. Your purchase is tied to your account's region, and unlock times follow the store you bought from. Changing your console's time zone doesn't change when a game unlocks.
+
+Some outlets have reported region tricks, such as changing an Xbox console's location or buying from another country's PlayStation Store. These are risky. A PS5 account's region can't be changed after it's created, and a wrong purchase can leave you locked out until your own region's time. Pure Xbox itself warns that switching regions without actually moving is at your own risk. We don't recommend it.
 
 ## Be ready before it unlocks
 

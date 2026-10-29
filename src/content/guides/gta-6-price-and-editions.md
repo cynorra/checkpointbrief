@@ -58,8 +58,9 @@ That changes the math. If you're unsure, the lower-risk move is Standard now and
 Some things don't depend on which edition you pick:
 
 - the full story and the full open world;
-- the **Vintage Vice City Pack** pre-order bonus, if you buy before November 20;
-- one free month of **GTA+**, according to reports on the pre-order announcement (GTA+ is Rockstar's subscription).
+- the **Vintage Vice City Pack** pre-order bonus, if you buy before November 20.
+
+Beyond that, a free month of GTA+ (Rockstar's subscription) is reported for **digital pre-orders only**, and one outlet says Xbox pre-orders don't get it, so check your store's listing.
 
 See what the pre-order bonuses actually are in our [pre-order bonuses guide](/guides/gta-6-pre-order-bonuses/).
 

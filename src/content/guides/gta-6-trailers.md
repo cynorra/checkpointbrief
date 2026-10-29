@@ -37,6 +37,22 @@ The longest look at the game before launch. It premiered on Netflix, a first for
 
 Released at 2 p.m. London time (9 a.m. Eastern) on October 15, five weeks before release. Its description says it was "captured entirely in-game from a PlayStation 5." It follows Jason and Lucia through a criminal conspiracy across Leonida and features new music from the French electronic duo Justice ([playnews.gg](https://www.playnews.gg/en/trailers/gta-6-trailer-3-is-out-the-launch-trailer-shot-in-game-on-ps5-ahead-of-19-november)).
 
+## Is the launch trailer "Trailer 3"?
+
+Some outlets call the October 15 launch trailer "Trailer 3," because it is the third full trailer after Trailer 1 and Trailer 2. Rockstar itself calls it the launch trailer. If you searched for "GTA 6 Trailer 3," this is the video you want. Be careful with websites claiming a different Trailer 3 date: before the launch trailer came out, many low-quality sites published guesses and fake release dates, and none of them were official.
+
+## The music
+
+The launch trailer features a new Justice song with Tame Impala, SZA and King Gizzard & The Lizard Wizard, reported as "Flower in a Hurricane" ([Noisy Pixel](https://noisypixel.net/grand-theft-auto-vi-launch-trailer-justice-flowr-in-a-hurricane/); outlets spell the title differently). Justice is also reported as the composer of the game's original score ([GosuGamers](https://www.gosugamers.net/entertainment/news/79358-gta-vi-launch-trailer-teases-jason-and-lucia-s-past-justice-confirmed-as-game-composer)).
+
+## What the launch trailer hints at
+
+Coverage describes the launch trailer as showing more of Jason and Lucia's backstory and the state of Leonida, with a hint that the two share history before the events of the game ([Vice](https://www.vice.com/en/article/gta-6-launch-trailer-jason-lucia-story-details/)). Rockstar confirmed all of the footage was captured on a standard PS5, not a PS5 Pro. It is a good reference for how the game looks on the base console, but trailers are edited and don't show how it runs. We keep a plain account of what is and isn't confirmed in the [Jason and Lucia guide](/guides/gta-6-jason-and-lucia/).
+
+## Where to watch the official videos
+
+Only watch on Rockstar's official YouTube channel or the [GTA VI site](https://www.rockstargames.com/VI). Re-uploads often have wrong dates, fake titles or malware links in the description.
+
 ## Will there be more?
 
 Possibly short spots and TV ads before launch, but the "launch trailer" label usually means it's the last big one. For who's in the trailers, see [GTA 6 characters](/guides/gta-6-jason-and-lucia/); for the places, see the [Leonida map guide](/guides/gta-6-map-leonida/).
