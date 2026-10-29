@@ -2,6 +2,7 @@
 title: "GTA 6 Online: Is There Multiplayer at Launch?"
 description: "Rockstar sells GTA 6 as a single-player game and hasn't announced online multiplayer or a date for it. What's confirmed, what's rumored and what GTA+ means for now."
 published: 2026-11-03
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -28,6 +29,31 @@ The Twitch comment is from [GTABase's roundup](https://www.gtabase.com/articles/
 Rockstar has done this before. Grand Theft Auto V launched in September 2013, and GTA Online followed about two weeks later, as a separate launch. Red Dead Redemption 2 launched in October 2018, and Red Dead Online opened as a beta about a month after that. Launching the story first gives the studio a stable base before millions of people hit online servers at once.
 
 GTA 6 may take longer than those, since Rockstar's marketing hasn't mentioned online at all.
+
+## What Rockstar and Take-Two have actually said
+
+- Take-Two has said GTA Online will keep being supported, and described GTA 6 as a single-player experience at launch ([IBTimes](https://www.ibtimes.co.uk/take-two-confirms-gta-online-support-gta-6-launch-1813620)).
+- Reporting says Rockstar doesn't plan to talk about GTA 6's online mode soon, and that the game will be marketed as single-player ([MP1st](https://mp1st.com/news/rockstar-wont-talk-about-gta-6-online-game-marketed-as-single-player-experience)).
+- "GTA Online 2" is a fan name, not an official one. Nothing official describes how a new online mode would work or when it would arrive.
+
+## How Rockstar launched online before
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Game</th><th>Story launch</th><th>Online launch</th></tr></thead>
+<tbody>
+<tr><td>Grand Theft Auto V</td><td>September 17, 2013</td><td>GTA Online, October 1, 2013</td></tr>
+<tr><td>Red Dead Redemption 2</td><td>October 26, 2018</td><td>Red Dead Online beta, November 27, 2018</td></tr>
+<tr><td>Grand Theft Auto 6</td><td>November 19, 2026</td><td>Not announced</td></tr>
+</tbody>
+</table>
+</div>
+
+In both earlier cases, online followed within weeks and was announced in advance. For GTA 6, Rockstar hasn't announced anything, which is why we say don't expect multiplayer on day one.
+
+## What this means for your purchase
+
+Buy GTA 6 for the story. Think of any online mode as a possible later addition, not part of what you're paying for. That also affects the choice between editions: the [Ultimate Edition](/guides/gta-6-price-and-editions/) adds in-game items, and nothing announced says they would carry over into an online mode.
 
 ## What GTA+ means right now
 

@@ -2,6 +2,7 @@
 title: "GTA 6 Age Rating: ESRB Mature 17+ Explained for Parents"
 description: "GTA 6 is rated M for Mature 17+ by the ESRB. What the content descriptors mean, how the rating compares to GTA V and how to use console parental controls."
 published: 2026-11-02
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -26,6 +27,12 @@ tool: gta6
 
 For the official wording, look up the game on the [ESRB's site](https://www.esrb.org/), which also lists a short rating summary.
 
+## PEGI and other regions
+
+In Europe, PEGI assigned GTA 6 an **18** rating, the highest PEGI level. PEGI briefly published a detailed description of the game's content before the page was pulled, and outlets reproduced what it said ([GTA Intel](https://gtaintel.com/news/gta-6-age-rating-m-pegi-18-cocaine-sex-scenes), [Video Games Chronicle](https://www.videogameschronicle.com/news/gta-6-rating-pulled-after-revealing-sex-scenes-and-drug-use/)). Those specifics come from copies of the deleted page, so treat them as reported, not confirmed. Australian and New Zealand store listings carry warnings about sexual content as well ([CheatCC](https://cheatcc.com/articles/gta-6-rated-mature-17-by-esrb-as-australia-and-nz-stores-flag-sex-scenes/)).
+
+One listing also shows an **In-Game Purchases** notice. That matters for parents because it means spending options exist inside the game. Set spending limits on your child's account either way.
+
 ## Is there gambling?
 
 The current ratings don't include a gambling descriptor. That suggests there are no playable casino games in the base game, but it isn't a confirmation, and ratings can't say anything about an online mode that hasn't launched yet.
@@ -33,6 +40,17 @@ The current ratings don't include a gambling descriptor. That suggests there are
 ## How it compares to GTA V
 
 GTA V was also rated M by the ESRB and 18 by PEGI in Europe. GTA 6 lands in the same category. If you've decided GTA V isn't right for someone in your house, GTA 6 won't be different.
+
+## Is it suitable for a 15- or 16-year-old?
+
+The ESRB rating is advice, not a law in the US, and the PEGI 18 rating is enforced differently from country to country. Neither tells a family what is right for one particular teenager. The descriptors above are the honest summary: frequent realistic violence, strong language, sexual content and drug use. If you wouldn't be comfortable with your teen watching a film with those descriptors, that's a reasonable guide. Many parents play the first hours with their teen first, or watch gameplay together before deciding.
+
+## Things parents can do before launch
+
+1. **Set up a family account** on PlayStation or Xbox so the child has their own profile with an age limit.
+2. **Block purchases** or require a password for them, because the game is reported to have in-game purchases.
+3. **Limit play time and online chat.** Both consoles let you restrict communication with other players, relevant if an online mode arrives later (see [GTA 6 Online](/guides/gta-6-online/)).
+4. **Talk about it.** A short conversation about what the game contains is often more effective than a block alone.
 
 ## Parental controls on each console
 

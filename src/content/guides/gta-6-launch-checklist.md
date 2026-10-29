@@ -29,7 +29,7 @@ tool: gta6
 
 ## 1. Free up space
 
-Rockstar hasn't published a file size, but plan for a large install plus a patch. The [file size guide](/guides/gta-6-file-size/) shows the real usable space on every console and the fastest ways to clear room. If you're always full, consider [adding an SSD to a PS5](/guides/ps5-ssd-upgrade/) or an [Xbox expansion card](/guides/xbox-series-storage/).
+Rockstar hasn't confirmed a file size, but PS5 store data points to about 210 GB, so plan for that plus a patch. The [file size guide](/guides/gta-6-file-size/) shows the real usable space on every console and the fastest ways to clear room. If you're always full, consider [adding an SSD to a PS5](/guides/ps5-ssd-upgrade/) or an [Xbox expansion card](/guides/xbox-series-storage/).
 
 ## 2–4. Get the console ready
 

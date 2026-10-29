@@ -51,4 +51,4 @@ To move a game: press the Xbox button, go to **My games & apps → Manage**, cho
 
 ## Making room for GTA 6
 
-GTA 6 is a Series X|S game, so it has to be installed on the internal drive or an expansion card to play. Rockstar hasn't published a file size, but plan for well over 100 GB. Check [GTA 6 file size](/guides/gta-6-file-size/) for estimates, and if you're on PlayStation too, see [how to add storage to a PS5](/guides/ps5-ssd-upgrade/).
+GTA 6 is a Series X|S game, so it has to be installed on the internal drive or an expansion card to play. Rockstar hasn't confirmed a file size. The PS5 store data points to about 210 GB, and a similar size is expected on Xbox, so plan for 200 GB or more ([file size guide](/guides/gta-6-file-size/)). Check [GTA 6 file size](/guides/gta-6-file-size/) for estimates, and if you're on PlayStation too, see [how to add storage to a PS5](/guides/ps5-ssd-upgrade/).
