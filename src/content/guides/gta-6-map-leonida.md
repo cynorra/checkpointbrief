@@ -2,6 +2,7 @@
 title: "GTA 6 Map: Every Leonida Location Rockstar Has Named"
 description: "GTA 6 is set in Leonida, Rockstar's version of Florida. Every named region, from Vice City to Mount Kalaga, what each is based on and what's known about map size."
 published: 2026-10-29
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -43,7 +44,34 @@ These round out the state outside the city. Port Gellhorn is a run-down coastal 
 
 ## How big is the map?
 
-Rockstar hasn't released an official map. Wikipedia quotes Rockstar describing it as "three times larger than the playable area of Red Dead Redemption 2." Treat any exact square-mile figure you see as an estimate. Fan maps are built from trailer footage and, sometimes, leaked material, and they're often wrong in the details.
+Rockstar hasn't released an official map or published a size in square miles or kilometers. What exists is secondhand. A New York Times report on a Rockstar preview quoted the studio as saying the full map is about **three times the playable area of Red Dead Redemption 2** ([PC Gamer's report](https://www.pcgamer.com/games/grand-theft-auto/gta-6-map-is-apparently-3-times-larger-than-red-dead-redemption-2-twice-as-large-as-gta-5/), [VGC](https://www.videogameschronicle.com/news/grand-theft-auto-6s-map-is-three-times-bigger-than-red-dead-redemption-2/)). Coverage of the same preview also repeats a comparison of roughly **twice the size of GTA V's map**, and says Vice City itself is about twice the size of Los Santos. Those comparisons come from press accounts of a preview, not a Rockstar published document.
+
+Don't try to combine them mathematically. "Three times RDR2" and "twice GTA V" use different definitions of what counts as the map, so they can't be read as one consistent ruler. Treat any exact square-mile figure you see as an estimate. Fan maps are built from trailer footage and, sometimes, leaked material, and they're often wrong in the details.
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Claim</th><th>Source type</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>About 3x the playable area of RDR2</td><td>New York Times report on a Rockstar preview</td><td>Reported, widely repeated</td></tr>
+<tr><td>About 2x GTA V's map</td><td>Press accounts of the same preview</td><td>Reported</td></tr>
+<tr><td>Vice City about 2x Los Santos</td><td>Press accounts of the same preview</td><td>Reported</td></tr>
+<tr><td>Exact size in square miles or km</td><td>Fan estimates</td><td>Not official</td></tr>
+<tr><td>Official map image</td><td>None released</td><td>Not available</td></tr>
+</tbody>
+</table>
+</div>
+
+## Why a bigger map means a bigger download
+
+A larger, denser world is part of why the install is expected to be big: PS5 store data points to about 210 GB. That figure is also unconfirmed, and we track it in the [file size guide](/guides/gta-6-file-size/).
+
+## Why region lists differ between websites
+
+If you've seen a list of regions with different names, it's usually because a site mixed leaks, fan guesses or old rumors with the official material. We list only the six places Rockstar has named: Vice City, Leonida Keys, Grassrivers, Port Gellhorn, Ambrosia and Mount Kalaga National Park. Treat any other name as unconfirmed until it appears on Rockstar's site or in a trailer.
+
+## How to read the map clues in the trailers
+
+Trailers are edited to show highlights, so location names, signs and landmarks in them are the most reliable clues. Count only what Rockstar names on its site, because a place shown in a trailer without a name might be part of a bigger region. The same caution applies to anything you see on social media that claims to be a "leaked map": Rockstar hasn't released one, and we don't use them.
 
 ## Will more places be revealed?
 

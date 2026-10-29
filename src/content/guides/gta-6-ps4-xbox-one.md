@@ -2,6 +2,7 @@
 title: "Is GTA 6 on PS4 or Xbox One? No, and Here's Why"
 description: "GTA 6 isn't coming to PS4 or Xbox One; it's PS5 and Xbox Series X|S only. Why, whether that could change and the cheapest way to play it on launch day."
 published: 2026-10-27
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -16,6 +17,14 @@ The PS4 and Xbox One launched in 2013. GTA 6 was built for hardware that is much
 - **Memory.** More, faster memory for higher-detail assets.
 
 Supporting both generations would mean designing the game around the slowest hardware. Rockstar didn't do that.
+
+## What Rockstar did with earlier games
+
+Rockstar's past releases show why this isn't unusual. Grand Theft Auto V came out in 2013 on PS3 and Xbox 360, then on PS4 and Xbox One in 2014, and finally on PS5 and Xbox Series X|S in 2022. Red Dead Redemption 2 launched in 2018 on PS4 and Xbox One, the current consoles of its day. GTA 6 follows the same logic: it launches on the current consoles of 2026 and not on the previous generation.
+
+## What the speed difference means
+
+Open-world games load the world as you move through it. The PS5's SSD has a raw speed of about 5.5 GB per second, many times faster than the hard drive in a PS4 or Xbox One, which is why a dense city can stream in without long loading screens. This is a hardware reason, not a marketing one, and it's the usual reason developers give for dropping older consoles.
 
 ## Could it change?
 
@@ -39,6 +48,16 @@ There's nothing to transfer: GTA 6 doesn't exist on PS4. If you see a "PS4 versi
 </div>
 
 The no-disc point matters here: because the physical edition of GTA 6 is a [download code in a box](/guides/gta-6-physical-edition-no-disc/), a digital-only console loses nothing for this game.
+
+## Can you play it through the cloud on an old console?
+
+Rockstar hasn't announced a cloud version of GTA 6 on any service, so there's no way to play it on a PS4 or Xbox One by streaming. If one is announced, it will appear on Rockstar's site and on the platform holder's store. Don't trust anyone selling a "PS4 download" or "Xbox One key" for GTA 6: it doesn't exist, and those are scams.
+
+## Should you upgrade or wait?
+
+- **You want to play on launch day:** you need a PS5, Xbox Series X or Series S before November 19. Remember the game is reportedly about 210 GB ([file size guide](/guides/gta-6-file-size/)), so storage matters on the cheapest models.
+- **You can wait:** console prices tend to dip around big shopping seasons, but nothing guarantees a discount near launch.
+- **You only care about the story:** a Series S is enough to play the single-player game, with the caveats above.
 
 ## Bundles
 

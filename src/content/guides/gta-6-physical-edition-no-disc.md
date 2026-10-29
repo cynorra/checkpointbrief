@@ -2,6 +2,7 @@
 title: "GTA 6 Physical Edition: No Disc, Just a Download Code"
 description: "The boxed copy of GTA 6 has no disc, only a code to download the game. What that means for installs, resale and lending, and when the box is worth buying."
 published: 2026-10-20
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -13,7 +14,7 @@ tool: gta6
 - A download code for the Standard Edition on PS5 or Xbox Series X|S
 - No disc
 
-Only the Standard Edition ($79.99) has a physical version. The Ultimate Edition is digital only.
+Only the Standard Edition ($79.99) has a physical version. The Ultimate Edition is digital only: Rockstar Support reportedly says a physical Ultimate Edition doesn't exist, and boxed buyers who want the Ultimate content can add the $20 upgrade after redeeming their Standard code ([gta6.how](https://gta6.how/news/gta-6-ultimate-edition-digital-only/)). That makes the boxed route $99.99 in total for the same content.
 
 ## What "code in a box" means in practice
 
@@ -47,9 +48,21 @@ There are still a few good reasons:
 - **Pre-load timing.** A digital pre-order starts downloading on November 12 automatically. With a box, you need to have it in hand and redeem it first.
 - **Ultimate Edition.** It's only sold digitally.
 
+## How to redeem the code
+
+1. Open the PlayStation Store or Microsoft Store on the console you will play on.
+2. Find the option to redeem a code (it is usually in the store menu or under your account), and enter the code from the box.
+3. Add the game to your library and start the download. Menu names change with system updates, so look for "Redeem Codes" if the layout differs.
+
+Redeem it on the account you play on, because once redeemed the game is tied to that account and cannot be passed on.
+
+## Why Rockstar chose this
+
+Take-Two's CEO has said the reason is that gaming is now "well over 90% digital" ([TechRadar](https://techradar.com/gaming/wondering-why-gta-6-is-a-code-in-a-box-take-two-ceo-says-its-because-gaming-is-now-well-over-90-percent-digital)). Fans criticized the decision ([TechRadar](https://techradar.com/gaming/gta-6-physical-copies-have-a-download-code-in-the-box-and-fans-arent-happy-the-biggest-game-to-ever-launch-and-thats-all-the-effort-youre-putting-in-for-physical)), and some retailers objected, but pre-orders continued. Rockstar has not explained further.
+
 ## Will there be a disc version later?
 
-Rockstar hasn't announced one. Some reports have speculated about a disc release after launch, but nothing official exists. Plan around what's confirmed: a code in a box.
+Rockstar hasn't announced one. A rumor about a later disc version circulated, but one outlet reports that the email it came from was referring to the code-in-a-box edition ([GamesRadar's editions guide](https://www.gamesradar.com/games/grand-theft-auto/gta-6-versions/)). Nothing official exists. Plan around what's confirmed: a code in a box.
 
 ## Make room either way
 
