@@ -2,6 +2,7 @@
 title: "GTA 6 Price: Standard vs Ultimate Edition, What Each Includes"
 description: "GTA 6 costs $79.99 for the Standard Edition and $99.99 for the Ultimate Edition. What the extra $20 buys, which is physical, and which one most players need."
 published: 2026-10-18
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -48,7 +49,35 @@ The Ultimate Edition makes sense if:
 
 ## Can you upgrade later?
 
-Rockstar sells the Ultimate content as an upgrade on top of the Standard Edition, which suggests you'll be able to start with Standard and buy the difference later. Check the store listing before you rely on that, since upgrade pricing hasn't been confirmed separately from the bundle.
+Yes. Reports based on Rockstar's announcement say Standard owners can buy the Ultimate content as a separate upgrade for the same $20 difference ([TechRadar](https://techradar.com/gaming/gta-6-fans-say-locking-content-behind-the-ultimate-edition-is-scummy-but-it-looks-like-an-upgrade-will-be-available-post-launch)). Coverage differs on exactly when the upgrade appears: some outlets expect it at launch, others after release. So buying Standard now doesn't lock you out of the Ultimate content later. Check the store listing on launch day for the exact timing.
+
+That changes the math. If you're unsure, the lower-risk move is Standard now and the upgrade later, once you know whether you want the cars and cosmetics.
+
+## What do both editions include?
+
+Some things don't depend on which edition you pick:
+
+- the full story and the full open world;
+- the **Vintage Vice City Pack** pre-order bonus, if you buy before November 20;
+- one free month of **GTA+**, according to reports on the pre-order announcement (GTA+ is Rockstar's subscription).
+
+See what the pre-order bonuses actually are in our [pre-order bonuses guide](/guides/gta-6-pre-order-bonuses/).
+
+## The real total cost
+
+The sticker price isn't the whole bill. Before you pay, add up:
+
+- **Storage:** the reported 210 GB install ([see the file size guide](/guides/gta-6-file-size/)) will not fit comfortably on a nearly full console. If you need a new SSD, that cost belongs in your budget. The [PS5 SSD upgrade guide](/guides/ps5-ssd-upgrade/) and [Xbox storage guide](/guides/xbox-series-storage/) show what's compatible.
+- **Online:** a PlayStation Plus or Xbox subscription is normally required for online multiplayer on console. Whether GTA 6's online mode needs one hasn't been confirmed, so check before assuming.
+- **Physical vs digital:** the physical Standard Edition is a box with a download code, not a disc, so it doesn't save you the download. It only helps if you find it cheaper at a retailer. See [why GTA 6 has no disc](/guides/gta-6-physical-edition-no-disc/).
+
+## How does it compare with earlier Rockstar launches?
+
+Both *Grand Theft Auto V* and *Red Dead Redemption 2* launched at $59.99 on console. At $79.99, GTA 6 Standard is $20 more than those. Some players have criticized locking cosmetic content behind the $99.99 tier, a debate covered in the [TechRadar report](https://techradar.com/gaming/gta-6-fans-say-locking-content-behind-the-ultimate-edition-is-scummy-but-it-looks-like-an-upgrade-will-be-available-post-launch).
+
+## Will the price drop?
+
+Not soon, if past behavior holds. Coverage of the pre-order numbers noted that more people have pre-ordered the $99.99 edition and shouldn't expect a Christmas discount ([MP1st](https://mp1st.com/news/gta-6-more-people-pre-ordered-100-edition-dont-expect-christmas-discount)). That is an outlet's expectation, not a Rockstar statement. The only discounts worth watching for are retailer deals on the physical Standard Edition.
 
 ## Are prices different on PS5 and Xbox?
 

@@ -2,6 +2,7 @@
 title: "GTA 6 Pre-Load: Date, How It Works on PS5 and Xbox"
 description: "GTA 6 pre-loading starts November 12, 2026, a week before launch. Who can pre-load, how to start it on PS5 and Xbox, and what to check before the day."
 published: 2026-10-19
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -38,7 +39,48 @@ The physical edition has no disc, which is why Rockstar released it the same day
 
 ## Check your free space first
 
-Rockstar hasn't published the download size. Expect a very large install, well over 100 GB by most estimates, and leave headroom for a day-one patch. A base PS5 has about 667 GB of usable space and an Xbox Series S about 364 GB, so clear room before November 12, not on the day.
+Rockstar hasn't published an official download size. The best figure so far is unofficial: PlayStation Game Size reported **210 GB on PS5 and PS5 Pro**, based on PlayStation Store data, and outlets such as [GTA Intel](https://gtaintel.com/news/gta-6-preload-file-size-launch-times) and [Beebom](https://beebom.com/gta-6-download-size/) repeated it. Xbox has no confirmed number, though a similar size is expected. Treat 210 GB as a planning figure, not a promise, and leave extra room for a day-one patch.
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Console</th><th>Usable space</th><th>Share used by 210 GB</th></tr></thead>
+<tbody>
+<tr><td>PS5 (base)</td><td>about 667 GB</td><td>about 31%</td></tr>
+<tr><td>Xbox Series S</td><td>about 364 GB</td><td>about 58%</td></tr>
+</tbody>
+</table>
+</div>
+
+On an Xbox Series S, that leaves little room for anything else, so plan to delete games or add storage before November 12. Our [PS5 SSD upgrade guide](/guides/ps5-ssd-upgrade/) and [Xbox Series storage guide](/guides/xbox-series-storage/) cover the options, and the [GTA 6 file size guide](/guides/gta-6-file-size/) tracks how the number develops.
+
+## How long will the download take?
+
+Time depends on your connection, not the console. These are best-case figures for a 210 GB download at a steady speed; real-world speeds are usually lower, and store servers get busy when pre-load opens.
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Connection speed</th><th>Approximate time</th></tr></thead>
+<tbody>
+<tr><td>25 Mbps</td><td>about 19 hours</td></tr>
+<tr><td>50 Mbps</td><td>about 9 hours 20 minutes</td></tr>
+<tr><td>100 Mbps</td><td>about 4 hours 40 minutes</td></tr>
+<tr><td>300 Mbps</td><td>about 1 hour 35 minutes</td></tr>
+<tr><td>500 Mbps</td><td>about 56 minutes</td></tr>
+<tr><td>1 Gbps</td><td>about 28 minutes</td></tr>
+</tbody>
+</table>
+</div>
+
+If your connection is under 100 Mbps, start the download the moment pre-load opens and let it run overnight. The point of pre-loading is that the slow part is finished a week early.
+
+If your internet provider has a monthly data cap, check it first. 210 GB is a large share of many caps, and a patch or a second console on the same account can push you over.
+
+## Pre-load problems and fixes
+
+- **Download won't start:** confirm you're signed in to the account that holds the pre-order, then check the store's download queue. On PS5, make sure the game is listed under your Game Library, not only in the store.
+- **Download is slow:** pause and resume it, restart the console, or switch from Wi-Fi to a wired connection. Pausing other downloads on the same network helps more than most settings changes.
+- **"Not enough space" warning:** the console needs room for the download plus temporary files while it installs, so having exactly 210 GB free may not be enough. Aim for a comfortable margin.
+- **Download finished but the game won't open:** that's expected until the unlock time. The tile will say the game isn't available yet.
 
 ## Does pre-loading mean early access?
 
@@ -46,4 +88,4 @@ No. You can download the game but not play it until it unlocks on November 19. N
 
 ## The day-one patch
 
-Large games almost always get an update at or just before launch. Even if your pre-load finished on November 12, turn on your console a little early on launch day and let it update, so you're not waiting when it unlocks. For the full launch date and history, see the [GTA 6 release date guide](/guides/gta-6-release-date/).
+Large games almost always get an update at or just before launch. Even if your pre-load finished on November 12, turn on your console a little early on launch day and let it update, so you're not waiting when it unlocks. For the full launch date and history, see the [GTA 6 release date guide](/guides/gta-6-release-date/), and for the exact hour it unlocks in your time zone, see [what time GTA 6 unlocks](/guides/gta-6-unlock-time/).

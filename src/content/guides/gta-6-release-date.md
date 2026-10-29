@@ -2,6 +2,7 @@
 title: "GTA 6 Release Date: November 19, 2026, and How We Got Here"
 description: "GTA 6 comes out November 19, 2026, on PS5 and Xbox Series X|S. The two delays, what Rockstar said most recently and the dates that matter before launch."
 published: 2026-10-18
+updated: 2026-10-29
 tool: gta6
 ---
 
@@ -50,11 +51,35 @@ Both delays were announced by Rockstar and Take-Two themselves, not leaked. That
 
 ## What time does it unlock?
 
-Rockstar has announced a date, not a time. Most big console releases unlock at midnight local time in each region, and the PlayStation Store listing points the same way, but Rockstar hasn't published a schedule yet. Don't plan around a specific hour until it does.
+Rockstar has announced a date, not an hour. Regional PlayStation Store listings, examined by fans and reported by outlets such as [GTA Intel](https://gtaintel.com/news/gta-6-preload-file-size-launch-times) and [Windows Report](https://windowsreport.com/gta-6-global-release-times-revealed-new-zealand-players-get-first-access/), point to **midnight local time on November 19 in each region**. That would roll out across about 19 hours: New Zealand first, the US and Canada among the last.
+
+For the US, that works out to midnight Eastern, 11 p.m. Central on November 18, 10 p.m. Mountain and 9 p.m. Pacific. Rockstar hasn't confirmed any of this, so treat it as reported, not official. Our [unlock time guide](/guides/gta-6-unlock-time/) has the full US table.
+
+Some outlets also report that changing your account region could unlock the game earlier. That is risky: PS5 regions are tied to your account, and a wrong move can leave you locked out until your own region's time. We don't recommend it.
 
 ## Is there early access?
 
 No. Neither edition includes early access to the game. The Ultimate Edition adds in-game content, not extra days. Pre-ordering digitally lets you download the game ahead of time so you can play the moment it unlocks, and that's the only head start on offer.
+
+## What to do between now and launch
+
+If the date holds, the sensible order is:
+
+1. **Decide the edition.** See [price and editions](/guides/gta-6-price-and-editions/). Standard owners can reportedly upgrade later.
+2. **Check storage.** The install is reported at about 210 GB on PS5 ([file size guide](/guides/gta-6-file-size/)).
+3. **Pre-order digitally** if you want to pre-load: the [pre-load guide](/guides/gta-6-pre-load/) covers the steps for PS5 and Xbox.
+4. **Pick up the bonus:** the Vintage Vice City Pack applies if you buy before November 20 ([pre-order bonuses](/guides/gta-6-pre-order-bonuses/)).
+5. **Prepare launch day:** update the console early and sign in ahead of the unlock.
+
+## Questions people ask
+
+**Is there a PC version on November 19?** No. Rockstar hasn't announced one. See [GTA 6 on PC](/guides/gta-6-pc-release/).
+
+**Can I play on PS4 or Xbox One?** No. The game is for current-generation consoles only. See [GTA 6 on PS4 and Xbox One](/guides/gta-6-ps4-xbox-one/).
+
+**Is the physical edition a disc?** No. The box contains a download code. See [why there is no disc](/guides/gta-6-physical-edition-no-disc/).
+
+**Does the date apply to every country?** The date is November 19, 2026 everywhere, but the local hour it unlocks varies by region.
 
 ## Will the date change again?
 
