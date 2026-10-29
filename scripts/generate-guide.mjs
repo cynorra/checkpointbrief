@@ -279,6 +279,11 @@ async function generateWithRetry(maxAttempts = 3) {
           );
         }
       }
+      // Strip hallucinated internal guide links (they break the deploy link check)
+      finalContent = finalContent.replace(
+        /\[([^\]]+)\]\(\/guides\/([a-z0-9-]+)\/?\)/g,
+        (m, text, slug) => (existingSlugs.has(slug) ? m : text)
+      );
       const body = fmMatch[2].replace(/\r\n/g, "\n").trim();
       const validation = validateGuide(fm, body, { existingArticles: existingGuidesSummary });
       if (!validation.valid) {

@@ -18,7 +18,7 @@ The internal SSDs of both consoles are critical for GTA 6's fast loading times a
 
 For expanding storage, the PS5 utilizes standard M.2 NVMe SSDs, requiring specific PCIe Gen4 drives that meet or exceed Sony's performance specifications (5,500 MB/s read speed minimum). This offers a wide range of third-party options and competitive pricing. The Xbox Series X, conversely, uses proprietary Seagate Storage Expansion Cards that plug directly into a dedicated port, mirroring the internal SSD's performance. While convenient, these cards typically come at a higher price point per gigabyte compared to compatible PS5 M.2 SSDs.
 
-GTA 6 is expected to be a substantial download. Pre-load for the game begins on November 12, 2026, ahead of its November 19, 2026 launch. Players should ensure they have sufficient internal storage or a compatible expansion solution ready. For more details on managing your console's storage, refer to our guides on [How to Add Storage to a PS5: M.2 SSD Requirements and Steps](/guides/ps5-ssd-upgrade/) or [Xbox Series X|S Storage: Expansion Cards vs USB Drives](/guides/xbox-series-x-s-storage-expansion/).
+GTA 6 is expected to be a substantial download. Pre-load for the game begins on November 12, 2026, ahead of its November 19, 2026 launch. Players should ensure they have sufficient internal storage or a compatible expansion solution ready. For more details on managing your console's storage, refer to our guides on [How to Add Storage to a PS5: M.2 SSD Requirements and Steps](/guides/ps5-ssd-upgrade/) or Xbox Series X|S storage expansion.
 
 ## Immersive Features: DualSense vs. Quick Resume
 
