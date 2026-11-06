@@ -38,11 +38,13 @@ const existingGuidesSummary = existingFiles.map((file) => {
   const content = readFileSync(join(GUIDES_DIR, file), "utf8");
   const title = content.match(/^title:\s*["']?([^"'\r\n]+)["']?/m)?.[1] || "";
   const date = content.match(/^published:\s*(\S+)/m)?.[1] || "";
+  const isDraft = /^draft:\s*true/m.test(content);
   const tool = content.match(/^tool:\s*(\S+)/m)?.[1] || "";
   return {
     slug: file.replace(/\.md$/, ""),
     title,
     date,
+    isDraft,
     tool,
     href: `/guides/${file.replace(/\.md$/, "")}/`
   };
@@ -80,7 +82,7 @@ function getNextTopic() {
 }
 
 function getNextPublishDate() {
-  const dates = existingGuidesSummary.map((g) => g.date).filter(Boolean).sort();
+  const dates = existingGuidesSummary.filter((g) => !g.isDraft).map((g) => g.date).filter(Boolean).sort();
   const today = new Date().toISOString().slice(0, 10);
   if (!dates.length) return today;
 
