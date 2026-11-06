@@ -102,6 +102,12 @@ export function validateGuide(frontmatter, markdownBody, options = {}) {
   }
 
   // Structure checks:
+  // Truncation check: must end with terminal punctuation
+  const trimmedBody = markdownBody.trim();
+  if (!/[.!?)"']$/.test(trimmedBody)) {
+    errors.push("Article body appears truncated: does not end with valid terminal punctuation (. ! ? or quote).");
+  }
+
   // Must have an opening lead in bold (AEO direct answer)
   if (!markdownBody.trim().startsWith("**") && !markdownBody.includes("\n**")) {
     errors.push("Missing bold Quick Answer / Bottom Line opening summary for AEO snippet.");

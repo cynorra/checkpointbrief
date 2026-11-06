@@ -50,7 +50,42 @@ export const CONTENT_FORMATS = [
 ];
 
 export const ZERO_CLICK_TOPIC_BANK = [
-  // --- GTA 6 Decision, Comparison & Technical Deep Dives ---
+  // --- High-Intent Search Console & Keyword Planner Priorities ---
+  {
+    topic: "What Does Pre-Load Mean on PS5? 7-Day Early Downloads, Auto-Install, and Storage Space Explained",
+    slug: "what-does-pre-load-mean-on-ps5",
+    tool: "general",
+    primaryKeyword: "what does pre load mean on ps5",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Explains the exact mechanics of pre-loading, Rest Mode auto-install, storage pre-allocation, and license decryption at midnight.",
+    sources: [
+      { label: "PlayStation Support: Auto-Downloads and Pre-Orders", href: "https://www.playstation.com/support/games/auto-download-ps5/" }
+    ]
+  },
+  {
+    topic: "Can You Play GTA 6 Early on PS5 or Xbox? The New Zealand Trick and Midnight Unlock Facts",
+    slug: "can-you-play-gta-6-early-new-zealand-trick",
+    tool: "gta6",
+    primaryKeyword: "can you play gta 6 early on ps5",
+    formatType: "Comparison & Decision Matrix",
+    clickHook: "Breaks down why the Xbox New Zealand region trick fails on global simultaneous releases, and explains midnight regional unlock schedules.",
+    sources: [
+      { label: "Rockstar Official Technology Overview", href: "https://www.rockstargames.com" },
+      { label: "Xbox Support: Changing Console Region", href: "https://support.xbox.com" }
+    ]
+  },
+  {
+    topic: "GTA 6 PC & Mobile Download Scams: Why Every Torrent, APK, and Windows 10 Beta File Is Malware",
+    slug: "gta-6-download-scams-fake-pc-files-warning",
+    tool: "gta6",
+    primaryKeyword: "gta 6 download scam warning",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Warns gamers searching for GTA 6 PC/APK downloads about infostealers, ransomware, fake password surveys, and legitimate verified purchase channels.",
+    sources: [
+      { label: "Rockstar Games Official Security Notice", href: "https://support.rockstargames.com" },
+      { label: "Take-Two Interactive Investor Relations", href: "https://ir.take2games.com" }
+    ]
+  },
 
   // --- Hardware, Storage & Optimization Guides ---
   {
@@ -182,6 +217,97 @@ export const ZERO_CLICK_TOPIC_BANK = [
     clickHook: "Covers Primary console activation, offline license restrictions, simultaneous digital play, and security rules.",
     sources: [
       { label: "PlayStation Support: Console Sharing and Offline Play", href: "https://www.playstation.com/support/account/ps5-console-sharing-offline-play/" }
+    ]
+  },
+
+  // --- High-Intent Search Console & Forum Traffic Drivers ---
+  {
+    topic: "Will GTA 6 Come to Nintendo Switch 2? Hardware Specs, Cartridge Limits, and Cloud Realities",
+    slug: "will-gta-6-come-to-nintendo-switch-2",
+    tool: "releases",
+    primaryKeyword: "gta 6 nintendo switch 2",
+    formatType: "Hardware Architecture Deep Dive",
+    clickHook: "Evaluates Switch 2's rumored 12GB RAM and DLSS capabilities against GTA 6's heavy CPU simulation and 150GB+ storage footprint.",
+    sources: [
+      { label: "Digital Foundry Switch 2 Hardware Analysis", href: "https://www.eurogamer.net/digitalfoundry" }
+    ]
+  },
+  {
+    topic: "5 Hidden PS5 Settings You Should Change Immediately (Audio, Storage & Display Tweaks)",
+    slug: "hidden-ps5-settings-to-change-immediately",
+    tool: "general",
+    primaryKeyword: "hidden PS5 settings to change immediately",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Covers auto-muting the DualSense mic to unlock full haptic vibration power, turning off auto-trophy 4K videos, and disabling HDMI-CEC phantom TV startups.",
+    sources: [
+      { label: "PlayStation Support: PS5 Console Settings", href: "https://www.playstation.com/support/hardware/ps5-settings/" }
+    ]
+  },
+  {
+    topic: "Why 40 FPS Balanced Mode on 120Hz Displays Is the Sweet Spot for Modern Console Gaming",
+    slug: "why-40-fps-balanced-mode-120hz-is-the-sweet-spot",
+    tool: "general",
+    primaryKeyword: "40 fps balanced mode 120hz ps5",
+    formatType: "Hardware Architecture Deep Dive",
+    clickHook: "Explains the frame-time math (25ms vs 33.3ms for 30fps and 16.6ms for 60fps) and why 40 FPS feels like a massive leap on 120Hz VRR TVs.",
+    sources: [
+      { label: "Digital Foundry Frame Time Analysis", href: "https://www.eurogamer.net/digitalfoundry" }
+    ]
+  },
+  {
+    topic: "How to Fix Slow PS5 Download Speeds (DNS 1.1.1.1, 5GHz Wi-Fi Band, and MTU Guide)",
+    slug: "how-to-fix-slow-ps5-download-speeds-dns-wifi-guide",
+    tool: "general",
+    primaryKeyword: "how to fix slow PS5 download speeds",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Step-by-step console network setup to switch from congested 2.4GHz to 5GHz, configure Cloudflare/Google DNS, and stop download throttling.",
+    sources: [
+      { label: "PlayStation Support: PS5 Network Connection", href: "https://www.playstation.com/support/connectivity/ps5-network-connection/" }
+    ]
+  },
+  {
+    topic: "Can You Play PS5 Games from an External USB Drive? How Cold Storage Actually Works",
+    slug: "can-you-play-ps5-games-from-external-usb-drive",
+    tool: "general",
+    primaryKeyword: "can you play PS5 games from external USB drive",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Clears up the huge confusion between native PS5 games (must run from internal SSD or M.2) and backward-compatible PS4 games (run directly from USB).",
+    sources: [
+      { label: "PlayStation Support: USB Extended Storage on PS5", href: "https://www.playstation.com/support/hardware/ps5-extended-storage/" }
+    ]
+  },
+  {
+    topic: "How to Connect Bluetooth Headphones and AirPods to PS5 (Zero Latency USB Adapter Guide)",
+    slug: "how-to-connect-bluetooth-headphones-to-ps5",
+    tool: "general",
+    primaryKeyword: "how to connect AirPods to PS5",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Explains why Sony blocks standard A2DP Bluetooth audio on PS5, and walks through low-latency USB dongles (aptX LL) and controller 3.5mm jacks.",
+    sources: [
+      { label: "PlayStation Support: Compatible Audio Devices", href: "https://www.playstation.com/support/hardware/ps5-audio-devices/" }
+    ]
+  },
+  {
+    topic: "How to Turn Off PC Crossplay on PS5 and Xbox (Play Exclusively with Console Players)",
+    slug: "how-to-turn-off-pc-crossplay-on-ps5-xbox",
+    tool: "general",
+    primaryKeyword: "how to turn off PC crossplay PS5",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Covers system-level Xbox privacy settings and game-level matchmaking toggles to avoid PC lobbies, aimbots, and wallhack exploits.",
+    sources: [
+      { label: "Xbox Support: Online Safety and Cross-Network Play", href: "https://support.xbox.com" },
+      { label: "PlayStation Support: Online Privacy Settings", href: "https://www.playstation.com/support" }
+    ]
+  },
+  {
+    topic: "How to Get a Refund on PlayStation Store (Even After Downloading a Game)",
+    slug: "how-to-get-a-refund-on-playstation-store",
+    tool: "general",
+    primaryKeyword: "how to get refund PlayStation Store",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Detailed breakdown of Sony's strict 14-day cancellation policy, chatbot vs live agent escalation, and exceptions for broken or faulty launches.",
+    sources: [
+      { label: "PlayStation Store Cancellation Policy", href: "https://www.playstation.com/support/store/ps-store-refund-policy/" }
     ]
   }
 ];

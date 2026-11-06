@@ -241,7 +241,7 @@ async function generateWithRetry(maxAttempts = 3) {
         },
         generationConfig: {
           temperature: 0.25,
-          maxOutputTokens: 3500
+          maxOutputTokens: 5000
         }
       };
 
