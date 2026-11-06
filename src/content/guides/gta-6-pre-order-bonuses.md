@@ -75,3 +75,8 @@ If you're certain you'll buy GTA 6 at launch, a digital pre-order gets you both 
 Store policies differ and they change, so check the current rules on the store you use. PlayStation Store and Microsoft Store both allow pre-order cancellations under conditions that depend on how close the release is. Retailers set their own rules for physical pre-orders.
 
 For the price of each edition and what the Ultimate content adds, see [GTA 6 Standard vs Ultimate Edition](/guides/gta-6-price-and-editions/).
+
+## Official Sources and Verification
+
+- **Business Wire:** [Vintage Vice City Pack and GTA+ Pre-Order Entitlements](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)
+- **Rockstar Games Store:** [Pre-Order Cutoff Dates and Platform Terms](https://store.rockstargames.com/)

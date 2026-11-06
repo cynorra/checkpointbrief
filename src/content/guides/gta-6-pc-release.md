@@ -82,3 +82,8 @@ Websites publish "GTA 6 PC requirements" lists, but Rockstar hasn't released any
 ## What we'll watch for
 
 Rockstar usually announces PC versions with a specific date months ahead. When that happens, we'll publish requirements and add the date to the [GTA 6 hub](/gta-6/). Until then, the release you can plan around is the console one: see the [GTA 6 release date guide](/guides/gta-6-release-date/).
+
+## Official Sources and Verification
+
+- **Take-Two Interactive Investor Relations:** [Quarterly Earnings Call Statements Regarding PC Platform Strategy](https://ir.take2games.com/)
+- **Rockstar Games NewsWire:** [Historical Console-to-PC Port Announcements](https://www.rockstargames.com/newswire)

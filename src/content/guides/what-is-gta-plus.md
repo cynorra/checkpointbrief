@@ -71,3 +71,8 @@ Subscriptions renew automatically. If you only want the free month:
 - **Xbox:** sign in at account.microsoft.com → Services & subscriptions, and turn off recurring billing for GTA+.
 
 Turning off auto-renew keeps the benefits until the end of the paid or free period.
+
+## Official Sources and Verification
+
+- **Rockstar Games Support:** [Official GTA+ Membership Benefits and Terms](https://support.rockstargames.com/articles/21l14aEXmnyjFrnsqQ6eXG/gta-membership-benefits)
+- **Business Wire:** [Rockstar Pre-Order Announcement (Digital Pre-Order Free Month)](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)

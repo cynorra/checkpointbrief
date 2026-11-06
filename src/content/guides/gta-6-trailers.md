@@ -56,3 +56,8 @@ Only watch on Rockstar's official YouTube channel or the [GTA VI site](https://w
 ## Will there be more?
 
 Possibly short spots and TV ads before launch, but the "launch trailer" label usually means it's the last big one. For who's in the trailers, see [GTA 6 characters](/guides/gta-6-jason-and-lucia/); for the places, see the [Leonida map guide](/guides/gta-6-map-leonida/).
+
+## Official Sources and Verification
+
+- **Rockstar Games Official YouTube Channel:** [Verified 4K Trailer Broadcasts and Cinematic Reveals](https://www.youtube.com/@RockstarGames)
+- **Rockstar Games:** [Official Media Gallery and High-Resolution Key Art](https://www.rockstargames.com/VI)

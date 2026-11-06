@@ -63,3 +63,8 @@ The closer a release gets, the more confident-sounding claims appear. A quick te
 3. **Is it a number with no source?** File sizes, map sizes and fps figures without a link are guesses.
 
 We follow the same rules on this site; see [how we verify](/how-we-verify/). The [GTA 6 hub](/gta-6/) shows only confirmed facts, each with its source, and keeps rumors in a separate, labeled table.
+
+## Official Sources and Verification
+
+- **Rockstar Games:** [Grand Theft Auto VI Confirmed Fact Sheet](https://www.rockstargames.com/VI)
+- **Business Wire:** [Confirmed Release Date, Pricing, and Platforms](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)

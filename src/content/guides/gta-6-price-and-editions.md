@@ -85,3 +85,8 @@ Not soon, if past behavior holds. Coverage of the pre-order numbers noted that m
 No. Both editions are priced the same on PlayStation Store and Microsoft Store. Retailers sometimes discount the physical Standard Edition, so if you're buying the box, it's worth comparing a couple of stores. Digital prices on console stores rarely drop before launch.
 
 For the full list of confirmed facts, editions and bonuses with sources, see the [GTA 6 hub](/gta-6/).
+
+## Official Sources and Verification
+
+- **Business Wire:** [Rockstar Games Standard ($79.99) and Ultimate ($99.99) Edition Pricing](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)
+- **PlayStation Store Listing:** [Official Digital Pre-Order Tiers and Content Manifest](https://store.playstation.com/)

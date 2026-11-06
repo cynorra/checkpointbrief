@@ -89,4 +89,8 @@ A visually dense, lighting-intensive open world requires proper display settings
 </table>
 </div>
 
-For official system documentation and hardware setup guides, consult [PlayStation Support](https://www.playstation.com/support/) and [Xbox Support](https://support.xbox.com/).
+## Official Sources and Verification
+
+- **Rockstar Games Social Club:** [Account Management and 2-Step Verification](https://socialclub.rockstargames.com/)
+- **PlayStation Support:** [Console System Software and Rest Mode Downloads](https://www.playstation.com/support/)
+- **Xbox Support:** [Power Options and Storage Management](https://support.xbox.com/)

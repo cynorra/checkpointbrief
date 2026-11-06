@@ -65,3 +65,8 @@ Rockstar has typically announced PC versions with a date months ahead, so the fi
 - **A console purchase doesn't carry over.** Rockstar hasn't mentioned cross-buy or cross-save, so don't assume either.
 
 When Rockstar announces anything about PC, we'll update this guide and the [GTA 6 hub](/gta-6/).
+
+## Official Sources and Verification
+
+- **Take-Two Interactive Investor Relations:** [SEC Annual Reports and Historical Staggered Launch Disclosures](https://ir.take2games.com/)
+- **Rockstar Games NewsWire:** [Official Release Date Archives for GTA IV, GTA V, and RDR2 on PC](https://www.rockstargames.com/newswire)

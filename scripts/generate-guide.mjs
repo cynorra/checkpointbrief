@@ -174,6 +174,10 @@ Content...
 
 ## Third Main Section Header
 Content...
+
+## Official Sources and Verification
+- **[Primary Authority]:** [Official Resource Title](https://...) – Context and verification details.
+- **[Platform/Publisher Support]:** [Official Support or Store Listing](https://...) – Direct confirmation.
 `;
 
 const userPrompt = `Write an in-depth, zero-click resistant guide for Checkpoint Brief:
@@ -183,14 +187,14 @@ Format Type: "${targetTopic.formatType || 'Comparison & Guide'}"
 Strategic Hook: "${targetTopic.clickHook || 'Provide detailed actionable comparison'}"
 Target Keyword: "${targetTopic.primaryKeyword}"
 Category (tool): "${targetTopic.tool}"
-Target Word Count: 600 - 1000 words.
+Target Word Count: 750 - 1100 words.
 
 Structure Requirements:
 1. Opening bold AEO summary paragraph.
 2. At least 3-4 separate sections starting with '## Section Name' (Markdown H2).
 3. A complete comparison table wrapped in <div class="table-wrap"><table>...</table></div>.
 4. Clear recommendations ("Who should pick what" / "Common pitfalls").
-5. Official source citations.`;
+5. Concluding '## Official Sources and Verification' section linking to primary official sources (Rockstar, PlayStation, Xbox, Epic Games, Take-Two SEC).`;
 
 function callGeminiAPI(payload) {
   return new Promise((resolve, reject) => {

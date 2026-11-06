@@ -88,3 +88,8 @@ Also keep a few extra gigabytes free during the download. Consoles need working 
 No. The Standard and Ultimate editions use the same game files; the extra content in the Ultimate Edition is a small addition, not a separate install. See [price and editions](/guides/gta-6-price-and-editions/).
 
 When Rockstar or a store confirms the size, we'll update this page. For the download itself, see the [GTA 6 pre-load guide](/guides/gta-6-pre-load/), which also has download times by internet speed.
+
+## Official Sources and Verification
+
+- **PlayStation Support:** [PS5 System Storage Requirements and Day-One Decompression Buffers](https://www.playstation.com/support/hardware/ps5-manage-storage/)
+- **Xbox Support:** [Xbox Series Internal Drive Usable Space Specifications](https://support.xbox.com/help/hardware-network/storage/manage-storage)

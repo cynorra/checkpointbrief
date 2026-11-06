@@ -75,3 +75,8 @@ Players wanting to experience the original 2002 campaign before November 2026 ha
 - **Story Continuity:** You do not need to play the 2002 game to understand GTA 6. Rockstar's HD universe (introduced in GTA IV) maintains a separate storyline from the 3D universe, meaning Jason and Lucia’s narrative stands entirely on its own.
 
 For confirmed launch facts and dates, check our verified [GTA 6 release date timeline](/guides/gta-6-release-date/) and the [official Rockstar Games hub](https://www.rockstargames.com/VI).
+
+## Official Sources and Verification
+
+- **Rockstar Games:** [Grand Theft Auto VI Official Website and Setting Reveal](https://www.rockstargames.com/VI)
+- **Rockstar Games Store:** [Grand Theft Auto: The Trilogy – The Definitive Edition Catalog](https://store.rockstargames.com/)

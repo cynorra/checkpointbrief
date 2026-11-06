@@ -61,3 +61,7 @@ This list holds the dates we could confirm from publisher announcements and majo
 ## Dates move
 
 Release dates change, sometimes in the last few weeks. We recheck the calendar regularly and show the check date on the calendar page. Before you pre-order anything, confirm the date on the publisher's store listing.
+
+## Official Sources and Verification
+
+- **Video Games Chronicle:** [Upcoming Video Game Release Dates Master Calendar](https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/)

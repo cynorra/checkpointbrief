@@ -82,3 +82,8 @@ Beyond heists, GTA 6 explores how criminal enterprises intersect with hyper-conn
 3. **Leonida's Extremes:** From the opulent billionaire enclaves of Vice City Beach to the lawless alligator-filled swamps of the Grassrivers, Jason and Lucia must adapt to wildly contrasting environments.
 
 For a full breakdown of the geography they navigate, explore our guide to [every confirmed Leonida location](/guides/gta-6-map-leonida/). For release milestones, check the [GTA 6 release date timeline](/guides/gta-6-release-date/).
+
+## Official Sources and Verification
+
+- **Rockstar Games:** [Official GTA VI Reveal and Dual-Protagonist Marketing Materials](https://www.rockstargames.com/VI)
+- **Take-Two Interactive:** [Take-Two Interactive Investor Reports on Franchise Storytelling](https://ir.take2games.com/)

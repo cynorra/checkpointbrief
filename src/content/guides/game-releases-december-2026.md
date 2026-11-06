@@ -69,3 +69,8 @@ Very few publishers release games in the last two weeks of December. Holiday sho
 ## Coming from November
 
 If you're still deciding what to play after GTA 6, the [November 2026 release list](/guides/game-releases-november-2026/) covers everything from early November, including Ocarina of Time and Pikmin 4 on Switch 2.
+
+## Official Sources and Verification
+
+- **Video Games Chronicle:** [Industry Release Schedule and Delay Tracking](https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/)
+- **Koei Tecmo America:** [Official Publisher Release Confirmation Announcements](https://www.koeitecmoamerica.com/)

@@ -47,5 +47,7 @@ Understanding the subtleties of the pre-load process prevents last-minute frustr
 - **Storage Pre-Allocation Traps:** If your SSD runs out of room during pre-load, the download pauses with an error code (such as CE-100005-6). To avoid this, keep an extra 20–30 GB of buffer space beyond the base game file size. See our guide on [how to clear storage on PS5](/guides/ps5-ssd-upgrade/) if your internal drive is near capacity.
 - **Physical Copies vs Digital Pre-Load:** Remember that pre-load is strictly for digital editions purchased through the PlayStation Store. Physical copies containing download codes (such as GTA 6's box with no Blu-ray disc) can only begin downloading once you physically receive the box and redeem the voucher code on November 12. For more details on physical codes, see our guide on [GTA 6 physical edition voucher details](/guides/gta-6-physical-edition-no-disc/).
 
-For official instructions and system troubleshooting, refer to [PlayStation Support's Guide to Auto-Downloads](https://www.playstation.com/support/games/auto-download-ps5/).
+## Official Sources and Verification
 
+- **PlayStation Support:** [Auto-Download Setup, Rest Mode Storage Allocation, and Pre-Order Policies](https://www.playstation.com/support/games/auto-download-ps5/)
+- **Sony Interactive Entertainment:** [Managing Console Storage Buffers and Error Resolution](https://www.playstation.com/support/hardware/ps5-manage-storage/)

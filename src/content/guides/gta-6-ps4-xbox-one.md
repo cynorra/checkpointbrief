@@ -64,3 +64,8 @@ Rockstar hasn't announced a cloud version of GTA 6 on any service, so there's no
 Console bundles with big games are common around major launches. If one is announced for GTA 6, it will be listed by Sony or Microsoft and major retailers. Compare it against buying the console and game separately; bundles aren't always cheaper.
 
 For how the two current platforms compare, see [GTA 6 on PS5 vs Xbox Series X|S](/guides/gta-6-ps5-vs-xbox/).
+
+## Official Sources and Verification
+
+- **Rockstar Games:** [Official Platform Specification (PS5 and Xbox Series X|S Exclusive)](https://www.rockstargames.com/VI)
+- **Take-Two Interactive:** [SEC Form 10-K Filings Regarding Current-Gen Hardware Transition](https://ir.take2games.com/)

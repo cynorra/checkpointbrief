@@ -90,3 +90,8 @@ Nobody outside Rockstar can promise that, but every signal points to November 19
 - Retail pre-orders, the November 12 pre-load and physical shipments are all scheduled around it.
 
 We update the [GTA 6 hub](/gta-6/) the day Rockstar announces anything new, and every fact there links to its source.
+
+## Official Sources and Verification
+
+- **Rockstar Games:** [Official Launch Date Announcement (November 19, 2026)](https://www.rockstargames.com/VI)
+- **Business Wire:** [Take-Two Interactive / Rockstar Press Release](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)

@@ -69,3 +69,8 @@ On both consoles you can block games above a chosen age rating, so an M-rated ga
 ## Our approach
 
 We cover GTA 6 because millions of adults will play it, but this site doesn't publish graphic images or clips from it, and nothing here is aimed at children. See our [editorial policy](/editorial-policy/). For the release and edition facts, see the [GTA 6 hub](/gta-6/).
+
+## Official Sources and Verification
+
+- **Entertainment Software Rating Board (ESRB):** [Mature 17+ Rating Assignment and Content Descriptors](https://www.esrb.org/)
+- **PEGI:** [European Age Rating Guidelines and Content Badges](https://pegi.info/)

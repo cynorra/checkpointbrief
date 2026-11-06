@@ -67,3 +67,8 @@ Rockstar hasn't announced one. A rumor about a later disc version circulated, bu
 ## Make room either way
 
 Because every copy downloads the full game, you need the storage space whichever version you buy. The [pre-load guide](/guides/gta-6-pre-load/) covers how to start the download on each console, and the [price and editions guide](/guides/gta-6-price-and-editions/) compares what each edition includes.
+
+## Official Sources and Verification
+
+- **Business Wire:** [Rockstar Games Official Pre-Order Fact Sheet (Digital Code in Box)](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)
+- **PlayStation Store Support:** [Voucher Code Redemption and Digital Entitlement Procedures](https://www.playstation.com/support/store/redeem-code/)

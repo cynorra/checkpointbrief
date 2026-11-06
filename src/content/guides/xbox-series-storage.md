@@ -73,4 +73,7 @@ If using an external USB drive for cold storage or backwards-compatible gaming:
 - **Minimum Capacity:** Must be **at least 128 GB**; smaller USB flash drives will not be accepted for game storage.
 - **Drive Formatting:** When first connected, the console displays a prompt asking if the drive will be used for "Media" or "Games & Apps." Select **Format storage device**. Note that this completely wipes the drive to Xbox's proprietary NTFS partition scheme.
 
-For official hardware support and troubleshooting, visit [Xbox Support: Manage Storage](https://support.xbox.com/help/hardware-network/storage/manage-storage).
+## Official Sources and Verification
+
+- **Xbox Support:** [Official Storage Expansion Card and USB Extended Storage Guidelines](https://support.xbox.com/help/hardware-network/storage/manage-storage)
+- **Xbox Wire:** [Xbox Velocity Architecture Hardware Deep Dive](https://news.xbox.com/)

@@ -76,3 +76,8 @@ Trailers are edited to show highlights, so location names, signs and landmarks i
 ## Will more places be revealed?
 
 Very likely. Pre-launch marketing never shows everything, and Rockstar games usually hold back parts of the map for players to discover. We'll add new named locations to the [GTA 6 hub](/gta-6/) as Rockstar reveals them.
+
+## Official Sources and Verification
+
+- **Rockstar Games:** [State of Leonida and Vice City Official Geographical Overview](https://www.rockstargames.com/VI)
+- **Take-Two Interactive:** [Annual Report Disclosure on Open-World Scale](https://ir.take2games.com/)

@@ -76,3 +76,8 @@ That still makes USB useful: park games you're not playing there, and copying th
 ## Is it worth doing for GTA 6?
 
 If your free space is under 200 GB, yes, or at least clear space now. Rockstar hasn't confirmed a size, but PS5 store data points to about 210 GB. See [GTA 6 file size](/guides/gta-6-file-size/) for the numbers and the real usable space on each console.
+
+## Official Sources and Verification
+
+- **PlayStation Support:** [Official M.2 SSD Installation Guide and Speed Requirements](https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/)
+- **Sony Interactive Entertainment:** [Managing and Clearing PS5 Internal Storage](https://www.playstation.com/support/hardware/ps5-manage-storage/)

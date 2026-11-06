@@ -84,3 +84,8 @@ Rather than rushing new entries, Rockstar bridged console generations with updat
 - **Grand Theft Auto: The Trilogy – The Definitive Edition (2021):** Unreal Engine 4 remaster of III, Vice City, and San Andreas for modern platforms.
 
 For a side-by-side comparison of how Vice City itself has evolved from its 2002 debut to modern Leonida, see our feature on [Vice City Then and Now](/guides/vice-city-then-and-now/).
+
+## Official Sources and Verification
+
+- **Take-Two Interactive SEC Filings:** [Historical Unit Sales and Financial Reports (GTA V 200M+ Units)](https://ir.take2games.com/)
+- **Rockstar Games NewsWire Archive:** [Chronological Franchise Launch Press Releases (1997–2026)](https://www.rockstargames.com/newswire)

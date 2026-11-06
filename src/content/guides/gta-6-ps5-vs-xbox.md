@@ -88,3 +88,8 @@ The reported install is about 210 GB ([file size guide](/guides/gta-6-file-size/
 - **If you're buying new:** a standard PS5 or Xbox Series X are both safe choices. The PS5 Pro is the option if you want whatever Rockstar's Pro enhancements turn out to be.
 
 And if you were hoping for PC, see [Is GTA 6 coming to PC?](/guides/gta-6-pc-release/)
+
+## Official Sources and Verification
+
+- **Sony Interactive Entertainment:** [PlayStation 5 and PS5 Pro Technical Architecture Specifications](https://blog.playstation.com/)
+- **Xbox Wire:** [Xbox Series X and Series S Hardware Architecture and Target Specs](https://news.xbox.com/)

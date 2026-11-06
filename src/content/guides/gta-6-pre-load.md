@@ -89,3 +89,8 @@ No. You can download the game but not play it until it unlocks on November 19. N
 ## The day-one patch
 
 Large games almost always get an update at or just before launch. Even if your pre-load finished on November 12, turn on your console a little early on launch day and let it update, so you're not waiting when it unlocks. For the full launch date and history, see the [GTA 6 release date guide](/guides/gta-6-release-date/), and for the exact hour it unlocks in your time zone, see [what time GTA 6 unlocks](/guides/gta-6-unlock-time/).
+
+## Official Sources and Verification
+
+- **Business Wire:** [Official Pre-Load Window Confirmation (November 12, 2026)](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)
+- **PlayStation Support:** [Configuring Automatic Game Pre-Loads and Background Installation](https://www.playstation.com/support/games/auto-download-ps5/)

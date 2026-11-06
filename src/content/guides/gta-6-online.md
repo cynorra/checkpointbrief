@@ -74,3 +74,8 @@ When pre-ordering GTA 6, evaluate your purchase based strictly on the single-pla
 - **GTA+ Complimentary Month:** Digital pre-orders receive a one-month subscription to GTA+, but this applies to the *existing* GTA Online on GTA V and the classic games library, not unreleased GTA 6 multiplayer.
 
 For official updates on Rockstar's release calendar, consult our [verified GTA 6 launch dates guide](/guides/gta-6-release-date/) and official [Rockstar Games announcements](https://www.rockstargames.com/VI).
+
+## Official Sources and Verification
+
+- **Rockstar Games NewsWire:** [Official Announcement on the Acquisition of Cfx.re (FiveM / RedM Creators)](https://www.rockstargames.com/newswire)
+- **Rockstar Games:** [GTA VI Official Product Specifications (Single-Player Campaign Focus)](https://www.rockstargames.com/VI)

@@ -77,3 +77,8 @@ To avoid launch-night technical roadblocks:
 - **Physical Copies:** Remember that physical boxes [contain a digital download voucher, not a disc](/guides/gta-6-physical-edition-no-disc/). Redeem the code on November 12 as soon as you receive the package.
 
 For official updates and server status alerts during launch week, check the [Rockstar Games Customer Support portal](https://support.rockstargames.com/) and [PlayStation Network Status](https://status.playstation.com/).
+
+## Official Sources and Verification
+
+- **Rockstar Games Support:** [Server Status, Launch Monitoring, and Account Verification](https://support.rockstargames.com/)
+- **PlayStation Network Status:** [Official PSN Operational and Digital License Status](https://status.playstation.com/)

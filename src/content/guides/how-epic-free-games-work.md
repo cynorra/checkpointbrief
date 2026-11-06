@@ -72,3 +72,8 @@ It brings people to the store. Every free game puts the Epic launcher on more co
 ## Checking what's free this week
 
 Epic's own page is the authority on what's free and until when. Our [free games tracker](/free-games/) reads the same data, filters out ordinary sales and lists only 100%-off games, with their end dates in Eastern Time. It rebuilds daily and again shortly after each Thursday rotation.
+
+## Official Sources and Verification
+
+- **Epic Games Store:** [Official Weekly Free Games Promotion Hub and FAQ](https://store.epicgames.com/en-US/free-games)
+- **Epic Games Help Center:** [Cloud Saves and Account Entitlement Terms](https://www.epicgames.com/help)
