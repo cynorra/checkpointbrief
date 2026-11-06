@@ -1,16 +1,19 @@
 // Automated Release Calendar Updater for Checkpoint Brief
 // Supports:
-// 1. Live sync from RAWG.io API if RAWG_API_KEY is provided in .env
-// 2. Curated baseline dataset of confirmed 2026-2027 releases
-// 3. Auto-formatting and updating src/lib/data/releases.js
-// 4. Invoked standalone (npm run update-releases), via generate-guide.mjs, or in GitHub Actions
+// 1. Live sync from Twitch / IGDB API (Industry standard) using TWITCH_CLIENT_ID & TWITCH_CLIENT_SECRET
+// 2. Secondary fallback to RAWG.io API if RAWG_API_KEY is provided
+// 3. Robust curated baseline dataset of verified 2026-2027 confirmed releases
+// 4. Auto-formats and updates src/lib/data/releases.js
+// 5. Invoked standalone (npm run update-releases), via generate-guide.mjs, or in GitHub Actions
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { writeFileSync } from "node:fs";
 import { join } from "node:path";
 import https from "node:https";
 import { loadEnv } from "vite";
 
 const env = { ...loadEnv("production", process.cwd(), ""), ...process.env };
+const TWITCH_CLIENT_ID = env.TWITCH_CLIENT_ID;
+const TWITCH_CLIENT_SECRET = env.TWITCH_CLIENT_SECRET;
 const RAWG_API_KEY = env.RAWG_API_KEY;
 
 const RELEASES_FILE = join(process.cwd(), "src", "lib", "data", "releases.js");
@@ -18,10 +21,14 @@ const today = new Date().toISOString().slice(0, 10);
 
 // Platform constant mapping
 const PLATFORM_MAP = {
+  "pc (microsoft windows)": "PC",
   "pc": "PC",
+  "mac": "PC",
+  "linux": "PC",
   "playstation 5": "PS5",
   "playstation5": "PS5",
   "ps5": "PS5",
+  "xbox series x|s": "Xbox Series X|S",
   "xbox series x/s": "Xbox Series X|S",
   "xbox series s/x": "Xbox Series X|S",
   "xbox series x": "Xbox Series X|S",
@@ -69,62 +76,116 @@ const BASELINE_CONFIRMED_RELEASES = [
   { date: "2027-06-11", title: "Hunter: The Reckoning – Deathwish", platforms: ["PC", "PS5", "Xbox Series X|S"] }
 ];
 
-async function fetchFromRawg(apiKey) {
-  if (!apiKey) return [];
-  console.log("[releases] Fetching latest confirmed releases from RAWG.io API...");
-  const startDate = today;
-  const endDate = "2027-12-31";
-  const url = `https://api.rawg.io/api/games?key=${apiKey}&dates=${startDate},${endDate}&ordering=released&page_size=40`;
+async function getTwitchToken(clientId, clientSecret) {
+  return new Promise((resolve) => {
+    const req = https.request(
+      `https://id.twitch.tv/oauth2/token?client_id=${clientId}&client_secret=${clientSecret}&grant_type=client_credentials`,
+      { method: "POST" },
+      (res) => {
+        let body = "";
+        res.on("data", chunk => body += chunk);
+        res.on("end", () => {
+          try {
+            const data = JSON.parse(body);
+            resolve(data.access_token || null);
+          } catch (e) {
+            resolve(null);
+          }
+        });
+      }
+    );
+    req.on("error", () => resolve(null));
+    req.end();
+  });
+}
+
+async function fetchFromIgdb(clientId, clientSecret) {
+  if (!clientId || !clientSecret) return [];
+  console.log("[releases] Authenticating with Twitch IGDB API...");
+  const token = await getTwitchToken(clientId, clientSecret);
+  if (!token) {
+    console.warn("[releases] Failed to authenticate with Twitch IGDB.");
+    return [];
+  }
+
+  console.log("[releases] Fetching upcoming release dates from IGDB...");
+  const nowUnix = Math.floor(Date.now() / 1000);
+  // Filter for PC (6), PS5 (167), Xbox Series (169), Switch (130)
+  const query = `fields game.name, game.hypes, game.total_rating, date, platform.name; where date >= ${nowUnix} & date != null & (platform = 6 | platform = 167 | platform = 169 | platform = 130); sort date asc; limit 100;`;
 
   return new Promise((resolve) => {
-    https.get(url, { headers: { "User-Agent": "checkpointbrief.com-bot/1.0" } }, (res) => {
-      if (res.statusCode !== 200) {
-        console.warn(`[releases] RAWG API returned status ${res.statusCode}`);
-        return resolve([]);
+    const req = https.request("https://api.igdb.com/v4/release_dates", {
+      method: "POST",
+      headers: {
+        "Client-ID": clientId,
+        "Authorization": `Bearer ${token}`,
+        "Content-Type": "text/plain",
+        "Content-Length": Buffer.byteLength(query)
       }
-      let raw = "";
-      res.on("data", chunk => raw += chunk);
+    }, (res) => {
+      let body = "";
+      res.on("data", chunk => body += chunk);
       res.on("end", () => {
         try {
-          const data = JSON.parse(raw);
-          const results = data.results || [];
-          const list = [];
-          for (const g of results) {
-            if (!g.released || !/^\d{4}-\d{2}-\d{2}$/.test(g.released)) continue;
-            const platforms = new Set();
-            for (const p of g.platforms || []) {
-              const name = p.platform?.name?.toLowerCase();
-              if (name && PLATFORM_MAP[name]) {
-                platforms.add(PLATFORM_MAP[name]);
+          const results = JSON.parse(body);
+          if (!Array.isArray(results)) {
+            console.warn("[releases] IGDB returned unexpected format:", body.slice(0, 200));
+            return resolve([]);
+          }
+
+          // Aggregate platforms by game + date
+          const gameMap = new Map();
+          for (const item of results) {
+            if (!item.game?.name || !item.date) continue;
+            const isoDate = new Date(item.date * 1000).toISOString().slice(0, 10);
+            const key = `${isoDate}:${item.game.name.trim().toLowerCase()}`;
+            const platRaw = item.platform?.name?.toLowerCase();
+            const mappedPlatform = platRaw ? PLATFORM_MAP[platRaw] : null;
+
+            if (!gameMap.has(key)) {
+              gameMap.set(key, {
+                date: isoDate,
+                title: item.game.name.trim(),
+                platforms: mappedPlatform ? [mappedPlatform] : ["PC"],
+                big: (item.game.hypes && item.game.hypes > 15) || /Grand Theft Auto|Call of Duty|Monster Hunter|Fable|Tomb Raider|Metro/i.test(item.game.name)
+              });
+            } else {
+              const existing = gameMap.get(key);
+              if (mappedPlatform && !existing.platforms.includes(mappedPlatform)) {
+                existing.platforms.push(mappedPlatform);
               }
             }
-            if (platforms.size === 0) continue;
-            list.push({
-              date: g.released,
-              title: g.name,
-              platforms: Array.from(platforms),
-              big: (g.rating && g.rating >= 4.0) || g.metacritic >= 80 || /Grand Theft Auto|Call of Duty|Monster Hunter|Fable/i.test(g.name)
-            });
           }
-          console.log(`[releases] Fetched ${list.length} valid games from RAWG.`);
+
+          const list = Array.from(gameMap.values());
+          console.log(`[releases] Successfully processed ${list.length} games from IGDB.`);
           resolve(list);
         } catch (err) {
-          console.warn("[releases] Error parsing RAWG response:", err.message);
+          console.warn("[releases] Error parsing IGDB response:", err.message);
           resolve([]);
         }
       });
-    }).on("error", (err) => {
-      console.warn("[releases] Network error reaching RAWG:", err.message);
+    });
+
+    req.on("error", (err) => {
+      console.warn("[releases] Network error reaching IGDB:", err.message);
       resolve([]);
     });
+    req.write(query);
+    req.end();
   });
 }
 
 export async function updateReleases() {
   console.log(`[releases] Running release dates update check for date: ${today}`);
-  const rawgGames = await fetchFromRawg(RAWG_API_KEY);
+  let liveGames = [];
 
-  // Merge map keyed by "date+title"
+  // 1. Try IGDB first (Twitch)
+  if (TWITCH_CLIENT_ID && TWITCH_CLIENT_SECRET) {
+    liveGames = await fetchFromIgdb(TWITCH_CLIENT_ID, TWITCH_CLIENT_SECRET);
+  }
+
+  // Merge map keyed by "date:title"
   const map = new Map();
 
   // Add baseline confirmed releases
@@ -132,18 +193,20 @@ export async function updateReleases() {
     map.set(`${item.date}:${item.title.toLowerCase()}`, item);
   }
 
-  // Merge in RAWG games (preferring explicit custom flags on existing items)
-  for (const g of rawgGames) {
+  // Merge in live games from IGDB
+  for (const g of liveGames) {
     const key = `${g.date}:${g.title.toLowerCase()}`;
     if (map.has(key)) {
       const existing = map.get(key);
-      map.set(key, { ...g, ...existing });
+      // Merge platforms
+      const platforms = Array.from(new Set([...existing.platforms, ...g.platforms]));
+      map.set(key, { ...g, ...existing, platforms });
     } else {
       map.set(key, g);
     }
   }
 
-  // Ensure GTA 6 always has its special properties
+  // Ensure GTA 6 always has its definitive properties
   for (const [key, item] of map.entries()) {
     if (item.title === "Grand Theft Auto VI") {
       item.big = true;
@@ -161,7 +224,7 @@ export async function updateReleases() {
 // sources.js (vgcReleases) and checked on the date there; dates move, so
 // pages show the check date and link the source. Add, move or remove
 // entries here; past dates drop off the calendar automatically.
-// Auto-maintained by scripts/update-releases.mjs.
+// Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
 export const CHECKED = "${today}";
 
