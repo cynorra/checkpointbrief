@@ -17,6 +17,13 @@ const HYPE_PATTERNS = [
   /\b(?:100% confirmed|absolute certainty)\b/i,
 ];
 
+// Anti-fluff / Anti-scaled content check: detects empty AI cliches and philosophical padding
+const AI_FLUFF_PATTERNS = [
+  /\b(?:in the rapidly evolving world of|in today['’]?s gaming landscape|as gamers know all too well)\b/i,
+  /\b(?:only time will tell|it remains to be seen|in conclusion,?\s|to sum up,?\s)\b/i,
+  /\b(?:testament to|delve(?:s|d)? into|tapestry of|beacon of)\b/i,
+];
+
 // Content policies for AdSense & Gaming sites:
 // No gambling/casino encouragement, no illegal piracy links, no leaked alpha build links
 const FORBIDDEN_CONTENT = [
@@ -87,6 +94,12 @@ export function validateGuide(frontmatter, markdownBody, options = {}) {
   for (const re of HYPE_PATTERNS) {
     const m = plain.match(re);
     if (m) errors.push(`Clickbait / hype language detected: "${m[0]}"`);
+  }
+
+  // AI Fluff / Empty content check
+  for (const re of AI_FLUFF_PATTERNS) {
+    const m = plain.match(re);
+    if (m) errors.push(`Empty AI filler cliché detected: "${m[0]}" (Write direct, practical sentences with concrete facts).`);
   }
 
   // Forbidden content check
