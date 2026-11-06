@@ -124,5 +124,64 @@ export const ZERO_CLICK_TOPIC_BANK = [
     sources: [
       { label: "Video Games Chronicle Release Schedule", href: "https://www.videogameschronicle.com" }
     ]
+  },
+
+  // --- Console Features, Hardware & Account Security ---
+  {
+    topic: "DualSense on GTA 6: How Adaptive Triggers and Haptics Will Be Used",
+    slug: "gta-6-dualsense-haptics-adaptive-triggers",
+    tool: "gta6",
+    primaryKeyword: "GTA 6 DualSense features PS5",
+    formatType: "Hardware Architecture Deep Dive",
+    clickHook: "Details confirmed adaptive trigger resistance for Vice City weapons, surface telemetry haptics, and comparison with Xbox standard rumble.",
+    sources: [
+      { label: "PlayStation Blog DualSense Features", href: "https://blog.playstation.com" },
+      { label: "Rockstar Official Technology Overview", href: "https://www.rockstargames.com" }
+    ]
+  },
+  {
+    topic: "How to Secure Your Rockstar Social Club Account with 2FA Before Launch",
+    slug: "how-to-secure-rockstar-social-club-2fa-guide",
+    tool: "gta6",
+    primaryKeyword: "Rockstar Social Club 2FA setup guide",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Exact step-by-step walkthrough on linking authenticator apps, backup recovery codes, and claiming bonus in-game security rewards.",
+    sources: [
+      { label: "Rockstar Support 2-Step Verification Guide", href: "https://support.rockstargames.com/articles/36000003303" }
+    ]
+  },
+  {
+    topic: "Xbox Series S vs Series X for GTA 6: Compromises, Target Resolution and Storage",
+    slug: "xbox-series-s-vs-series-x-gta-6-comparison",
+    tool: "general",
+    primaryKeyword: "GTA 6 Xbox Series S performance vs Series X",
+    formatType: "Comparison & Decision Matrix",
+    clickHook: "Breaks down the 10GB vs 16GB RAM constraint, dynamic scaling expectations, and internal storage realities for Series S buyers.",
+    sources: [
+      { label: "Digital Foundry Console Architecture Analysis", href: "https://www.eurogamer.net/digitalfoundry" },
+      { label: "Xbox Wire Series S Specifications", href: "https://news.xbox.com" }
+    ]
+  },
+  {
+    topic: "Best Budget Gaming Monitors for PS5 & Xbox in 2026: HDMI 2.1, 120Hz and VRR",
+    slug: "best-budget-monitors-ps5-xbox-2026-buyers-guide",
+    tool: "general",
+    primaryKeyword: "best budget HDMI 2.1 monitor for PS5 2026",
+    formatType: "Comparison & Decision Matrix",
+    clickHook: "Compares sub-$300 displays offering genuine 48Gbps HDMI 2.1 bandwidth, VRR range, and HDR peak brightness.",
+    sources: [
+      { label: "RTINGS Display Lab Benchmarks", href: "https://www.rtings.com" }
+    ]
+  },
+  {
+    topic: "How PS5 Game Sharing Works for GTA 6 (Console Sharing and Offline Play)",
+    slug: "how-to-game-share-on-ps5-guide",
+    tool: "general",
+    primaryKeyword: "how to game share on PS5 guide",
+    formatType: "Actionable Step-by-Step Technical Guide",
+    clickHook: "Covers Primary console activation, offline license restrictions, simultaneous digital play, and security rules.",
+    sources: [
+      { label: "PlayStation Support: Console Sharing and Offline Play", href: "https://www.playstation.com/support/account/ps5-console-sharing-offline-play/" }
+    ]
   }
 ];
