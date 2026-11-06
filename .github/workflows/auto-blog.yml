@@ -8,9 +8,8 @@
 name: Daily Auto-Blog Generator & Publisher
 
 on:
-  # Daily schedule paused until AI output is fact-checked (AdSense review).
-  # schedule:
-  #   - cron: "0 4 * * *"
+  schedule:
+    - cron: "0 4 * * *" # Runs every day at 04:00 UTC (07:00 TRT)
   workflow_dispatch: # Allows manual trigger from GitHub Actions UI anytime
 
 concurrency:
