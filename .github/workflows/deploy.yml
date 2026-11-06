@@ -28,6 +28,9 @@ concurrency:
   group: deploy
   cancel-in-progress: false
 
+permissions:
+  contents: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -48,6 +51,19 @@ jobs:
           TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
           TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
+
+      - name: Commit updated release calendar if changed
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config --global user.name "Checkpoint Brief Bot"
+          git config --global user.email "bot@checkpointbrief.com"
+          git add src/lib/data/releases.js
+          if git diff --staged --quiet; then
+            echo "Release calendar unchanged."
+          else
+            git commit -m "chore(releases): auto-update release schedule via IGDB [skip ci]"
+            git push origin main
+          fi
 
       - name: Data tests
         run: npm test
