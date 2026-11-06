@@ -42,6 +42,11 @@ jobs:
 
       - run: npm ci
 
+      - name: Update release calendar
+        run: node scripts/update-releases.mjs
+        env:
+          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}
+
       - name: Data tests
         run: npm test
 

@@ -347,6 +347,14 @@ async function main() {
   writeFileSync(targetFile, result.fullContent + "\n", "utf8");
   console.log(`\nFile saved successfully to:\n  ${targetFile}`);
 
+  // Automatically refresh release dates calendar alongside blog generation
+  try {
+    const { updateReleases } = await import("./update-releases.mjs");
+    await updateReleases();
+  } catch (err) {
+    console.warn("[releases] Non-blocking update-releases error:", err.message);
+  }
+
   if (args.includes("--publish")) {
     console.log(`\nPushing ${targetTopic.slug} to Supabase...`);
     const { execSync } = await import("node:child_process");
