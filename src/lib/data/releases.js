@@ -153,12 +153,6 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-09",
-    "title": "Metro Anomaly",
-    "platforms": ["PC" ],
-    "big": true
-  },
-  {
-    "date": "2026-11-09",
     "title": "Mini Mart Survivors",
     "platforms": ["PC" ],
     "big": false
@@ -322,6 +316,12 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Elixir of Moonglow",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Euro Truck Simulator 2: Iceland",
     "platforms": ["PC" ],
     "big": false
   },
