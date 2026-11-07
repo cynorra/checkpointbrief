@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-06";
+export const CHECKED = "2026-11-07";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -30,18 +30,6 @@ export const RELEASES = [
     "title": "Stellar Blade",
     "platforms": ["Switch 2" ],
     "note": "Switch 2 version"
-  },
-  {
-    "date": "2026-11-07",
-    "title": "Below the Stone",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-07",
-    "title": "Thập Tuyệt Trận",
-    "platforms": ["PC" ],
-    "big": false
   },
   {
     "date": "2026-11-08",
@@ -142,7 +130,7 @@ export const RELEASES = [
   {
     "date": "2026-11-09",
     "title": "Hozy",
-    "platforms": ["Xbox Series X|S" ],
+    "platforms": ["Xbox Series X|S", "PS5" ],
     "big": false
   },
   {
@@ -352,7 +340,7 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Football Manager 27",
-    "platforms": ["PC", "PS5" ],
+    "platforms": ["PC", "PS5", "Xbox Series X|S" ],
     "big": false
   },
   {
