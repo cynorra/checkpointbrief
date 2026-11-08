@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-07";
+export const CHECKED = "2026-11-08";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -32,20 +32,14 @@ export const RELEASES = [
     "note": "Switch 2 version"
   },
   {
-    "date": "2026-11-08",
-    "title": "Company Tycoon",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-08",
-    "title": "Maze Of Tenfon:Chapter 2",
+    "date": "2026-11-09",
+    "title": "After Dark Pinas: Check In",
     "platforms": ["PC" ],
     "big": false
   },
   {
     "date": "2026-11-09",
-    "title": "After Dark Pinas: Check In",
+    "title": "Amnea28: Two Eternities",
     "platforms": ["PC" ],
     "big": false
   },
@@ -123,6 +117,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-09",
+    "title": "HitTube",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
     "title": "Ho Ho Ho Sokoban",
     "platforms": ["PC" ],
     "big": false
@@ -136,6 +136,12 @@ export const RELEASES = [
   {
     "date": "2026-11-09",
     "title": "I Walk Among Zombies Vol. 1",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Last Chickenburg",
     "platforms": ["PC" ],
     "big": false
   },
@@ -165,6 +171,18 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-09",
+    "title": "One Fenix Down",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
+    "title": "PeeVPee",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
     "title": "Pidgeon Pocket",
     "platforms": ["PC" ],
     "big": false
@@ -172,6 +190,12 @@ export const RELEASES = [
   {
     "date": "2026-11-09",
     "title": "Plum",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Project: Haste",
     "platforms": ["PC" ],
     "big": false
   },
@@ -190,6 +214,12 @@ export const RELEASES = [
   {
     "date": "2026-11-09",
     "title": "Slotbound",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
+    "title": "StateOS: The Political Sandbox",
     "platforms": ["PC" ],
     "big": false
   },
@@ -220,6 +250,18 @@ export const RELEASES = [
   {
     "date": "2026-11-09",
     "title": "Towers of Babble",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Travellin Cats Advent Calendar",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-09",
+    "title": "Tricolo",
     "platforms": ["PC" ],
     "big": false
   },
@@ -321,12 +363,6 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
-    "title": "Euro Truck Simulator 2: Iceland",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-10",
     "title": "Expiration",
     "platforms": ["PC" ],
     "big": false
@@ -340,7 +376,7 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Football Manager 27",
-    "platforms": ["PC", "PS5", "Xbox Series X|S" ],
+    "platforms": ["PC" ],
     "big": false
   },
   {
@@ -399,12 +435,6 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
-    "title": "Never Sort By Color",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-10",
     "title": "Nick vs. the Brick of Ick from space",
     "platforms": ["PC" ],
     "big": false
@@ -436,12 +466,6 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Piggy Monte",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-10",
-    "title": "Please, Tell Me Why?",
     "platforms": ["PC" ],
     "big": false
   },
@@ -495,12 +519,6 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
-    "title": "The Sea Is Our Stage",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-10",
     "title": "Thieves and Gold",
     "platforms": ["PC" ],
     "big": false
@@ -526,12 +544,6 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Warpack",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-10",
-    "title": "WildBonds",
     "platforms": ["PC" ],
     "big": false
   },
