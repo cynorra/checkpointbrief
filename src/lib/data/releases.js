@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-08";
+export const CHECKED = "2026-11-09";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -32,254 +32,20 @@ export const RELEASES = [
     "note": "Switch 2 version"
   },
   {
-    "date": "2026-11-09",
-    "title": "After Dark Pinas: Check In",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Amnea28: Two Eternities",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Armorer: Tidy Up the Armory Before Dawn",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Borbs",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Cards of Bellum",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Casualties: Unknown",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Cinema Theater Tycoon",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Dreadmoor",
-    "platforms": ["PC" ],
-    "big": true
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Evenicle: Next Fragment Medica",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "ExoFlora: First Seeds",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Fraga",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Funeral for the Sun",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Grimdelve",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Hantu and Hunted",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "HitTube",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Ho Ho Ho Sokoban",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Hozy",
-    "platforms": ["Xbox Series X|S", "PS5" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "I Walk Among Zombies Vol. 1",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Last Chickenburg",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Meltdown",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Menthal",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Mini Mart Survivors",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Neo Junk City",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "One Fenix Down",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "PeeVPee",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Pidgeon Pocket",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Plum",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Project: Haste",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Roselle Hunt",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Seferia Matrix",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Slotbound",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "StateOS: The Political Sandbox",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Supercar Collection Together",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Sword of the Demiurge",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "The Big Suck",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Tome of Talis: A Dice Conquest Game",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Towers of Babble",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Travellin Cats Advent Calendar",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Tricolo",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "Waifu Curator",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-09",
-    "title": "What the Buck?!",
+    "date": "2026-11-10",
+    "title": "Agromatic",
     "platforms": ["PC" ],
     "big": false
   },
   {
     "date": "2026-11-10",
-    "title": "1999 Tokoyo Building",
+    "title": "AI Apocalypse",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Among Paws",
     "platforms": ["PC" ],
     "big": false
   },
@@ -315,6 +81,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Brew & Dash",
+    "platforms": ["Xbox Series X|S", "PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Calmaria: Wild Growth",
     "platforms": ["PC" ],
     "big": false
@@ -333,7 +105,19 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Cubic Color Confusion",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Deiity (Under Ice)",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Drawmi: Card Shop",
     "platforms": ["PC" ],
     "big": false
   },
@@ -363,6 +147,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Euro Truck Simulator 2: Iceland",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Expiration",
     "platforms": ["PC" ],
     "big": false
@@ -376,7 +166,7 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Football Manager 27",
-    "platforms": ["PC" ],
+    "platforms": ["PC", "PS5", "Xbox Series X|S" ],
     "big": false
   },
   {
@@ -388,6 +178,12 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Fragments",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Gobs & Gears",
     "platforms": ["PC" ],
     "big": false
   },
@@ -405,8 +201,26 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Hard West 2",
+    "platforms": ["Xbox Series X|S", "PS5" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Helix Ark",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Hillthorn",
     "platforms": ["Switch", "PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Hold My Cargo",
+    "platforms": ["PC" ],
     "big": false
   },
   {
@@ -435,6 +249,18 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Memento Dawn",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Midwest 90: Rapid City",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Nick vs. the Brick of Ick from space",
     "platforms": ["PC" ],
     "big": false
@@ -449,6 +275,12 @@ export const RELEASES = [
     "date": "2026-11-10",
     "title": "One More Plate",
     "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Ova Magica",
+    "platforms": ["Xbox Series X|S", "PS5" ],
     "big": false
   },
   {
@@ -471,7 +303,25 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Pocket Legend",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Potion-making: Path of the Alchemist",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Pray Your God!",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Project: Autumn",
     "platforms": ["PC" ],
     "big": false
   },
@@ -483,6 +333,18 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Raccoin: Chaos Max Edition",
+    "platforms": ["PS5", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Raccoin: Coin Pusher Roguelike",
+    "platforms": ["PS5", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Rebirth TD",
     "platforms": ["PC" ],
     "big": false
@@ -490,6 +352,18 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Rense",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Santa's Workshop: Tidy Up Christmas",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Secrets of Suburbia",
     "platforms": ["PC" ],
     "big": false
   },
@@ -513,7 +387,61 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Takeover 2",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Tanuki: Pon's Summer",
+    "platforms": ["Switch", "PC", "Xbox Series X|S", "PS5" ],
+    "big": true
+  },
+  {
+    "date": "2026-11-10",
+    "title": "The Adventures of Tango Rio",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "The Devil's Due",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "The Ghost and The Phoenix",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "The Guestbook of the Otherworld",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "The House Dreams Along With Them",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "The Last Keeper",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "The Sea Is Our Stage",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "The Yard: Escape from Prison",
     "platforms": ["PC" ],
     "big": false
   },
@@ -537,6 +465,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-10",
+    "title": "Vampire: The Masquerade - Oaths and Ashes",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
     "title": "Warhammer Survivors",
     "platforms": ["Switch", "PC", "PS5", "Xbox Series X|S" ],
     "big": false
@@ -544,6 +478,18 @@ export const RELEASES = [
   {
     "date": "2026-11-10",
     "title": "Warpack",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "WildBonds",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-10",
+    "title": "Yuha's Nightmares",
     "platforms": ["PC" ],
     "big": false
   },
