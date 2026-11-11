@@ -74,18 +74,8 @@ export const ZERO_CLICK_TOPIC_BANK = [
       { label: "Xbox Support: Changing Console Region", href: "https://support.xbox.com" }
     ]
   },
-  {
-    topic: "GTA 6 PC & Mobile Download Scams: Why Every Torrent, APK, and Windows 10 Beta File Is Malware",
-    slug: "gta-6-download-scams-fake-pc-files-warning",
-    tool: "gta6",
-    primaryKeyword: "gta 6 download scam warning",
-    formatType: "Actionable Step-by-Step Technical Guide",
-    clickHook: "Warns gamers searching for GTA 6 PC/APK downloads about infostealers, ransomware, fake password surveys, and legitimate verified purchase channels.",
-    sources: [
-      { label: "Rockstar Games Official Security Notice", href: "https://support.rockstargames.com" },
-      { label: "Take-Two Interactive Investor Relations", href: "https://ir.take2games.com" }
-    ]
-  },
+  // Removed: "GTA 6 PC & Mobile Download Scams ... Torrent ..." — the topic itself requires words the
+  // quality validator forbids (torrent/cracked), so it was rejected on every run and blocked the daily job.
 
   // --- Hardware, Storage & Optimization Guides ---
   {

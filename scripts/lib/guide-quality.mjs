@@ -76,8 +76,8 @@ export function validateGuide(frontmatter, markdownBody, options = {}) {
   // 2. Body checks
   const plain = stripMarkdown(markdownBody);
   const wordCount = plain.split(/\s+/).filter(Boolean).length;
-  if (wordCount < 400) {
-    errors.push(`Content too short: ${wordCount} words (minimum 400 required for a quality guide).`);
+  if (wordCount < 600) {
+    errors.push(`Content too short: ${wordCount} words (minimum 600 required for a quality guide; target 800-1200).`);
   }
 
   // First-person checks

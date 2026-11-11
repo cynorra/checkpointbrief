@@ -6,6 +6,10 @@
 //   node scripts/generate-guide.mjs --topic "GTA 6 Weapons & Combat"  # Custom topic
 //   node scripts/generate-guide.mjs --tool gta6                      # Category filter (gta6|releases|deals|general)
 //   node scripts/generate-guide.mjs --dry-run                        # Preview without saving to disk
+//
+// Resilience: if a topic fails validation on every attempt, the next topic in the bank is tried
+// (up to MAX_TOPICS_PER_RUN). Topics that keep failing across runs are recorded in
+// scripts/lib/failed-topics.json and skipped, so one bad topic can never block the daily run.
 
 import { existsSync, readdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
@@ -22,6 +26,11 @@ if (!GEMINI_API_KEY) {
   process.exit(1);
 }
 
+const MODEL = "gemini-2.5-flash";
+const MAX_ATTEMPTS_PER_TOPIC = 3;
+const MAX_TOPICS_PER_RUN = 4;
+const MAX_FAILS_BEFORE_SKIP = 2;
+
 const args = process.argv.slice(2);
 const dryRun = args.includes("--dry-run");
 const customTopicIdx = args.indexOf("--topic");
@@ -30,6 +39,7 @@ const toolFilterIdx = args.indexOf("--tool");
 const toolFilter = toolFilterIdx !== -1 ? args[toolFilterIdx + 1] : null;
 
 const GUIDES_DIR = join(process.cwd(), "src", "content", "guides");
+const FAILED_FILE = join(process.cwd(), "scripts", "lib", "failed-topics.json");
 const existingFiles = existsSync(GUIDES_DIR) ? readdirSync(GUIDES_DIR).filter((f) => f.endsWith(".md")) : [];
 const existingSlugs = new Set(existingFiles.map((f) => f.replace(/\.md$/, "")));
 
@@ -50,35 +60,50 @@ const existingGuidesSummary = existingFiles.map((file) => {
   };
 });
 
-function getNextTopic() {
+function loadFailed() {
+  try {
+    return JSON.parse(readFileSync(FAILED_FILE, "utf8"));
+  } catch {
+    return {};
+  }
+}
+
+function saveFailed(map) {
+  if (dryRun) return;
+  writeFileSync(FAILED_FILE, JSON.stringify(map, null, 2) + "\n", "utf8");
+}
+
+function getCandidateTopics() {
   if (customTopic) {
     const slug = customTopic
       .toLowerCase()
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-|-$/g, "");
-    return {
-      topic: customTopic,
-      slug,
-      tool: toolFilter || "gta6",
-      primaryKeyword: customTopic,
-      formatType: "In-Depth Analysis & Guide",
-      clickHook: "Provides high-value comparison and actionable steps beyond simple search snippets.",
-      sources: [{ label: "Official Documentation / Press Releases", href: "https://www.rockstargames.com" }]
-    };
+    return [
+      {
+        topic: customTopic,
+        slug,
+        tool: toolFilter || "gta6",
+        primaryKeyword: customTopic,
+        formatType: "In-Depth Analysis & Guide",
+        clickHook: "Provides high-value comparison and actionable steps beyond simple search snippets.",
+        sources: [{ label: "Official Documentation / Press Releases", href: "https://www.rockstargames.com" }]
+      }
+    ];
   }
 
-  // Filter out topics already written
-  const candidateTopics = ZERO_CLICK_TOPIC_BANK.filter((t) => {
+  const failed = loadFailed();
+  const candidates = ZERO_CLICK_TOPIC_BANK.filter((t) => {
     if (existingSlugs.has(t.slug)) return false;
     if (toolFilter && t.tool !== toolFilter) return false;
+    if ((failed[t.slug]?.count || 0) >= MAX_FAILS_BEFORE_SKIP) return false;
     return true;
   });
 
-  if (candidateTopics.length === 0) {
-    throw new Error("All pre-configured zero-click topic bank ideas have been written! Provide --topic or add more topics to scripts/lib/topic-bank.mjs.");
+  if (candidates.length === 0) {
+    throw new Error("No usable topics left in the zero-click topic bank (all written or repeatedly failing). Add topics to scripts/lib/topic-bank.mjs or clear scripts/lib/failed-topics.json.");
   }
-
-  return candidateTopics[0];
+  return candidates;
 }
 
 function getNextPublishDate() {
@@ -94,27 +119,18 @@ function getNextPublishDate() {
   return nextDate.toISOString().slice(0, 10);
 }
 
-const targetTopic = getNextTopic();
-const targetDate = getNextPublishDate();
+const FACT_CONTEXT = `- GTA 6 launches November 19, 2026 on PS5 & Xbox Series X|S. No PC version at launch. Pre-load starts Nov 12, 2026.
+- Physical copies of GTA 6 do NOT include Blu-ray discs; they contain a digital download voucher in the case.
+- Rely strictly on verified facts (Rockstar, Sony, Microsoft, Take-Two SEC filings, Epic Games).`;
 
-console.log(`\n==================================================`);
-console.log(`Zero-Click Resistant Guide: "${targetTopic.topic}"`);
-console.log(`Format Strategy: ${targetTopic.formatType || 'Actionable Guide'}`);
-console.log(`Click Hook: ${targetTopic.clickHook || 'Detailed matrix and walkthrough'}`);
-console.log(`Slug: ${targetTopic.slug}`);
-console.log(`Target Tool: ${targetTopic.tool}`);
-console.log(`Scheduled Date: ${targetDate}`);
-console.log(`==================================================\n`);
+function buildPrompts(topic, targetDate, feedback) {
+  const relevantGuides = existingGuidesSummary
+    .filter((g) => (g.tool === topic.tool || g.tool === "gta6") && g.date <= targetDate)
+    .slice(-6);
 
-const relevantGuides = existingGuidesSummary
-  .filter((g) => (g.tool === targetTopic.tool || g.tool === "gta6") && g.date <= targetDate)
-  .slice(-6);
+  const internalLinksContext = relevantGuides.map((g) => `- "${g.title}": href="${g.href}"`).join("\n");
 
-const internalLinksContext = relevantGuides
-  .map((g) => `- "${g.title}": href="${g.href}"`)
-  .join("\n");
-
-const systemInstruction = `You are the lead gaming data analyst and hardware editor at Checkpoint Brief (https://checkpointbrief.com).
+  const systemInstruction = `You are the lead gaming data analyst and hardware editor at Checkpoint Brief (https://checkpointbrief.com).
 
 PRIMARY OBJECTIVE: BEAT ZERO-CLICK SEARCH & PREVENT SCALED/THIN CONTENT
 AI Overviews steal traffic on simple questions by giving 1-sentence answers, and Google penalizes empty/templated "scaled content".
@@ -127,13 +143,11 @@ Your article MUST deliver rich, original, and deeply practical value:
 ANTI-THIN / ANTI-SCALED CONTENT MANDATES:
 1. NO FILLER / ZERO FLUFF: Absolutely NO generic intro/outro fluff like "In the rapidly evolving world of gaming", "It remains to be seen", "Gaming is an art", or "In conclusion". Every sentence must convey a technical fact, actionable step, or concrete analysis.
 2. BESPOKE HEADINGS ONLY: NEVER use generic template headers like "Overview", "Introduction", "Pros and Cons", or "Final Thoughts". Headings must be topic-specific and actionable (e.g., "Configuring Rest Mode for 7-Day Pre-Loads", "Why the 2.4GHz Wi-Fi Band Throttles Downloads").
-3. ACCURACY & CONCRETE METRICS: Use real menu names, exact GB sizes, actual port speeds (Gbps, MB/s), and real error codes (e.g., CE-100005-6).
+3. ACCURACY & CONCRETE METRICS: Use real menu names, exact GB sizes, actual port speeds (Gbps, MB/s), and real error codes (e.g., CE-100005-6). If you are not certain of a specific figure, menu name or error code, describe it qualitatively or give an honest range instead of inventing it.
 4. EDITORIAL VOICE: Objective, third-person technical authority. Zero first-person claims ("I tested", "we found"). No clickbait hype ("insane", "mind-blowing").
 
 CONTEXT & ACCURACY:
-- GTA 6 launches November 19, 2026 on PS5 & Xbox Series X|S. No PC version at launch. Pre-load starts Nov 12, 2026.
-- Physical copies of GTA 6 do NOT include Blu-ray discs; they contain a digital download voucher in the case.
-- Rely strictly on verified facts (Rockstar, Sony, Microsoft, Take-Two SEC filings, Epic Games).
+${FACT_CONTEXT}
 
 EDITORIAL QUALITY MANDATES:
 1. NO CLICKBAIT: No "mind-blowing", "secret trick", "guaranteed", "you won't believe".
@@ -148,13 +162,14 @@ EDITORIAL QUALITY MANDATES:
    - NEVER repeat or paraphrase any topic already written. Here are existing published titles to AVOID overlapping with:
    ${existingGuidesSummary.slice(-15).map((g) => `- "${g.title}"`).join("\n   ")}
    - NEVER use generic formula titles like "The Ultimate Guide to...", "Complete Guide to...", "Everything You Need to Know".
-   - You MUST tailor the headings and structure specifically to this topic's Format Type ("${targetTopic.formatType || 'Actionable Guide'}"). Do NOT use cookie-cutter section headers.
+   - You MUST tailor the headings and structure specifically to this topic's Format Type ("${topic.formatType || "Actionable Guide"}"). Do NOT use cookie-cutter section headers.
 7. INTERNAL LINKING:
    - Naturally integrate 1-2 relevant internal links to existing Checkpoint Brief pages from this list:
    ${internalLinksContext}
    - Reference site hubs where appropriate: [GTA 6 hub](/gta-6/), [GTA 6 countdown](/gta-6/countdown/), [Release date calendar](/release-dates/), [Free games tracker](/free-games/).
 8. EXTERNAL CITATIONS:
-   - Use direct Markdown links to official sources (Rockstar Games, PlayStation, Xbox, Epic Games).
+   - Use direct Markdown links to official sources (Rockstar Games, PlayStation, Xbox, Epic Games). Only link to pages you are confident exist (support-site root pages are safer than guessed deep links).
+9. WORD CHOICE: Never use the words "torrent", "cracked", "pirated", "keygen" or "warez" anywhere, even when warning readers. Say "unofficial downloads" or "unlicensed copies" instead. Never use the words "guaranteed" or "insane".
 
 FORMAT REQUIRED:
 Return ONLY valid raw Markdown with frontmatter:
@@ -162,7 +177,7 @@ Return ONLY valid raw Markdown with frontmatter:
 title: "Crisp, keyword-focused title under 70 chars without year"
 description: "High-CTR meta description between 80-160 chars explaining the exact decision or guide."
 published: ${targetDate}
-tool: ${targetTopic.tool}
+tool: ${topic.tool}
 ---
 **Bold Teaser Answer paragraph...**
 
@@ -180,14 +195,14 @@ Content...
 - **[Platform/Publisher Support]:** [Official Support or Store Listing](https://...) – Direct confirmation.
 `;
 
-const userPrompt = `Write an in-depth, zero-click resistant guide for Checkpoint Brief:
+  let userPrompt = `Write an in-depth, zero-click resistant guide for Checkpoint Brief:
 
-Topic: "${targetTopic.topic}"
-Format Type: "${targetTopic.formatType || 'Comparison & Guide'}"
-Strategic Hook: "${targetTopic.clickHook || 'Provide detailed actionable comparison'}"
-Target Keyword: "${targetTopic.primaryKeyword}"
-Category (tool): "${targetTopic.tool}"
-Target Word Count: 750 - 1100 words.
+Topic: "${topic.topic}"
+Format Type: "${topic.formatType || "Comparison & Guide"}"
+Strategic Hook: "${topic.clickHook || "Provide detailed actionable comparison"}"
+Target Keyword: "${topic.primaryKeyword}"
+Category (tool): "${topic.tool}"
+Target Word Count: 800 - 1200 words (never below 700). Finish the article completely; do not stop mid-sentence.
 
 Structure Requirements:
 1. Opening bold AEO summary paragraph.
@@ -196,17 +211,29 @@ Structure Requirements:
 4. Clear recommendations ("Who should pick what" / "Common pitfalls").
 5. Concluding '## Official Sources and Verification' section linking to primary official sources (Rockstar, PlayStation, Xbox, Epic Games, Take-Two SEC).`;
 
+  if (topic.sources?.length) {
+    userPrompt += `\n\nPreferred source links for the sources section:\n${topic.sources.map((s) => `- ${s.label}: ${s.href}`).join("\n")}`;
+  }
+
+  if (feedback?.length) {
+    userPrompt += `\n\nYOUR PREVIOUS DRAFT WAS REJECTED. Fix every one of these problems in the new draft:\n${feedback.map((f) => `- ${f}`).join("\n")}`;
+  }
+
+  return { systemInstruction, userPrompt };
+}
+
 function callGeminiAPI(payload) {
   return new Promise((resolve, reject) => {
     const postData = JSON.stringify(payload);
     const options = {
       hostname: "generativelanguage.googleapis.com",
       port: 443,
-      path: `/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`,
+      path: `/v1beta/models/${MODEL}:generateContent`,
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "Content-Length": Buffer.byteLength(postData)
+        "Content-Length": Buffer.byteLength(postData),
+        "x-goog-api-key": GEMINI_API_KEY
       }
     };
 
@@ -219,44 +246,94 @@ function callGeminiAPI(payload) {
           if (res.statusCode !== 200) {
             return reject(new Error(`Gemini API Error (${res.statusCode}): ${JSON.stringify(json.error || json)}`));
           }
-          const text = json.candidates?.[0]?.content?.parts?.[0]?.text;
+          const candidate = json.candidates?.[0];
+          // Join every non-thinking text part (a single part is not guaranteed)
+          const text = (candidate?.content?.parts || [])
+            .filter((p) => !p.thought && typeof p.text === "string")
+            .map((p) => p.text)
+            .join("");
           if (!text) {
-            return reject(new Error("Empty response from Gemini API"));
+            return reject(new Error(`Empty response from Gemini API (finishReason: ${candidate?.finishReason || "unknown"})`));
           }
-          resolve(text);
+          resolve({ text, finishReason: candidate?.finishReason });
         } catch (e) {
           reject(new Error(`Failed to parse Gemini response: ${e.message}`));
         }
       });
     });
 
+    req.setTimeout(120000, () => req.destroy(new Error("Gemini request timed out after 120s")));
     req.on("error", reject);
     req.write(postData);
     req.end();
   });
 }
 
-async function generateWithRetry(maxAttempts = 3) {
-  let attempt = 0;
-  while (attempt < maxAttempts) {
-    attempt++;
-    console.log(`[Gemini] Generating zero-click resistant guide (attempt ${attempt}/${maxAttempts})...`);
+// Second pass: an editor model checks the draft for invented specifics.
+// Fails OPEN (returns ok) if the review call itself errors, so an API hiccup never blocks publishing.
+async function editorialReview(fm, body) {
+  const prompt = `You are the fact-checking editor of a gaming news site. Review the article below.
+
+Known verified context:
+${FACT_CONTEXT}
+
+Flag ONLY serious problems:
+- Specific numbers, dates, prices, error codes, menu paths or product specs that look invented or that you believe are wrong.
+- Claims presented as confirmed that are only rumor or speculation.
+- Statements that contradict the known verified context.
+- Content that is padding with no concrete information.
+
+Do NOT flag style preferences or minor wording. If the article is acceptable, return an empty issues list.
+
+Return JSON only: {"verdict":"pass"|"fail","issues":["short description of each serious problem"]}.
+Use "fail" only when at least one serious problem exists.
+
+TITLE: ${fm.title}
+
+${body}`;
+
+  try {
+    const { text } = await callGeminiAPI({
+      contents: [{ role: "user", parts: [{ text: prompt }] }],
+      generationConfig: {
+        temperature: 0,
+        maxOutputTokens: 2048,
+        responseMimeType: "application/json",
+        thinkingConfig: { thinkingBudget: 512 }
+      }
+    });
+    const parsed = JSON.parse(text);
+    const issues = Array.isArray(parsed.issues) ? parsed.issues.map(String) : [];
+    return { ok: parsed.verdict !== "fail" || issues.length === 0, issues };
+  } catch (err) {
+    console.warn(`[Editor Review] Skipped (non-blocking): ${err.message}`);
+    return { ok: true, issues: [] };
+  }
+}
+
+async function generateWithRetry(topic, targetDate, maxAttempts = MAX_ATTEMPTS_PER_TOPIC) {
+  let feedback = [];
+  let lastError = null;
+
+  for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+    console.log(`[Gemini] Generating "${topic.slug}" (attempt ${attempt}/${maxAttempts})...`);
     try {
-      const payload = {
-        contents: [
-          { role: "user", parts: [{ text: userPrompt }] }
-        ],
-        systemInstruction: {
-          parts: [{ text: systemInstruction }]
-        },
+      const { systemInstruction, userPrompt } = buildPrompts(topic, targetDate, feedback);
+      const { text: rawResponse, finishReason } = await callGeminiAPI({
+        contents: [{ role: "user", parts: [{ text: userPrompt }] }],
+        systemInstruction: { parts: [{ text: systemInstruction }] },
         generationConfig: {
           temperature: 0.25,
-          maxOutputTokens: 5000
+          maxOutputTokens: 16000,
+          // Cap hidden reasoning so it cannot eat the output budget and truncate the article
+          thinkingConfig: { thinkingBudget: 1024 }
         }
-      };
+      });
 
-      const rawResponse = await callGeminiAPI(payload);
-      
+      if (finishReason && finishReason !== "STOP") {
+        throw new Error(`Generation did not finish cleanly (finishReason: ${finishReason}); output is likely truncated.`);
+      }
+
       const cleaned = rawResponse
         .replace(/^```markdown\s*/i, "")
         .replace(/^```md\s*/i, "")
@@ -300,42 +377,81 @@ async function generateWithRetry(maxAttempts = 3) {
       const validation = validateGuide(fm, body, { existingArticles: existingGuidesSummary });
       if (!validation.valid) {
         console.warn(`[Quality Reject] Guide failed validation:`);
-        for (const err of validation.errors) {
-          console.warn(`  - ${err}`);
-        }
+        for (const err of validation.errors) console.warn(`  - ${err}`);
         console.warn(`[Rejected Body Snippet (first 300 chars)]:\n${body.slice(0, 300)}\n---`);
-        if (attempt < maxAttempts) {
-          console.log(`Retrying generation with stricter constraints...`);
-          continue;
-        } else {
-          throw new Error(`Failed to generate a valid guide after ${maxAttempts} attempts.`);
-        }
+        feedback = validation.errors;
+        lastError = new Error(`Validation failed: ${validation.errors.join(" | ")}`);
+        continue;
       }
 
       if (validation.warnings.length > 0) {
         console.log(`[Quality Notices]:`);
-        for (const warn of validation.warnings) {
-          console.log(`  * ${warn}`);
-        }
+        for (const warn of validation.warnings) console.log(`  * ${warn}`);
+      }
+
+      const review = await editorialReview(fm, body);
+      if (!review.ok) {
+        console.warn(`[Editor Reject] Fact-check review flagged problems:`);
+        for (const issue of review.issues) console.warn(`  - ${issue}`);
+        feedback = review.issues.map((i) => `Editor flagged: ${i} (remove it or replace it with a verifiable statement)`);
+        lastError = new Error(`Editor review failed: ${review.issues.join(" | ")}`);
+        continue;
       }
 
       console.log(`[Success] Guide passed all quality checks (${validation.wordCount} words).`);
-      return {
-        frontmatter: fm,
-        body,
-        fullContent: finalContent
-      };
+      return { frontmatter: fm, body, fullContent: finalContent };
     } catch (err) {
       console.error(`[Attempt ${attempt} Failed]:`, err.message);
-      if (attempt >= maxAttempts) throw err;
-      await new Promise((r) => setTimeout(r, 4000));
+      lastError = err;
+      feedback = [err.message];
+      if (attempt < maxAttempts) await new Promise((r) => setTimeout(r, 4000));
     }
   }
+  throw lastError || new Error("Generation failed");
 }
 
 async function main() {
-  const result = await generateWithRetry(3);
-  const targetFile = join(GUIDES_DIR, `${targetTopic.slug}.md`);
+  const candidates = getCandidateTopics();
+  const targetDate = getNextPublishDate();
+  const failed = loadFailed();
+  const tried = [];
+  let result = null;
+  let topic = null;
+
+  for (const candidate of candidates.slice(0, MAX_TOPICS_PER_RUN)) {
+    console.log(`\n==================================================`);
+    console.log(`Zero-Click Resistant Guide: "${candidate.topic}"`);
+    console.log(`Format Strategy: ${candidate.formatType || "Actionable Guide"}`);
+    console.log(`Click Hook: ${candidate.clickHook || "Detailed matrix and walkthrough"}`);
+    console.log(`Slug: ${candidate.slug}`);
+    console.log(`Target Tool: ${candidate.tool}`);
+    console.log(`Scheduled Date: ${targetDate}`);
+    console.log(`==================================================\n`);
+
+    try {
+      result = await generateWithRetry(candidate, targetDate);
+      topic = candidate;
+      delete failed[candidate.slug];
+      break;
+    } catch (err) {
+      tried.push(candidate.slug);
+      failed[candidate.slug] = {
+        count: (failed[candidate.slug]?.count || 0) + 1,
+        lastError: String(err.message).slice(0, 300),
+        lastDate: new Date().toISOString().slice(0, 10)
+      };
+      console.warn(`[Topic Failed] "${candidate.slug}" could not be generated. Moving to the next topic.\n`);
+      if (customTopic) break;
+    }
+  }
+
+  saveFailed(failed);
+
+  if (!result) {
+    throw new Error(`All ${tried.length} attempted topics failed (${tried.join(", ")}). Nothing published.`);
+  }
+
+  const targetFile = join(GUIDES_DIR, `${topic.slug}.md`);
 
   if (dryRun) {
     console.log(`\n[DRY RUN] Guide preview for: ${targetFile}\n`);
@@ -356,12 +472,12 @@ async function main() {
   }
 
   if (args.includes("--publish")) {
-    console.log(`\nPushing ${targetTopic.slug} to Supabase...`);
+    console.log(`\nPushing ${topic.slug} to Supabase...`);
     const { execSync } = await import("node:child_process");
-    execSync(`node scripts/push-guides.mjs ${targetTopic.slug}`, { stdio: "inherit" });
+    execSync(`node scripts/push-guides.mjs ${topic.slug}`, { stdio: "inherit" });
   } else {
     console.log(`\nNext steps:`);
-    console.log(`1. Review the file: src/content/guides/${targetTopic.slug}.md`);
+    console.log(`1. Review the file: src/content/guides/${topic.slug}.md`);
     console.log(`2. Push to Supabase when ready: npm run push-guides`);
   }
 }
