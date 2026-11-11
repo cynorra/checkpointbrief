@@ -1,0 +1,33 @@
+---
+// Vanilla mobile menu (no React): a native <dialog> used as a right-hand sheet.
+interface Props { nav: { href: string; label: string }[]; secondary: { href: string; label: string }[]; siteName: string }
+const { nav, secondary, siteName } = Astro.props;
+---
+<button type="button" id="mnav-open" aria-label="Open menu" aria-haspopup="dialog"
+  class="hover:bg-accent inline-flex size-9 items-center justify-center rounded-md transition-colors md:hidden">
+  <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+</button>
+<dialog id="mnav" aria-label="Menu" class="bg-background text-foreground fixed top-0 right-0 left-auto m-0 h-dvh max-h-none w-72 max-w-[85vw] border-l p-0 shadow-xl backdrop:bg-black/50">
+  <div class="flex items-center justify-between p-4">
+    <span class="font-display text-lg font-extrabold">{siteName}</span>
+    <button type="button" id="mnav-close" aria-label="Close menu" class="hover:bg-accent inline-flex size-9 items-center justify-center rounded-md">
+      <svg class="size-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile" class="flex flex-col px-2">
+    {nav.map((l) => (
+      <a href={l.href} class="text-foreground hover:bg-accent rounded-md px-3 py-2.5 text-base font-medium no-underline">{l.label}</a>
+    ))}
+    <hr class="my-3" />
+    {secondary.map((l) => (
+      <a href={l.href} class="text-muted-foreground hover:text-foreground rounded-md px-3 py-1.5 text-sm no-underline">{l.label}</a>
+    ))}
+  </nav>
+</dialog>
+<script>
+  const dlg = document.getElementById("mnav") as HTMLDialogElement | null;
+  document.getElementById("mnav-open")?.addEventListener("click", () => dlg?.showModal());
+  document.getElementById("mnav-close")?.addEventListener("click", () => dlg?.close());
+  dlg?.addEventListener("click", (e) => { if (e.target === dlg) dlg.close(); });
+  dlg?.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => dlg.close()));
+</script>
