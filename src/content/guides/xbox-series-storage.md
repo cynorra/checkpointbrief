@@ -24,7 +24,7 @@ The advertised drive capacity on retail boxes does not reflect the space availab
 </table>
 </div>
 
-The 512 GB base Xbox Series S faces the most severe storage bottleneck. With upcoming current-gen blockbusters like [GTA 6 expected around 150–210 GB](/guides/gta-6-file-size/), a single game can consume well over half of the Series S's entire usable drive.
+The 512 GB base Xbox Series S faces the most severe storage bottleneck. With upcoming current-gen blockbusters like [GTA 6, which needs up to 212 GB to pre-load](/guides/gta-6-file-size/), a single game can consume well over half of the Series S's entire usable drive.
 
 ## Storage Expansion Cards vs. External USB Drives
 

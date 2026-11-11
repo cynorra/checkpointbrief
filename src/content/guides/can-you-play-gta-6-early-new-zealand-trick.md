@@ -40,7 +40,7 @@ In this scenario, New Zealand players would actually unlock *later* than U.S. Ea
 
 ## Navigating GTA 6's Actual Unlock Schedule and Pre-Load Prerequisites
 
-Since early access via region manipulation is not viable, players must focus on ensuring their console is ready for the official global unlock. Grand Theft Auto VI's pre-load period begins on **November 12, 2026**, allowing players to download the full game data ahead of launch.
+Since early access via region manipulation is not viable, players must focus on ensuring their console is ready for the official global unlock. Grand Theft Auto VI's pre-load opened on **November 10, 2026**, allowing players to download the full game data ahead of launch. Rockstar Support says the game itself unlocks at midnight local time on November 19 in every region.
 
 **Pre-Load Configuration for Seamless Day-One Access:**
 

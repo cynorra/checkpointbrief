@@ -1,14 +1,14 @@
 ---
 title: "How to Clear PS5 Storage for GTA 6 Without Losing Saves"
-description: "Free up PS5 space before the GTA 6 pre-load: move PS4 games to USB, clear captures and back up saves. File size is still unconfirmed by Rockstar."
+description: "Free up PS5 space before the GTA 6 pre-load: move PS4 games to USB, clear captures and back up saves. Rockstar says the pre-load needs up to 212 GB."
 published: 2026-11-13
 tool: general
 ---
-**To make room for Grand Theft Auto 6 on a PS5, move PS4 games to a USB extended-storage drive, delete or copy large video captures, and confirm your saves are backed up to the cloud.** Rockstar has not confirmed the final file size (store listings point to roughly 210 GB, see our [GTA 6 file size guide](/guides/gta-6-file-size/)), so aim for more free space than you think you need before the November 12, 2026 pre-load.
+**To make room for Grand Theft Auto 6 on a PS5, move PS4 games to a USB extended-storage drive, delete or copy large video captures, and confirm your saves are backed up to the cloud.** Rockstar says the pre-load needs up to 212 GB (see our [GTA 6 file size guide](/guides/gta-6-file-size/)), so aim for more free space than you think you need. Pre-loading has been open since November 10, 2026.
 
 ## Assessing Current PS5 Storage & Identifying Data Targets
 
-Before initiating any data transfers or deletions, it is critical to understand the current storage allocation on your PlayStation 5. Rockstar has not announced the final install size of Grand Theft Auto 6; store listings reportedly point to around 210 GB, so plan for a very large download. Identifying the largest non-essential data blocks is the first step.
+Before initiating any data transfers or deletions, it is critical to understand the current storage allocation on your PlayStation 5. Rockstar says the Grand Theft Auto 6 pre-load needs up to 212 GB of free space, so plan for a very large download. Identifying the largest non-essential data blocks is the first step.
 
 **To check your PS5's current storage:**
 1.  Navigate to **Settings** (gear icon on the Home screen).
@@ -77,10 +77,10 @@ Game save files are small but critical. Deleting them without a backup means los
 
 ## Preparing for GTA 6 Pre-Load and Installation
 
-With internal storage cleared, the final steps involve configuring your PS5 for a seamless Grand Theft Auto 6 pre-load and installation. Pre-loading for GTA 6 is scheduled to begin on November 12, 2026, one week before its November 19, 2026 launch.
+With internal storage cleared, the final steps involve configuring your PS5 for a seamless Grand Theft Auto 6 pre-load and installation. Pre-loading for GTA 6 opened on November 10, 2026, and the game unlocks at midnight local time on November 19, 2026.
 
 **Key Preparations:**
-*   **Confirm Space:** Double-check your available Console Storage via **Settings > Storage**. Leave a comfortable margin above the reported ~210 GB figure until Rockstar confirms the real size.
+*   **Confirm Space:** Double-check your available Console Storage via **Settings > Storage**. Leave a comfortable margin above Rockstar's 212 GB figure.
 *   **Enable Automatic Downloads:** This ensures the pre-load initiates automatically once available.
     *   Go to **Settings > System > Power Saving > Features Available in Rest Mode**.
     *   Ensure **Stay Connected to the Internet** is enabled.

@@ -1,18 +1,18 @@
 ---
 title: "GTA 6 File Size: What's Known and How Much Space to Free"
-description: "GTA 6 is reportedly 210 GB on PS5, per store data, though Rockstar hasn't confirmed it. How much space you need on each PS5 and Xbox, and how to clear room."
+description: "GTA 6 needs up to 212 GB of free space to pre-load, says Rockstar. How much that is on each PS5 and Xbox, plus how to clear room."
 published: 2026-10-21
-updated: 2026-10-29
+updated: 2026-11-11
 tool: gta6
 ---
 
-**GTA 6 is reportedly about 210 GB on PS5 and PS5 Pro, but Rockstar has not confirmed it.** The figure comes from PlayStation Game Size, which reads PlayStation Store data, and was repeated by outlets such as [Beebom](https://beebom.com/gta-6-download-size/) and [GTA Intel](https://gtaintel.com/news/gta-6-preload-file-size-launch-times). For Xbox there is no confirmed number: the Xbox listing has shown only a placeholder, though a similar size is expected. Plan to have **at least 250 GB free** before pre-loading starts on November 12, which covers the reported size plus a day-one patch.
+**GTA 6 needs up to 212 GB of free space to pre-load, according to Rockstar.** The company's [pre-load FAQ](https://support.rockstargames.com/articles/7nPqOA2uCbpEQHXx7KVrYd/grand-theft-auto-vi-pre-load-faq) says the pre-load "will require up to 212 GB of available space depending on your device." That is an official figure, and it is close to the roughly 210 GB that PlayStation Store data had suggested earlier. Plan to have **at least 250 GB free**, which covers the 212 GB plus a day-one patch.
 
 ## Ignore the viral numbers
 
-You've probably seen tables claiming 150, 300 or even 750 GB. Those don't come from Rockstar or a store listing. One widely shared figure came from a parody account, and a supposed "GTA 6 download" passed around online turned out to be mostly padding bundled with malware. Never download a "GTA 6 file" from anywhere except your console's official store. The 210 GB figure at least comes from store data, but until Rockstar or the store itself confirms it, it is still a report.
+You've probably seen tables claiming 150, 300 or even 750 GB. Those don't come from Rockstar or a store listing. One widely shared figure came from a parody account, and a supposed "GTA 6 download" passed around online turned out to be mostly padding bundled with malware. Never download a "GTA 6 file" from anywhere except your console's official store. The 212 GB figure is the one Rockstar itself publishes.
 
-## How 210 GB compares with Rockstar's earlier games
+## How 212 GB compares with Rockstar's earlier games
 
 <div class="table-wrap">
 <table>
@@ -25,25 +25,25 @@ You've probably seen tables claiming 150, 300 or even 750 GB. Those don't come f
 </table>
 </div>
 
-At 210 GB, GTA 6 would be roughly twice the size of Red Dead Redemption 2's advertised minimum and well over double GTA V on PS5. That fits a game built only for current consoles, with a much denser world. The day-one patch would add more on top.
+At 212 GB, GTA 6 is roughly twice the size of Red Dead Redemption 2's advertised minimum and well over double GTA V on PS5. That fits a game built only for current consoles, with a much denser world. A day-one patch may add more on top.
 
-## What 210 GB means for each console
+## What 212 GB means for each console
 
 <div class="table-wrap">
 <table>
-<thead><tr><th>Console</th><th>Usable space</th><th>Share used by 210 GB</th><th>Left afterwards</th></tr></thead>
+<thead><tr><th>Console</th><th>Usable space</th><th>Share used by 212 GB</th><th>Left afterwards</th></tr></thead>
 <tbody>
-<tr><td>PS5 (original)</td><td>667 GB</td><td>about 31%</td><td>about 457 GB</td></tr>
-<tr><td>PS5 Slim</td><td>about 842 GB</td><td>about 25%</td><td>about 632 GB</td></tr>
+<tr><td>PS5 (original)</td><td>667 GB</td><td>about 32%</td><td>about 455 GB</td></tr>
+<tr><td>PS5 Slim</td><td>about 842 GB</td><td>about 25%</td><td>about 630 GB</td></tr>
 <tr><td>PS5 Pro</td><td>about 1.89 TB</td><td>about 11%</td><td>about 1.68 TB</td></tr>
-<tr><td>Xbox Series X</td><td>802 GB</td><td>about 26%</td><td>about 592 GB</td></tr>
-<tr><td>Xbox Series S (512 GB)</td><td>364 GB</td><td>about 58%</td><td>about 154 GB</td></tr>
+<tr><td>Xbox Series X</td><td>802 GB</td><td>about 27%</td><td>about 588 GB</td></tr>
+<tr><td>Xbox Series S (512 GB)</td><td>364 GB</td><td>about 58%</td><td>about 152 GB</td></tr>
 <tr><td>Xbox Series S (1 TB)</td><td>about 800 GB</td><td>about 26%</td><td>about 590 GB</td></tr>
 </tbody>
 </table>
 </div>
 
-The 512 GB Xbox Series S stands out. After GTA 6 it has about 154 GB left, which is room for a couple of other big games at most. If that's your console, decide now what to delete or buy storage.
+The 512 GB Xbox Series S stands out. After GTA 6 it has about 152 GB left, which is room for a couple of other big games at most. If that's your console, decide now what to delete or buy storage.
 
 ## Space numbers by console (before GTA 6)
 
@@ -81,13 +81,13 @@ The **512 GB Xbox Series S** is the tightest fit. A game of 150 GB would take up
 
 Only if you can't comfortably fit it. A simple rule: after installing GTA 6, you should still have 100 GB or more free for updates and other games. If the table above leaves you below that, storage is a sensible purchase. If you're on a PS5 Pro or a 1 TB console, you likely don't need one.
 
-Also keep a few extra gigabytes free during the download. Consoles need working space while installing, so a drive with exactly 210 GB free can still fail.
+Also keep a few extra gigabytes free during the download. Consoles need working space while installing, so a drive with exactly 212 GB free can still fail.
 
 ## Does the file size differ by edition?
 
 No. The Standard and Ultimate editions use the same game files; the extra content in the Ultimate Edition is a small addition, not a separate install. See [price and editions](/guides/gta-6-price-and-editions/).
 
-When Rockstar or a store confirms the size, we'll update this page. For the download itself, see the [GTA 6 pre-load guide](/guides/gta-6-pre-load/), which also has download times by internet speed.
+If Rockstar changes the size, we'll update this page. For the download itself, see the [GTA 6 pre-load guide](/guides/gta-6-pre-load/), which also has download times by internet speed.
 
 ## Official Sources and Verification
 

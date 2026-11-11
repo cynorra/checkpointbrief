@@ -217,7 +217,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     tool: "releases",
     primaryKeyword: "gta 6 nintendo switch 2",
     formatType: "Hardware Architecture Deep Dive",
-    clickHook: "Evaluates Switch 2's rumored 12GB RAM and DLSS capabilities against GTA 6's heavy CPU simulation and very large reported storage footprint (about 210 GB, unconfirmed by Rockstar).",
+    clickHook: "Evaluates Switch 2's rumored 12GB RAM and DLSS capabilities against GTA 6's heavy CPU simulation and very large storage footprint (Rockstar says the pre-load needs up to 212 GB).",
     sources: [
       { label: "Digital Foundry Switch 2 Hardware Analysis", href: "https://www.eurogamer.net/digitalfoundry" }
     ]

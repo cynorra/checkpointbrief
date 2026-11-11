@@ -6,7 +6,7 @@ updated: 2026-11-06
 tool: gta6
 ---
 
-**GTA 6 unlocks on November 19, 2026, and digital pre-loading begins a full week earlier on November 12.** Most launch-day delays—stalled downloads, insufficient SSD space, forgotten account credentials, or day-one patch queues—can be completely avoided with proactive preparation. Work through this ten-step technical checklist during launch week to ensure your console is ready to boot the moment the servers unlock.
+**GTA 6 unlocks at midnight local time on November 19, 2026, and digital pre-loading has been open since November 10.** Most launch-day delays—stalled downloads, insufficient SSD space, forgotten account credentials, or day-one patch queues—can be completely avoided with proactive preparation. Work through this ten-step technical checklist during launch week to ensure your console is ready to boot the moment the servers unlock.
 
 ## Launch Week Milestone Schedule
 
@@ -14,14 +14,14 @@ tool: gta6
 <table>
 <thead><tr><th>#</th><th>Action Item</th><th>Target Timeline</th><th>Platform</th></tr></thead>
 <tbody>
-<tr><td>1</td><td>Free up at least 200 GB + 30 GB unpack buffer</td><td>Before Nov 12</td><td>PS5 &amp; Xbox Series X|S</td></tr>
-<tr><td>2</td><td>Install pending console firmware updates</td><td>Before Nov 12</td><td>PS5 &amp; Xbox Series X|S</td></tr>
-<tr><td>3</td><td>Configure background Rest Mode &amp; auto-download settings</td><td>Before Nov 12</td><td>PS5 &amp; Xbox Series X|S</td></tr>
-<tr><td>4</td><td>Verify Rockstar Social Club account linking and enable 2FA</td><td>Before Nov 12</td><td>Rockstar Games Account</td></tr>
-<tr><td>5</td><td>Confirm pre-order purchase and billing status</td><td>Before Nov 12</td><td>PlayStation Store / Xbox Store</td></tr>
-<tr><td>6</td><td>Initiate pre-load (or redeem physical case download voucher)</td><td>Nov 12</td><td>PS5 &amp; Xbox Series X|S</td></tr>
+<tr><td>1</td><td>Free up at least 200 GB + 30 GB unpack buffer</td><td>Now</td><td>PS5 &amp; Xbox Series X|S</td></tr>
+<tr><td>2</td><td>Install pending console firmware updates</td><td>Now</td><td>PS5 &amp; Xbox Series X|S</td></tr>
+<tr><td>3</td><td>Configure background Rest Mode &amp; auto-download settings</td><td>Now</td><td>PS5 &amp; Xbox Series X|S</td></tr>
+<tr><td>4</td><td>Verify Rockstar Social Club account linking and enable 2FA</td><td>Now</td><td>Rockstar Games Account</td></tr>
+<tr><td>5</td><td>Confirm pre-order purchase and billing status</td><td>Now</td><td>PlayStation Store / Xbox Store</td></tr>
+<tr><td>6</td><td>Initiate pre-load (or redeem physical case download voucher)</td><td>Now (open since Nov 10)</td><td>PS5 &amp; Xbox Series X|S</td></tr>
 <tr><td>7</td><td>Audit download completion queue and verify file integrity</td><td>Nov 13–17</td><td>PS5 &amp; Xbox Series X|S</td></tr>
-<tr><td>8</td><td>Redeem complimentary GTA+ month (if pre-ordered digitally)</td><td>Nov 12–18</td><td>PS5 &amp; Xbox Series X|S</td></tr>
+<tr><td>8</td><td>Redeem complimentary GTA+ month (if pre-ordered digitally)</td><td>Before launch</td><td>PS5 &amp; Xbox Series X|S</td></tr>
 <tr><td>9</td><td>Pre-warm console on launch eve for Day-One patch deployment</td><td>Nov 18 (Launch Eve)</td><td>PS5 &amp; Xbox Series X|S</td></tr>
 <tr><td>10</td><td>Calibrate TV Game Mode, HDR peak brightness, and audio</td><td>Before Launch</td><td>Display / Audio Receiver</td></tr>
 </tbody>
@@ -30,7 +30,7 @@ tool: gta6
 
 ## 1. Storage Audit: Clearing Space and Buffer Sizing
 
-Rockstar has not published the final install size, but PlayStation Store backend metadata suggests approximately 210 GB for the initial install build. Because modern consoles require additional temporary space to decompress compressed download archives, you should maintain at least 240 GB of free space.
+Rockstar says the pre-load needs up to 212 GB of available space, depending on your device. Because consoles also need temporary space while installing, keep at least 240 GB free.
 
 - **On PlayStation 5:** Check available space in **Settings > Storage > Console Storage**. If you are short on room, offload backwards-compatible PS4 titles to an external USB drive, or delete accumulated automatic trophy video captures (**Settings > Captures and Broadcasts > Auto-Captures**). For hardware expansion options, consult our [PS5 SSD installation guide](/guides/ps5-ssd-upgrade/).
 - **On Xbox Series X|S:** Check **Settings > System > Storage devices**. Note that Xbox Series S features only 364 GB of usable internal storage out of the box, meaning GTA 6 may occupy more than half of your total drive. See our [Xbox Series storage breakdown](/guides/xbox-series-storage/) for expansion card considerations.
@@ -57,10 +57,10 @@ Account lockouts and payment declines are among the most common causes of launch
 
 ## 6–7. Pre-Load Execution and File Verification
 
-Pre-loading begins worldwide on **November 12, 2026**. 
+Pre-loading began on **November 10, 2026**: at midnight local time on PS5, and at 12 a.m. GMT on Xbox Series X|S. 
 
 - **Digital Buyers:** If background downloads are enabled, the game will automatically queue into your download manager. Verify progress in the PS5 Control Center (Downloads/Uploads) or Xbox Queue.
-- **Physical Buyers:** As confirmed by Rockstar, physical game cases [do not contain Blu-ray discs](/guides/gta-6-physical-edition-no-disc/). Instead, they contain a printed digital voucher. Once your physical package arrives, redeem the voucher code in the PlayStation Store or Microsoft Store immediately on November 12 to trigger the digital pre-load.
+- **Physical Buyers:** As confirmed by Rockstar, physical game cases [do not contain Blu-ray discs](/guides/gta-6-physical-edition-no-disc/). Instead, they contain a printed digital voucher. Once your physical package arrives, redeem the code in the PlayStation Store or Microsoft Store as soon as you have it. Boxes reach retailers from November 12, and Rockstar says codes can be used as soon as they are received.
 - **Queue Audit:** On November 14 or 15, inspect the completed download to ensure it has not paused with an error code (such as PS5 error CE-100005-6 or Xbox error 0x87e0000f). A paused download left unnoticed will ruin your launch night.
 
 ## 8. Redeeming Your GTA+ Membership Month
@@ -69,7 +69,7 @@ All digital pre-orders include a complimentary one-month subscription to GTA+, r
 
 ## 9. Launch Eve: Day-One Patch and Regional Unlock Timing
 
-Rockstar has not published individual regional unlock windows; consult our [GTA 6 unlock time schedule](/guides/gta-6-unlock-time/) for historical launch cadences. 
+Rockstar says the game unlocks at midnight local time on November 19 in all regions. Find your exact time in our [GTA 6 unlock time table](/guides/gta-6-unlock-time/). 
 
 On the evening of November 18, turn on your console at least four hours before midnight. Day-one stability patches are commonly pushed to CDN servers in the final 12 hours before unlock. Booting your console early allows the patch to download and merge with your pre-loaded game data, avoiding a 15-minute patching queue when the countdown timer reaches zero.
 

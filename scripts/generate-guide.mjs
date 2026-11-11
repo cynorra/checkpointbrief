@@ -119,9 +119,10 @@ function getNextPublishDate() {
   return nextDate.toISOString().slice(0, 10);
 }
 
-const FACT_CONTEXT = `- GTA 6 launches November 19, 2026 on PS5 & Xbox Series X|S. No PC version at launch. Pre-load starts Nov 12, 2026.
-- Physical copies of GTA 6 do NOT include Blu-ray discs; they contain a digital download voucher in the case.
-- Rockstar has NOT confirmed GTA 6's install size. Store listings reportedly point to about 210 GB. Never state any GTA 6 file size as fact; say "reportedly" or avoid giving a number.
+const FACT_CONTEXT = `- GTA 6 launches November 19, 2026 on PS5 & Xbox Series X|S, at midnight local time in every region (Rockstar Support, updated Nov 3, 2026). No PC version at launch.
+- Digital pre-load opened Nov 10, 2026: PS5 at midnight local time in each time zone, Xbox Series X|S at 12 a.m. GMT (Rockstar Support). Physical copies reach retailers from Nov 12, 2026.
+- Physical copies of GTA 6 do NOT include Blu-ray discs; they contain a digital download code in the box, usable as soon as it is received. No physical Ultimate Edition exists; the Ultimate Edition Upgrade is a digital add-on.
+- Rockstar says the GTA 6 pre-load needs up to 212 GB of available space, depending on the device. Do not state any other GTA 6 file size as fact.
 - Rely strictly on verified facts (Rockstar, Sony, Microsoft, Take-Two SEC filings, Epic Games).`;
 
 function buildPrompts(topic, targetDate, feedback) {
@@ -331,7 +332,7 @@ Flag ONLY clear, serious problems that would mislead a reader:
 Never flag any of the following:
 - Style, tone, structure, wording or minor imprecision.
 - Links, link targets, or the titles of other articles on the site.
-- Anything consistent with the known verified context, including hedged mentions of the reported ~210 GB file size.
+- Anything consistent with the known verified context, including Rockstar's 212 GB pre-load figure and its Nov 10 pre-load, Nov 12 physical and midnight-local-time launch facts.
 - General explanations of how consoles or services work.
 
 For each problem give a severity: "high" only if the claim is clearly false or fabricated; otherwise "low". Low issues are ignored.

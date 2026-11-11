@@ -48,7 +48,7 @@ GTA+ is Rockstar's subscription. The press release says digital pre-orders get a
 <tbody>
 <tr><td>Vintage Vice City Pack</td><td>Yes</td><td>Yes</td></tr>
 <tr><td>Free month of GTA+</td><td>Yes (check your platform)</td><td>Not mentioned</td></tr>
-<tr><td>Pre-load from November 12</td><td>Yes</td><td>Yes, after redeeming the code</td></tr>
+<tr><td>Pre-load (open since November 10)</td><td>Yes</td><td>Yes, after redeeming the code</td></tr>
 <tr><td>Edition choice</td><td>Standard or Ultimate</td><td>Standard only</td></tr>
 <tr><td>Can be cheaper at a retailer</td><td>Rarely</td><td>Sometimes</td></tr>
 </tbody>
@@ -62,11 +62,11 @@ The physical copy has no disc: the box holds a download code, so you still downl
 - **Buying on November 20 or later** and missing the Vintage Vice City Pack. The cutoff is before November 20, 2026.
 - **Pre-ordering on the wrong account.** Buy it on the account you actually play on, because purchases are tied to it.
 - **Assuming you get early access.** No edition includes it. See the [release date guide](/guides/gta-6-release-date/).
-- **Skipping the storage check.** The reported install is 210 GB, so make sure you have room before November 12. See the [file size guide](/guides/gta-6-file-size/).
+- **Skipping the storage check.** Rockstar says the pre-load needs up to 212 GB, so make sure you have room. See the [file size guide](/guides/gta-6-file-size/).
 
 ## Is it worth pre-ordering for these?
 
-The bonuses alone aren't a reason to pre-order. The pack is small, and Rockstar often sells or re-releases launch bonuses later. The real advantage of a digital pre-order is **pre-loading**: from November 12, you can download the whole game so it's ready to play the moment it unlocks, instead of waiting on a very large download on launch day.
+The bonuses alone aren't a reason to pre-order. The pack is small, and Rockstar often sells or re-releases launch bonuses later. The real advantage of a digital pre-order is **pre-loading**: since November 10, you can download the whole game so it's ready to play the moment it unlocks, instead of waiting on a very large download on launch day.
 
 If you're certain you'll buy GTA 6 at launch, a digital pre-order gets you both bonuses and the pre-load. If you're not sure yet, there's no rush; the pack is still yours if you buy in launch week.
 

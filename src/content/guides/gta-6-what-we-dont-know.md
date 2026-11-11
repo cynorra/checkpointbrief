@@ -14,7 +14,7 @@ tool: gta6
 <table>
 <thead><tr><th>Question</th><th>Official answer so far</th><th>Best available information</th></tr></thead>
 <tbody>
-<tr><td>File size</td><td>Not published</td><td>PS5 store data reportedly shows about 210 GB; Xbox unconfirmed. See the <a href="/guides/gta-6-file-size/">file size guide</a></td></tr>
+<tr><td>File size</td><td>Pre-load needs up to 212 GB (Rockstar)</td><td>The final size can differ by device. See the <a href="/guides/gta-6-file-size/">file size guide</a></td></tr>
 <tr><td>Unlock time</td><td>Date only (Nov 19)</td><td>Store data suggests midnight Eastern for the US; see <a href="/guides/gta-6-unlock-time/">unlock time</a></td></tr>
 <tr><td>Frame rate</td><td>Not announced</td><td>A podcast rumor mentions a 30 fps quality mode and a 60 fps performance mode; nothing official</td></tr>
 <tr><td>PS5 Pro improvements</td><td>"PS5 Pro Enhanced" label, no details</td><td>See <a href="/guides/gta-6-ps5-vs-xbox/">PS5 vs Xbox</a></td></tr>
@@ -49,7 +49,7 @@ For contrast, these are firm, from Rockstar's own announcements ([official page]
 
 - Release on **November 19, 2026**, on PS5 and Xbox Series X|S.
 - **$79.99** Standard and **$99.99** Ultimate.
-- Pre-load and physical copies on **November 12**.
+- Digital pre-load on **November 10** (open now), physical copies in stores on **November 12**.
 - Vintage Vice City Pack for purchases before November 20; a free GTA+ month for digital pre-orders.
 - Set in **Leonida**, with **Vice City**, starring **Jason Duval and Lucia Caminos**.
 - Rated **M for Mature 17+** by the ESRB.

@@ -63,7 +63,7 @@ Don't try to combine them mathematically. "Three times RDR2" and "twice GTA V" u
 
 ## Why a bigger map means a bigger download
 
-A larger, denser world is part of why the install is expected to be big: PS5 store data points to about 210 GB. That figure is also unconfirmed, and we track it in the [file size guide](/guides/gta-6-file-size/).
+A larger, denser world is part of why the install is expected to be big: Rockstar says the pre-load needs up to 212 GB, and we track it in the [file size guide](/guides/gta-6-file-size/).
 
 ## Why region lists differ between websites
 

@@ -64,7 +64,7 @@ The Series S is less powerful than the Series X and PS5, and has much less stora
 
 ## Storage: the practical difference
 
-The reported install is about 210 GB ([file size guide](/guides/gta-6-file-size/)), unconfirmed. On a base PS5 (about 667 GB usable) that is roughly a third of the drive; on a 512 GB Xbox Series S (about 364 GB usable) it is more than half. If you're on a Series S, storage will matter more than any graphical difference. See the [Xbox Series storage guide](/guides/xbox-series-storage/) and the [PS5 SSD upgrade guide](/guides/ps5-ssd-upgrade/).
+Rockstar says the pre-load needs up to 212 GB ([file size guide](/guides/gta-6-file-size/)). On a base PS5 (about 667 GB usable) that is roughly a third of the drive; on a 512 GB Xbox Series S (about 364 GB usable) it is more than half. If you're on a Series S, storage will matter more than any graphical difference. See the [Xbox Series storage guide](/guides/xbox-series-storage/) and the [PS5 SSD upgrade guide](/guides/ps5-ssd-upgrade/).
 
 ## Quick picks by player type
 

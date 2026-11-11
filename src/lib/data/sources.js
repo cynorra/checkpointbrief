@@ -5,6 +5,10 @@ const CURRENT_CHECKED = new Date().toISOString().slice(0, 10);
 
 export const SOURCES = {
   rockstarVI: { label: "Rockstar Games: Grand Theft Auto VI official page", href: "https://www.rockstargames.com/VI", checked: CURRENT_CHECKED },
+  rockstarTimes: { label: "Rockstar Support: GTA VI regional pre-load and release times on PS5 and Xbox Series X|S (updated Nov 3, 2026)", href: "https://support.rockstargames.com/articles/29jV3Cv2cCgvwM1XgtMO5o/grand-theft-auto-vi-regional-pre-load-and-release-times-on-playstation-5-and-xbox-series-x-or-s", checked: CURRENT_CHECKED },
+  rockstarPreloadFaq: { label: "Rockstar Support: GTA VI Pre-Load FAQ (updated Nov 3, 2026)", href: "https://support.rockstargames.com/articles/7nPqOA2uCbpEQHXx7KVrYd/grand-theft-auto-vi-pre-load-faq", checked: CURRENT_CHECKED },
+  rockstarEditions: { label: "Rockstar Support: GTA VI platforms, editions and versions (updated Nov 4, 2026)", href: "https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions", checked: CURRENT_CHECKED },
+  rockstarPreloadNews: { label: "Rockstar Newswire: Grand Theft Auto VI pre-load begins on November 10", href: "https://www.rockstargames.com/newswire/article/k4ak9okk485712/grand-theft-auto-vi-pre-load-begins-on-november-10", checked: CURRENT_CHECKED },
   notebookcheckPrice: { label: "Notebookcheck: GTA 6 price officially confirmed ahead of pre-orders", href: "https://www.notebookcheck.net/GTA-6-price-officially-confirmed-ahead-of-pre-orders.1327919.0.html", checked: CURRENT_CHECKED },
   wikiVI: { label: "Wikipedia: Grand Theft Auto VI", href: "https://en.wikipedia.org/wiki/Grand_Theft_Auto_VI", checked: CURRENT_CHECKED },
   gamesradarVI: { label: "GamesRadar+: GTA 6, everything we know", href: "https://www.gamesradar.com/gta-6-guide/", checked: CURRENT_CHECKED },

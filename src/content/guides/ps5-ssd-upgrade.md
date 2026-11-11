@@ -54,7 +54,7 @@ The formatting step erases anything already on the SSD. After that, the PS5 show
 
 ## How many big games fit?
 
-Using the reported 210 GB for GTA 6 as an example, a drive with about 900 GB of usable space (a typical 1 TB model) holds about four games that size. A 2 TB drive roughly doubles that. This is just arithmetic to help you size the purchase; real space depends on formatting and what else is installed.
+Using Rockstar's 212 GB pre-load size for GTA 6 as an example, a drive with about 900 GB of usable space (a typical 1 TB model) holds about four games that size. A 2 TB drive roughly doubles that. This is just arithmetic to help you size the purchase; real space depends on formatting and what else is installed.
 
 ## Moving games between drives
 
@@ -75,7 +75,7 @@ That still makes USB useful: park games you're not playing there, and copying th
 
 ## Is it worth doing for GTA 6?
 
-If your free space is under 200 GB, yes, or at least clear space now. Rockstar hasn't confirmed a size, but PS5 store data points to about 210 GB. See [GTA 6 file size](/guides/gta-6-file-size/) for the numbers and the real usable space on each console.
+If your free space is under 200 GB, yes, or at least clear space now. Rockstar says the pre-load needs up to 212 GB. See [GTA 6 file size](/guides/gta-6-file-size/) for the numbers and the real usable space on each console.
 
 ## Official Sources and Verification
 

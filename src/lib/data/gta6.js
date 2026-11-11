@@ -4,9 +4,10 @@
 
 export const UPDATED = new Date().toISOString().slice(0, 10);
 
-/** Console launch day. Unlock times by region had not been published when checked. */
+/** Console launch day. Rockstar Support: releases at midnight local time on this date in all regions. */
 export const RELEASE_DATE = "2026-11-19";
-export const PRELOAD_DATE = "2026-11-12";
+export const PRELOAD_DATE = "2026-11-10";
+export const PHYSICAL_DATE = "2026-11-12";
 export const PREORDER_DATE = "2026-06-25";
 
 export const PLATFORMS = ["PlayStation 5", "Xbox Series X|S"];
@@ -18,7 +19,10 @@ export const FACTS = [
   { label: "Standard Edition", value: "$79.99", source: "notebookcheckPrice" },
   { label: "Ultimate Edition", value: "$99.99", source: "notebookcheckPrice" },
   { label: "Pre-orders opened", value: "June 25, 2026", source: "rockstarPreorderPR" },
-  { label: "Physical copies and pre-load", value: "November 12, 2026 (physical copies hold a download code, no disc)", source: "rockstarPreorderPR" },
+  { label: "Release time", value: "Midnight local time on November 19, 2026, in all regions, on both consoles", source: "rockstarTimes" },
+  { label: "Digital pre-load", value: "From November 10, 2026: PS5 at midnight local time, Xbox Series X|S at 12 a.m. GMT", source: "rockstarTimes" },
+  { label: "Pre-load size", value: "Up to 212 GB, depending on the device", source: "rockstarPreloadFaq" },
+  { label: "Physical copies", value: "In stores from November 12, 2026; a download code in the box, no disc", source: "rockstarEditions" },
   { label: "Setting", value: "The state of Leonida, including Vice City", source: "rockstarVI" },
   { label: "Protagonists", value: "Jason Duval and Lucia Caminos", source: "wikiVI" },
   { label: "Developer and publisher", value: "Rockstar Games (Take-Two Interactive)", source: "wikiVI" },
@@ -64,7 +68,8 @@ export const TIMELINE = [
   { date: "2026-06-25", event: "Pre-orders open.", source: "wikiVI" },
   { date: "2026-08-27", event: "An extended gameplay look premieres.", source: "wikiVI" },
   { date: "2026-10-15", event: "The launch trailer is released.", source: "rockstarVI" },
-  { date: "2026-11-12", event: "Physical copies (download codes, no disc) and pre-loading.", source: "wikiVI" },
+  { date: "2026-11-10", event: "Digital pre-loading opens: midnight local time on PS5, 12 a.m. GMT on Xbox Series X|S.", source: "rockstarTimes" },
+  { date: "2026-11-12", event: "Physical copies (download codes, no disc) reach retailers.", source: "rockstarEditions" },
   { date: "2026-11-19", event: "Launch on PlayStation 5 and Xbox Series X|S.", source: "rockstarVI" },
 ].sort((a, b) => a.date.localeCompare(b.date));
 

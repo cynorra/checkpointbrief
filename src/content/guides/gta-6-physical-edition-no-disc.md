@@ -6,7 +6,7 @@ updated: 2026-10-29
 tool: gta6
 ---
 
-**The physical edition of GTA 6 does not include a disc. The box contains a code you redeem for the digital download.** Rockstar confirmed this in its pre-order details: "Physical copies of GTAVI will contain a code that can be redeemed for the digital download of the game. A disc will not be included in the box" ([Push Square](https://www.pushsquare.com/news/2026/06/gta-6-physical-edition-doesnt-come-with-discs-its-a-code-in-the-box)). The boxes go on sale November 12, 2026, the same day pre-loading starts.
+**The physical edition of GTA 6 does not include a disc. The box contains a code you redeem for the digital download.** Rockstar confirmed this in its pre-order details: "Physical copies of GTAVI will contain a code that can be redeemed for the digital download of the game. A disc will not be included in the box" ([Push Square](https://www.pushsquare.com/news/2026/06/gta-6-physical-edition-doesnt-come-with-discs-its-a-code-in-the-box)). Rockstar says boxes are expected at retailers from November 12, 2026, and that the codes inside can be used as soon as they are received ([Rockstar Support](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions)).
 
 ## What's in the box
 
@@ -14,7 +14,7 @@ tool: gta6
 - A download code for the Standard Edition on PS5 or Xbox Series X|S
 - No disc
 
-Only the Standard Edition ($79.99) has a physical version. The Ultimate Edition is digital only: Rockstar Support reportedly says a physical Ultimate Edition doesn't exist, and boxed buyers who want the Ultimate content can add the $20 upgrade after redeeming their Standard code ([gta6.how](https://gta6.how/news/gta-6-ultimate-edition-digital-only/)). That makes the boxed route $99.99 in total for the same content.
+Only the Standard Edition ($79.99) has a physical version. The Ultimate Edition is digital only: Rockstar Support says "a physical version of the Grand Theft Auto VI: Ultimate Edition is not available," and that physical Standard owners can buy the Ultimate Edition Upgrade from the PlayStation or Microsoft stores after using their Standard code ([Rockstar Support](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions)). That makes the boxed route $99.99 in total for the same content.
 
 ## What "code in a box" means in practice
 
@@ -45,7 +45,7 @@ There are still a few good reasons:
 ## Reasons to buy digital instead
 
 - **The GTA+ month.** Rockstar's free month of GTA+ is for digital pre-orders; it isn't mentioned for physical copies. See [GTA 6 pre-order bonuses](/guides/gta-6-pre-order-bonuses/).
-- **Pre-load timing.** A digital pre-order starts downloading on November 12 automatically. With a box, you need to have it in hand and redeem it first.
+- **Pre-load timing.** A digital pre-order could start pre-loading on November 10 automatically. With a box, you need to have it in hand and redeem the code first.
 - **Ultimate Edition.** It's only sold digitally.
 
 ## How to redeem the code

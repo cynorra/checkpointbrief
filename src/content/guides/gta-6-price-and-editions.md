@@ -60,7 +60,7 @@ Some things don't depend on which edition you pick:
 - the full story and the full open world;
 - the **Vintage Vice City Pack** pre-order bonus, if you buy before November 20.
 
-Beyond that, a free month of GTA+ (Rockstar's subscription) is reported for **digital pre-orders only**, and one outlet says Xbox pre-orders don't get it, so check your store's listing.
+Beyond that, digital pre-orders and purchases before November 20 include one month of GTA+ (Rockstar's subscription), per [Rockstar Support](https://support.rockstargames.com/articles/4QfG4FmZCf5W1gS8jy4UVT/grand-theft-auto-vi-platform-editions-and-versions). Rockstar lists the Vintage Vice City Pack for physical pre-orders but does not list the GTA+ month for them.
 
 See what the pre-order bonuses actually are in our [pre-order bonuses guide](/guides/gta-6-pre-order-bonuses/).
 
@@ -68,7 +68,7 @@ See what the pre-order bonuses actually are in our [pre-order bonuses guide](/gu
 
 The sticker price isn't the whole bill. Before you pay, add up:
 
-- **Storage:** the reported 210 GB install ([see the file size guide](/guides/gta-6-file-size/)) will not fit comfortably on a nearly full console. If you need a new SSD, that cost belongs in your budget. The [PS5 SSD upgrade guide](/guides/ps5-ssd-upgrade/) and [Xbox storage guide](/guides/xbox-series-storage/) show what's compatible.
+- **Storage:** the 212 GB pre-load ([see the file size guide](/guides/gta-6-file-size/)) will not fit comfortably on a nearly full console. If you need a new SSD, that cost belongs in your budget. The [PS5 SSD upgrade guide](/guides/ps5-ssd-upgrade/) and [Xbox storage guide](/guides/xbox-series-storage/) show what's compatible.
 - **Online:** a PlayStation Plus or Xbox subscription is normally required for online multiplayer on console. Whether GTA 6's online mode needs one hasn't been confirmed, so check before assuming.
 - **Physical vs digital:** the physical Standard Edition is a box with a download code, not a disc, so it doesn't save you the download. It only helps if you find it cheaper at a retailer. See [why GTA 6 has no disc](/guides/gta-6-physical-edition-no-disc/).
 

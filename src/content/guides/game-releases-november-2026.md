@@ -31,7 +31,7 @@ For a filterable version that updates as dates change, see the [release date cal
 
 ## The big one: GTA 6
 
-GTA 6 launches November 19 at $79.99 for the Standard Edition. Digital pre-orders can download it from November 12, and physical copies, which hold a download code instead of a disc, go on sale the same day. Everything confirmed, with sources, is in the [GTA 6 release date guide](/guides/gta-6-release-date/).
+GTA 6 launches November 19 at $79.99 for the Standard Edition. It unlocks at midnight local time. Digital pre-orders have been able to pre-load since November 10, and physical copies, which hold a download code instead of a disc, reach retailers on November 12. Everything confirmed, with sources, is in the [GTA 6 release date guide](/guides/gta-6-release-date/).
 
 ## Why November is so quiet otherwise
 

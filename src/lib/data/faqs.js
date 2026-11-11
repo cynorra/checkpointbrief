@@ -1,7 +1,7 @@
 // FAQ answers shown on hub pages and emitted as FAQPage schema. Keep answers
 // short, plain text and consistent with the data modules.
 export const GTA6_FAQ = [
-  { q: "When does GTA 6 come out?", a: "November 19, 2026, on PlayStation 5 and Xbox Series X|S. Pre-loading opens November 12." },
+  { q: "When does GTA 6 come out?", a: "November 19, 2026, on PlayStation 5 and Xbox Series X|S. It unlocks at midnight local time in every region, and digital pre-loading opened November 10." },
   { q: "How much is GTA 6?", a: "$79.99 for the Standard Edition and $99.99 for the Ultimate Edition in the US." },
   { q: "Is GTA 6 on PC?", a: "Not at launch. No PC version or PC date has been announced." },
   { q: "Is GTA 6 on PS4 or Xbox One?", a: "No. It's only on PS5 and Xbox Series X|S." },

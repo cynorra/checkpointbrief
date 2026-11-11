@@ -55,7 +55,7 @@ Rockstar hasn't announced a cloud version of GTA 6 on any service, so there's no
 
 ## Should you upgrade or wait?
 
-- **You want to play on launch day:** you need a PS5, Xbox Series X or Series S before November 19. Remember the game is reportedly about 210 GB ([file size guide](/guides/gta-6-file-size/)), so storage matters on the cheapest models.
+- **You want to play on launch day:** you need a PS5, Xbox Series X or Series S before November 19. Remember the pre-load needs up to 212 GB ([file size guide](/guides/gta-6-file-size/)), so storage matters on the cheapest models.
 - **You can wait:** console prices tend to dip around big shopping seasons, but nothing guarantees a discount near launch.
 - **You only care about the story:** a Series S is enough to play the single-player game, with the caveats above.
 
