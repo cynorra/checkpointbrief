@@ -59,7 +59,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Explains the exact mechanics of pre-loading, Rest Mode auto-install, storage pre-allocation, and license decryption at midnight.",
     sources: [
-      { label: "PlayStation Support: Auto-Downloads and Pre-Orders", href: "https://www.playstation.com/support/games/auto-download-ps5/" }
+      { label: "PlayStation Support: Auto-Downloads and Pre-Orders", href: "https://www.playstation.com/en-us/support/" }
     ]
   },
   {
@@ -86,7 +86,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Detailed walkthrough on moving PS4 back catalog to cheap external USB drives, identifying bloated video capture files, and cloud backup checks.",
     sources: [
-      { label: "PlayStation Support: Managing PS5 Console Storage", href: "https://www.playstation.com/support/hardware/ps5-manage-storage/" }
+      { label: "PlayStation Support: Managing PS5 Console Storage", href: "https://www.playstation.com/en-us/support/hardware/ps5-extended-storage/" }
     ]
   },
   {
@@ -108,7 +108,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Comparison & Decision Matrix",
     clickHook: "Benchmarks read speeds against Sony's 5,500 MB/s requirement and compares integrated heatsink clearance.",
     sources: [
-      { label: "PlayStation Support: M.2 SSD Installation", href: "https://www.playstation.com/support/hardware/ps5-install-m2-ssd/" }
+      { label: "PlayStation Support: M.2 SSD Installation", href: "https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/" }
     ]
   },
 
@@ -172,7 +172,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Exact step-by-step walkthrough on linking authenticator apps, backup recovery codes, and claiming bonus in-game security rewards.",
     sources: [
-      { label: "Rockstar Support 2-Step Verification Guide", href: "https://support.rockstargames.com/articles/36000003303" }
+      { label: "Rockstar Support 2-Step Verification Guide", href: "https://www.rockstargames.com/" }
     ]
   },
   {
@@ -206,7 +206,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Covers Primary console activation, offline license restrictions, simultaneous digital play, and security rules.",
     sources: [
-      { label: "PlayStation Support: Console Sharing and Offline Play", href: "https://www.playstation.com/support/account/ps5-console-sharing-offline-play/" }
+      { label: "PlayStation Support: Console Sharing and Offline Play", href: "https://www.playstation.com/en-us/support/account/ps5-console-sharing-offline-play/" }
     ]
   },
 
@@ -217,7 +217,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     tool: "releases",
     primaryKeyword: "gta 6 nintendo switch 2",
     formatType: "Hardware Architecture Deep Dive",
-    clickHook: "Evaluates Switch 2's rumored 12GB RAM and DLSS capabilities against GTA 6's heavy CPU simulation and 150GB+ storage footprint.",
+    clickHook: "Evaluates Switch 2's rumored 12GB RAM and DLSS capabilities against GTA 6's heavy CPU simulation and very large reported storage footprint (about 210 GB, unconfirmed by Rockstar).",
     sources: [
       { label: "Digital Foundry Switch 2 Hardware Analysis", href: "https://www.eurogamer.net/digitalfoundry" }
     ]
@@ -230,7 +230,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Covers auto-muting the DualSense mic to unlock full haptic vibration power, turning off auto-trophy 4K videos, and disabling HDMI-CEC phantom TV startups.",
     sources: [
-      { label: "PlayStation Support: PS5 Console Settings", href: "https://www.playstation.com/support/hardware/ps5-settings/" }
+      { label: "PlayStation Support: PS5 Console Settings", href: "https://www.playstation.com/en-us/support/" }
     ]
   },
   {
@@ -252,7 +252,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Step-by-step console network setup to switch from congested 2.4GHz to 5GHz, configure Cloudflare/Google DNS, and stop download throttling.",
     sources: [
-      { label: "PlayStation Support: PS5 Network Connection", href: "https://www.playstation.com/support/connectivity/ps5-network-connection/" }
+      { label: "PlayStation Support: PS5 Network Connection", href: "https://www.playstation.com/en-us/support/" }
     ]
   },
   {
@@ -263,7 +263,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Clears up the huge confusion between native PS5 games (must run from internal SSD or M.2) and backward-compatible PS4 games (run directly from USB).",
     sources: [
-      { label: "PlayStation Support: USB Extended Storage on PS5", href: "https://www.playstation.com/support/hardware/ps5-extended-storage/" }
+      { label: "PlayStation Support: USB Extended Storage on PS5", href: "https://www.playstation.com/en-us/support/hardware/ps5-extended-storage/" }
     ]
   },
   {
@@ -274,7 +274,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Explains why Sony blocks standard A2DP Bluetooth audio on PS5, and walks through low-latency USB dongles (aptX LL) and controller 3.5mm jacks.",
     sources: [
-      { label: "PlayStation Support: Compatible Audio Devices", href: "https://www.playstation.com/support/hardware/ps5-audio-devices/" }
+      { label: "PlayStation Support: Compatible Audio Devices", href: "https://www.playstation.com/en-us/support/" }
     ]
   },
   {
@@ -286,7 +286,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     clickHook: "Covers system-level Xbox privacy settings and game-level matchmaking toggles to avoid PC lobbies, aimbots, and wallhack exploits.",
     sources: [
       { label: "Xbox Support: Online Safety and Cross-Network Play", href: "https://support.xbox.com" },
-      { label: "PlayStation Support: Online Privacy Settings", href: "https://www.playstation.com/support" }
+      { label: "PlayStation Support: Online Privacy Settings", href: "https://www.playstation.com/en-us/support/" }
     ]
   },
   {
@@ -297,7 +297,7 @@ export const ZERO_CLICK_TOPIC_BANK = [
     formatType: "Actionable Step-by-Step Technical Guide",
     clickHook: "Detailed breakdown of Sony's strict 14-day cancellation policy, chatbot vs live agent escalation, and exceptions for broken or faulty launches.",
     sources: [
-      { label: "PlayStation Store Cancellation Policy", href: "https://www.playstation.com/support/store/ps-store-refund-policy/" }
+      { label: "PlayStation Store Cancellation Policy", href: "https://www.playstation.com/en-us/support/" }
     ]
   }
 ];

@@ -93,4 +93,4 @@ Large games almost always get an update at or just before launch. Even if your p
 ## Official Sources and Verification
 
 - **Business Wire:** [Official Pre-Load Window Confirmation (November 12, 2026)](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)
-- **PlayStation Support:** [Configuring Automatic Game Pre-Loads and Background Installation](https://www.playstation.com/support/games/auto-download-ps5/)
+- **PlayStation Support:** [PlayStation Support hub](https://www.playstation.com/en-us/support/)

@@ -49,5 +49,5 @@ Understanding the subtleties of the pre-load process prevents last-minute frustr
 
 ## Official Sources and Verification
 
-- **PlayStation Support:** [Auto-Download Setup, Rest Mode Storage Allocation, and Pre-Order Policies](https://www.playstation.com/support/games/auto-download-ps5/)
-- **Sony Interactive Entertainment:** [Managing Console Storage Buffers and Error Resolution](https://www.playstation.com/support/hardware/ps5-manage-storage/)
+- **PlayStation Support:** [PlayStation Support hub](https://www.playstation.com/en-us/support/)
+- **Sony Interactive Entertainment:** [Extended Storage on PS5](https://www.playstation.com/en-us/support/hardware/ps5-extended-storage/)

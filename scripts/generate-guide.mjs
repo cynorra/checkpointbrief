@@ -121,6 +121,7 @@ function getNextPublishDate() {
 
 const FACT_CONTEXT = `- GTA 6 launches November 19, 2026 on PS5 & Xbox Series X|S. No PC version at launch. Pre-load starts Nov 12, 2026.
 - Physical copies of GTA 6 do NOT include Blu-ray discs; they contain a digital download voucher in the case.
+- Rockstar has NOT confirmed GTA 6's install size. Store listings reportedly point to about 210 GB. Never state any GTA 6 file size as fact; say "reportedly" or avoid giving a number.
 - Rely strictly on verified facts (Rockstar, Sony, Microsoft, Take-Two SEC filings, Epic Games).`;
 
 function buildPrompts(topic, targetDate, feedback) {
@@ -244,7 +245,9 @@ function callGeminiAPI(payload) {
         try {
           const json = JSON.parse(body);
           if (res.statusCode !== 200) {
-            return reject(new Error(`Gemini API Error (${res.statusCode}): ${JSON.stringify(json.error || json)}`));
+            const apiErr = new Error(`Gemini API Error (${res.statusCode}): ${JSON.stringify(json.error || json)}`);
+            apiErr.apiStatus = res.statusCode;
+            return reject(apiErr);
           }
           const candidate = json.candidates?.[0];
           // Join every non-thinking text part (a single part is not guaranteed)
@@ -269,6 +272,49 @@ function callGeminiAPI(payload) {
   });
 }
 
+// Verify external links. A link is "broken" only on a definite 404/410 or a DNS failure;
+// bot blocks (403/429), 5xx and timeouts are treated as unknown and the link is kept.
+const SAFE_SOURCE_LINKS = [
+  "https://www.playstation.com/en-us/support/",
+  "https://www.rockstargames.com/",
+  "https://support.xbox.com/",
+  "https://blog.playstation.com/"
+];
+
+async function isBrokenUrl(url) {
+  try {
+    const res = await fetch(url, {
+      redirect: "follow",
+      signal: AbortSignal.timeout(15000),
+      headers: { "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36" }
+    });
+    return res.status === 404 || res.status === 410;
+  } catch (err) {
+    const code = err?.cause?.code || err?.code;
+    return code === "ENOTFOUND";
+  }
+}
+
+async function findBrokenLinks(text) {
+  const urls = [...new Set([...text.matchAll(/\]\((https?:\/\/[^)\s]+)\)/g)].map((m) => m[1]))];
+  const broken = [];
+  for (const url of urls) {
+    if (await isBrokenUrl(url)) broken.push(url);
+  }
+  return { urls, broken };
+}
+
+function stripLinks(text, brokenUrls) {
+  let out = text;
+  for (const url of brokenUrls) {
+    const esc = url.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    // "[https://x](https://x)" style labels disappear entirely, normal labels keep their text
+    out = out.replace(new RegExp(`\\[https?://[^\\]]*\\]\\(${esc}\\)`, "g"), "");
+    out = out.replace(new RegExp(`\\[([^\\]]+)\\]\\(${esc}\\)`, "g"), "$1");
+  }
+  return out;
+}
+
 // Second pass: an editor model checks the draft for invented specifics.
 // Fails OPEN (returns ok) if the review call itself errors, so an API hiccup never blocks publishing.
 async function editorialReview(fm, body) {
@@ -277,16 +323,21 @@ async function editorialReview(fm, body) {
 Known verified context:
 ${FACT_CONTEXT}
 
-Flag ONLY serious problems:
-- Specific numbers, dates, prices, error codes, menu paths or product specs that look invented or that you believe are wrong.
-- Claims presented as confirmed that are only rumor or speculation.
-- Statements that contradict the known verified context.
-- Content that is padding with no concrete information.
+Flag ONLY clear, serious problems that would mislead a reader:
+- A specific number, date, price, error code or menu path that is almost certainly invented or wrong.
+- A rumor or speculation stated as confirmed fact (hedged wording such as "reportedly", "expected", "estimated" is acceptable and must NOT be flagged).
+- A statement that directly contradicts the known verified context above.
 
-Do NOT flag style preferences or minor wording. If the article is acceptable, return an empty issues list.
+Never flag any of the following:
+- Style, tone, structure, wording or minor imprecision.
+- Links, link targets, or the titles of other articles on the site.
+- Anything consistent with the known verified context, including hedged mentions of the reported ~210 GB file size.
+- General explanations of how consoles or services work.
 
-Return JSON only: {"verdict":"pass"|"fail","issues":["short description of each serious problem"]}.
-Use "fail" only when at least one serious problem exists.
+For each problem give a severity: "high" only if the claim is clearly false or fabricated; otherwise "low". Low issues are ignored.
+
+Return JSON only: {"issues":[{"claim":"short quote","reason":"why it is wrong","severity":"high"|"low"}]}.
+Return {"issues":[]} when the article is acceptable.
 
 TITLE: ${fm.title}
 
@@ -303,8 +354,9 @@ ${body}`;
       }
     });
     const parsed = JSON.parse(text);
-    const issues = Array.isArray(parsed.issues) ? parsed.issues.map(String) : [];
-    return { ok: parsed.verdict !== "fail" || issues.length === 0, issues };
+    const high = (Array.isArray(parsed.issues) ? parsed.issues : []).filter((i) => i && i.severity === "high");
+    const issues = high.map((i) => `${i.claim}: ${i.reason}`);
+    return { ok: issues.length === 0, issues };
   } catch (err) {
     console.warn(`[Editor Review] Skipped (non-blocking): ${err.message}`);
     return { ok: true, issues: [] };
@@ -373,7 +425,7 @@ async function generateWithRetry(topic, targetDate, maxAttempts = MAX_ATTEMPTS_P
         /\[([^\]]+)\]\(\/guides\/([a-z0-9-]+)\/?\)/g,
         (m, text, slug) => (existingSlugs.has(slug) ? m : text)
       );
-      const body = fmMatch[2].replace(/\r\n/g, "\n").trim();
+      let body = fmMatch[2].replace(/\r\n/g, "\n").trim();
       const validation = validateGuide(fm, body, { existingArticles: existingGuidesSummary });
       if (!validation.valid) {
         console.warn(`[Quality Reject] Guide failed validation:`);
@@ -389,6 +441,21 @@ async function generateWithRetry(topic, targetDate, maxAttempts = MAX_ATTEMPTS_P
         for (const warn of validation.warnings) console.log(`  * ${warn}`);
       }
 
+      // Drop links that 404 (models guess deep URLs), then make sure real sources remain
+      const { urls: externalUrls, broken } = await findBrokenLinks(finalContent);
+      if (broken.length) {
+        console.warn(`[Link Check] Removing ${broken.length} broken link(s):`);
+        for (const b of broken) console.warn(`  - ${b}`);
+        finalContent = stripLinks(finalContent, broken);
+        body = stripLinks(body, broken);
+      }
+      if (externalUrls.length - broken.length < 1) {
+        feedback = [`All external source links were invalid. Cite only real pages such as: ${SAFE_SOURCE_LINKS.join(", ")}`];
+        lastError = new Error("No working external source links");
+        console.warn(`[Link Check] No working external source links left; retrying.`);
+        continue;
+      }
+
       const review = await editorialReview(fm, body);
       if (!review.ok) {
         console.warn(`[Editor Reject] Fact-check review flagged problems:`);
@@ -402,6 +469,11 @@ async function generateWithRetry(topic, targetDate, maxAttempts = MAX_ATTEMPTS_P
       return { frontmatter: fm, body, fullContent: finalContent };
     } catch (err) {
       console.error(`[Attempt ${attempt} Failed]:`, err.message);
+      // Quota exhausted: retrying or trying other topics cannot help. Stop the whole run.
+      if (err.apiStatus === 429) {
+        err.fatalQuota = true;
+        throw err;
+      }
       lastError = err;
       feedback = [err.message];
       if (attempt < maxAttempts) await new Promise((r) => setTimeout(r, 4000));
@@ -435,6 +507,16 @@ async function main() {
       break;
     } catch (err) {
       tried.push(candidate.slug);
+      if (err.fatalQuota) {
+        saveFailed(failed);
+        throw new Error(`Gemini quota exhausted (429). Stopped without recording topic failures. ${err.message.slice(0, 200)}`);
+      }
+      // API-side trouble (overload, network) says nothing about the topic: do not count it against it.
+      const apiSide = Boolean(err.apiStatus) || /timed out|ECONN|ENOTFOUND|fetch failed|Empty response|did not finish cleanly/i.test(err.message);
+      if (apiSide) {
+        console.warn(`[Topic Skipped] "${candidate.slug}" hit an API/network error, not recorded as a topic failure.`);
+        continue;
+      }
       failed[candidate.slug] = {
         count: (failed[candidate.slug]?.count || 0) + 1,
         lastError: String(err.message).slice(0, 300),

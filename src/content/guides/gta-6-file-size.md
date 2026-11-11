@@ -91,5 +91,5 @@ When Rockstar or a store confirms the size, we'll update this page. For the down
 
 ## Official Sources and Verification
 
-- **PlayStation Support:** [PS5 System Storage Requirements and Day-One Decompression Buffers](https://www.playstation.com/support/hardware/ps5-manage-storage/)
+- **PlayStation Support:** [Extended Storage on PS5](https://www.playstation.com/en-us/support/hardware/ps5-extended-storage/)
 - **Xbox Support:** [Xbox Series Internal Drive Usable Space Specifications](https://support.xbox.com/help/hardware-network/storage/manage-storage)

@@ -115,6 +115,6 @@ For further details on the game's release, consult our [GTA 6 release date guide
 
 ## Official Sources and Verification
 - **[Rockstar Games]:** [Grand Theft Auto VI Official Website](https://www.rockstargames.com/gta6) – Primary source for all official announcements, including release model and pre-load details.
-- **[PlayStation Support]:** [PS5 Rest Mode Settings Guide](https://www.playstation.com/en-us/support/hardware/ps5-rest-mode-features/) – Details on configuring PS5 for background downloads and updates.
+- **[PlayStation Support]:** [PlayStation Support hub](https://www.playstation.com/en-us/support/) – Official help articles for Rest Mode, background downloads and updates.
 - **[Xbox Support]:** [Xbox Power Modes and Settings](https://support.xbox.com/en-US/help/hardware-network/power/learn-about-power-modes) – Information on Instant-on mode for automatic updates on Xbox Series X|S.
 - **[Take-Two Interactive SEC Filings]:** [Take-Two Interactive Investor Relations](https://ir.take2games.com/) – Corporate disclosures often confirm release strategies and platform specifics.

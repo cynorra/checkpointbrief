@@ -80,4 +80,4 @@ If your free space is under 200 GB, yes, or at least clear space now. Rockstar h
 ## Official Sources and Verification
 
 - **PlayStation Support:** [Official M.2 SSD Installation Guide and Speed Requirements](https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/)
-- **Sony Interactive Entertainment:** [Managing and Clearing PS5 Internal Storage](https://www.playstation.com/support/hardware/ps5-manage-storage/)
+- **Sony Interactive Entertainment:** [Extended Storage on PS5](https://www.playstation.com/en-us/support/hardware/ps5-extended-storage/)

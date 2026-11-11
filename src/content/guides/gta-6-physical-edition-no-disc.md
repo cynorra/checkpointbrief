@@ -71,4 +71,4 @@ Because every copy downloads the full game, you need the storage space whichever
 ## Official Sources and Verification
 
 - **Business Wire:** [Rockstar Games Official Pre-Order Fact Sheet (Digital Code in Box)](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)
-- **PlayStation Store Support:** [Voucher Code Redemption and Digital Entitlement Procedures](https://www.playstation.com/support/store/redeem-code/)
+- **PlayStation Store Support:** [PlayStation Support hub](https://www.playstation.com/en-us/support/)
