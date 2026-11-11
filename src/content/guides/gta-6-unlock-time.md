@@ -1,6 +1,6 @@
 ---
 title: "GTA 6 Release Time: Unlock Time in Every Time Zone"
-description: "Rockstar says GTA 6 unlocks at midnight local time on November 19, 2026, in all regions. Exact unlock time for every major time zone, plus fixes if the game stays locked."
+description: "Rockstar says GTA 6 unlocks at midnight local time on November 19, 2026, in all regions. Unlock time for every major time zone, plus locked-game fixes."
 published: 2026-10-28
 updated: 2026-11-11
 tool: gta6
