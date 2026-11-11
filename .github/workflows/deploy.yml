@@ -65,6 +65,23 @@ jobs:
             git push origin main
           fi
 
+      - name: Record Epic free games history
+        run: node scripts/update-epic-history.mjs
+
+      - name: Commit Epic history if changed
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          git config --global user.name "Checkpoint Brief Bot"
+          git config --global user.email "bot@checkpointbrief.com"
+          git add src/lib/data/epic-history.json
+          if git diff --staged --quiet; then
+            echo "Epic history unchanged."
+          else
+            git commit -m "chore(epic): record free games history [skip ci]"
+            git pull --rebase origin main
+            git push origin main
+          fi
+
       - name: Data tests
         run: npm test
 

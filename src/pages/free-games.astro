@@ -6,6 +6,7 @@ import { src } from "../lib/data/sources.js";
 import { itemListSchema, faqSchema } from "../lib/schema.js";
 import Faq from "../components/Faq.astro";
 import { FREE_GAMES_FAQ } from "../lib/data/faqs.js";
+import history from "../lib/data/epic-history.json";
 
 const d = pageDates("/free-games/");
 // Read at build time. The deploy workflow rebuilds daily and right after
@@ -20,6 +21,9 @@ const lead = epic
     ? `Free on the Epic Games Store right now: ${current.map((g) => g.title).join(" and ")}, until ${fmtWhen(current[0].end)}. Claim them and they're yours to keep.${upcoming.length ? ` Next up: ${upcoming.map((g) => g.title).join(" and ")}.` : ""}`
     : "Epic has no free game live at this moment; the next ones are listed below when Epic has announced them."
   : "The Epic Games Store gives away games every week. Our live list couldn't load in the last update, so check the store's free games page directly; this page refreshes daily.";
+const fmtDay = (iso) => new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric", timeZone: "America/New_York" });
+const past = history;
+const firstSeen = past.length ? fmtDay(past[past.length - 1].start) : "";
 const updatedDate = new Date(built.toISOString().slice(0, 10));
 ---
 <HubLayout
@@ -78,6 +82,21 @@ const updatedDate = new Date(built.toISOString().slice(0, 10));
     <li>Click <strong>Get</strong>. The checkout should show a total of $0.00.</li>
     <li>Click <strong>Place Order</strong>. The game is now in your library.</li>
   </ol>
+
+  {past.length > 0 && (
+    <>
+      <h2>Past Epic free games (recorded by this site)</h2>
+      <p>Every game this page has seen go free on the Epic Games Store, newest first. We started recording on {firstSeen}; each row is read from Epic's own promotions feed, not typed from memory.</p>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Game</th><th>Free from</th><th>Free until</th><th>Normal price</th></tr></thead>
+        <tbody>
+          {past.map((g) => (
+            <tr><td><a href={g.url} rel="noopener">{g.title}</a></td><td>{fmtDay(g.start)}</td><td>{fmtDay(g.end)}</td><td>{g.originalPrice ?? "n/a"}</td></tr>
+          ))}
+        </tbody>
+      </table></div>
+    </>
+  )}
 
   <Faq items={FREE_GAMES_FAQ} />
 </HubLayout>
