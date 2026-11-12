@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-11";
+export const CHECKED = "2026-11-12";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -33,309 +33,9 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-12",
-    "title": "10 Second Mixtape",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "A Pet Shop After Dark",
-    "platforms": ["Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "All Eyes on Me",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Auto Battle Buddies",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Autobahn Police Simulator 4",
-    "platforms": ["Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Ball x Pit: Risen Ballbylon",
-    "platforms": ["PS5", "Switch", "Xbox Series X|S", "PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Ballzy: PvP Block Puzzle",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Bar Owner Simulator",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Barbie Rewind",
-    "platforms": ["PC", "Switch", "PS5", "Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Beyond The Blight",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Blood Sword",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Bottle Flip Inc",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Caramel Creek",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Carmilla: Crimson Moon",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "ChromaFlow",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Corridor 13",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Cupiclaw",
-    "platforms": ["Switch" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Deskpot",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Desktop Plinko",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Dreadmiles",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "E.G.O. Software Suite",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Echo 9",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Euro Truck Simulator 2: Coaches",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Fakin It XL",
-    "platforms": ["PC", "Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Fat Goblins",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Find Kittens 12: Pirates",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Flexible Frosty",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Franchise Hockey Manager 13",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Gee, Tea, Eh, Seven?",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Hazard Levels",
-    "platforms": ["PC", "PS5", "Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Hordia",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Ikemen Big Bang: A Dating Game About Potentially Hot Guys",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "InCowMental",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Iron Frontier",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Irreverence",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Keepsake County",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "King Dies Rich",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Kleks Academy",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Lanternwood",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Lost Zion",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Love in Summer",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Mad Dvizhuha: Benzovoz",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
     "title": "Metaphor: ReFantazio",
     "platforms": ["Switch 2" ],
     "note": "Switch 2 version"
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Moomin Midsummer Madness",
-    "platforms": ["Switch", "PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Ninja Noboken Episode 2",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Noble Fates",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Not My Dad",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "One More Lawn",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Ophelia´s Paradise",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Phantom Gear",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Pig King",
-    "platforms": ["PC" ],
-    "big": false
   },
   {
     "date": "2026-11-12",
@@ -344,193 +44,552 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-12",
-    "title": "PlanetOrbit",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "PocoDoro",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Princessfall",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Pro Basketball Manager 2027",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Procedure Zero",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Refund Me TD 2",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Silent Authority: Blood & Bourbon",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Sitter",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Ski-E-O! Ski Resort Tycoon",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Snow Worries!",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
-    "title": "Sonic Panic",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-12",
     "title": "Sonic Pico Park",
-    "platforms": ["PC", "PS5", "Xbox Series X|S", "Switch 2", "Switch" ],
-    "big": false
+    "platforms": ["PC", "PS5", "Xbox Series X|S", "Switch 2", "Switch" ]
   },
   {
-    "date": "2026-11-12",
-    "title": "Spin Tactics",
+    "date": "2026-11-13",
+    "title": "10 Million Pixels",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Splatchinko",
+    "date": "2026-11-13",
+    "title": "A.N.S.I.A.",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Square Colosseum: Cell B201",
+    "date": "2026-11-13",
+    "title": "Backseat Champions",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Static Signal",
+    "date": "2026-11-13",
+    "title": "Banker Simulator",
+    "platforms": ["Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Bannerlings",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Supermarket: Tidy Up!",
-    "platforms": ["PS5", "Xbox Series X|S", "PC" ],
+    "date": "2026-11-13",
+    "title": "Battlegenics",
+    "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Tekken 8: Roger Jr.",
+    "date": "2026-11-13",
+    "title": "Beekeeper Simulator",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Blowhole",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Bombanana!",
+    "platforms": ["PS5", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Business Tycoon",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Cannon Keep",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "CarCrash.Tube: Car Crash Simulator",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Cat Simulator",
+    "platforms": ["Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "ChickenPlaguePolice",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Dark Workshop Simulator",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Deathly Delights",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Deeplanders",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Derelikt",
     "platforms": ["PC", "Xbox Series X|S", "PS5" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Terrahold",
+    "date": "2026-11-13",
+    "title": "Dice Hoarder",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "The Cozy Board Game Shop: Tidy Up",
+    "date": "2026-11-13",
+    "title": "Dongda Gangster",
+    "platforms": ["Xbox Series X|S", "PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Drawquarium",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "The Totemist",
+    "date": "2026-11-13",
+    "title": "Dusteroids",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Tick & Tired",
+    "date": "2026-11-13",
+    "title": "Epoch Vault",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Tidyspell",
+    "date": "2026-11-13",
+    "title": "Escape Your Boss",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Toll Idle",
+    "date": "2026-11-13",
+    "title": "Exodus Core",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Upshot",
+    "date": "2026-11-13",
+    "title": "Extract Survivors",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Vitavania",
+    "date": "2026-11-13",
+    "title": "Fancy Farm Brawl",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Vizier",
+    "date": "2026-11-13",
+    "title": "Frontier Tale",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Voxmons",
+    "date": "2026-11-13",
+    "title": "Goblin and Glory",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Wardogs: Season 3",
+    "date": "2026-11-13",
+    "title": "Grandma Left Me A Building",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Weed Supermarket Simulator",
+    "date": "2026-11-13",
+    "title": "Green Again",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Hands Over",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Hellterns",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Hot Meals Fast Wheels",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "House Cleaner Simulator",
+    "platforms": ["Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Kinsoku Ryokan",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Knurlworm",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Last Gambit",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Leaf Blower Co.",
     "platforms": ["Xbox Series X|S", "PS5" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Whirlight: No Time To Trip",
+    "date": "2026-11-13",
+    "title": "Logosmancer",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Malignus",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Mellings",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Menes: The Chainbreaker",
+    "platforms": ["PC", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Moga TD",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "My Little Empire: Cyber Lounge",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Netherwake",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "No More Monsters",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Node Zero",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Overhours",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Parcel Inspector Simulator",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Path of Exile: Covens of Umbra",
+    "platforms": ["PC", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Pawhold: Idle Desktop Cat Space Game",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Piercing",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Potted Pets",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Powerfuel",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Provinces",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "QUTAS67: Qubic Ultimate Tap Adventure Simulator 2067",
+    "platforms": ["PC", "Xbox Series X|S", "PS5" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Rasen",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "RatSpiderFrog",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Referee Life Simulator 2026",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Satelital",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Ski Jumping World Cup",
+    "platforms": ["Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Slay the Q",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Sloppy Forgeries",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Sol One",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "The Adventure Story of Yixiu",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "The Eggsortist",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "UnderMire",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Warota: I Live Next to The Demon King's Castle LOL",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Warrior Quest",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "We March as One",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Yoyo Blade",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Zaos",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-13",
+    "title": "Zombie Crawlers",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Badass Brigade",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Fate/Empire of Dirt Complete",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Fate/Empire of Dirt: Stella Splendens",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Horror Game Creator",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Monster Girls Dice Board",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-14",
+    "title": "Pool of Madness",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Cafe Simulator",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Cruisopolis: Cruise Line Tycoon",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Dongda Gangster",
+    "platforms": ["PS5" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "How Many Tickets Does It Take To Win The Lottery?",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "IWA Fighting Adventure",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Otter's Heart",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Overspray",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Snake Echos",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Water Maid",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-15",
+    "title": "Wingspan: Bird Pack - Birds of Continental Europe",
     "platforms": ["Switch" ],
     "big": false
   },
   {
-    "date": "2026-11-12",
-    "title": "Whiskers of Yesterday",
+    "date": "2026-11-16",
+    "title": "Trees Hate You",
     "platforms": ["PC" ],
     "big": false
   },
