@@ -433,6 +433,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-17",
+    "title": "Australia Did It: End-of-the-World Railway Defense Business",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-17",
     "title": "Ball Picker: Clean Up the Golf Yard",
     "platforms": ["PC" ],
     "big": false
@@ -590,12 +596,6 @@ export const RELEASES = [
   {
     "date": "2026-11-17",
     "title": "Zero Sum",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Space Station Designer",
     "platforms": ["PC" ],
     "big": false
   },
