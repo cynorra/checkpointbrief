@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-13";
+export const CHECKED = "2026-11-14";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -46,42 +46,6 @@ export const RELEASES = [
     "date": "2026-11-12",
     "title": "Sonic Pico Park",
     "platforms": ["PC", "PS5", "Xbox Series X|S", "Switch 2", "Switch" ]
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Badass Brigade",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Fate/Empire of Dirt Complete",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Fate/Empire of Dirt: Stella Splendens",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Horror Game Creator",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Monster Girls Dice Board",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-14",
-    "title": "Pool of Madness",
-    "platforms": ["PC" ],
-    "big": false
   },
   {
     "date": "2026-11-15",
@@ -596,6 +560,42 @@ export const RELEASES = [
   {
     "date": "2026-11-17",
     "title": "Zero Sum",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Dark Rail",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Frog is Crime",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "KYC: K Stands for Killing",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Please Confirm the Deceased",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Space Station Designer",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Whitopia",
     "platforms": ["PC" ],
     "big": false
   },
