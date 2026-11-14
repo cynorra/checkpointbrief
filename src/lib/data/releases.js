@@ -121,12 +121,6 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-16",
-    "title": "Barn Rush",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
     "title": "Chrono Cards",
     "platforms": ["PC" ],
     "big": false
@@ -566,7 +560,7 @@ export const RELEASES = [
   {
     "date": "2026-11-18",
     "title": "Dark Rail",
-    "platforms": ["PC" ],
+    "platforms": ["PC", "PS5" ],
     "big": false
   },
   {
