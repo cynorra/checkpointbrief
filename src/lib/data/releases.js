@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-14";
+export const CHECKED = "2026-11-15";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -48,66 +48,6 @@ export const RELEASES = [
     "platforms": ["PC", "PS5", "Xbox Series X|S", "Switch 2", "Switch" ]
   },
   {
-    "date": "2026-11-15",
-    "title": "Cafe Simulator",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Cruisopolis: Cruise Line Tycoon",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Dongda Gangster",
-    "platforms": ["PS5" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "How Many Tickets Does It Take To Win The Lottery?",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "IWA Fighting Adventure",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Otter's Heart",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Overspray",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Snake Echos",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Water Maid",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-15",
-    "title": "Wingspan: Bird Pack - Birds of Continental Europe",
-    "platforms": ["Switch" ],
-    "big": false
-  },
-  {
     "date": "2026-11-16",
     "title": "Alderun",
     "platforms": ["PC" ],
@@ -134,6 +74,12 @@ export const RELEASES = [
   {
     "date": "2026-11-16",
     "title": "Code Market",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Deep Space Miner",
     "platforms": ["PC" ],
     "big": false
   },
@@ -176,6 +122,12 @@ export const RELEASES = [
   {
     "date": "2026-11-16",
     "title": "Func Key",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-16",
+    "title": "Hack 42: Typing Incremental",
     "platforms": ["PC" ],
     "big": false
   },
@@ -560,7 +512,13 @@ export const RELEASES = [
   {
     "date": "2026-11-18",
     "title": "Dark Rail",
-    "platforms": ["PC", "PS5" ],
+    "platforms": ["PC", "PS5", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Disney Dreamlight Valley: The Keepsake Sea",
+    "platforms": ["Switch" ],
     "big": false
   },
   {
@@ -585,6 +543,18 @@ export const RELEASES = [
     "date": "2026-11-18",
     "title": "Space Station Designer",
     "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Strato Alto",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Vice: Magic City Mayhem",
+    "platforms": ["PC", "Xbox Series X|S", "Switch", "PS5" ],
     "big": false
   },
   {
