@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-15";
+export const CHECKED = "2026-11-16";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -46,288 +46,6 @@ export const RELEASES = [
     "date": "2026-11-12",
     "title": "Sonic Pico Park",
     "platforms": ["PC", "PS5", "Xbox Series X|S", "Switch 2", "Switch" ]
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Alderun",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Aurora Requiem: The Lullaby of Calvaris",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Chrono Cards",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Clicky Islands",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Code Market",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Deep Space Miner",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Dice Looter",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Dreadgence",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Dungeonbound",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Feed the Vessel",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Fool King",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "FreeLances: Blood for Profit",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Func Key",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Hack 42: Typing Incremental",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Harma",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Here Comes the Horde",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Highland Haven",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Mizi No!: Hobby Time",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Moongrave",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "My Little Ranch",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Night of the Idle Horde",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "No One Owns the Light",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "NodalBastion",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Nullnest",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Of Dice and Minions",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "One More Claw",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Orcthal",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Pegs of Hell",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Raise, Rise & Die",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Reel Adventure: The Autobattler Journey",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Rock and Found",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "RoRX",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Savebot: The Last Garden",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Scopecreep",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Socks Pair Up",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Sort Memes Together",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Spirit Crossing",
-    "platforms": ["PC", "Switch" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "StackOn",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Tekken 8: Roger Jr.",
-    "platforms": ["PC", "Xbox Series X|S", "PS5" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "The Scratcher",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Topdeck Automat",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Trafficity",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Trees Hate You",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Trust Me Fellow",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Watermellionaire",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "White Christmas",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-16",
-    "title": "Who Gave Them Weapons",
-    "platforms": ["PC" ],
-    "big": false
   },
   {
     "date": "2026-11-17",
@@ -393,6 +111,12 @@ export const RELEASES = [
     "date": "2026-11-17",
     "title": "Legacy of Kain: Soul Reaver 2",
     "platforms": ["PS5" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-17",
+    "title": "Marbles: Tidy Up",
+    "platforms": ["PC" ],
     "big": false
   },
   {
@@ -511,6 +235,18 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-18",
+    "title": "Bank Vault: Tidy Up Together",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Bomb Them Ores",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
     "title": "Dark Rail",
     "platforms": ["PC", "PS5", "Xbox Series X|S" ],
     "big": false
@@ -518,7 +254,19 @@ export const RELEASES = [
   {
     "date": "2026-11-18",
     "title": "Disney Dreamlight Valley: The Keepsake Sea",
-    "platforms": ["Switch" ],
+    "platforms": ["Switch", "PC", "PS5", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Eletta",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Frog Collector",
+    "platforms": ["PC" ],
     "big": false
   },
   {
@@ -529,7 +277,25 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-18",
+    "title": "Graveyard Orbit",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
     "title": "KYC: K Stands for Killing",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Let Me Die",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Marque & Reprisal",
     "platforms": ["PC" ],
     "big": false
   },
@@ -553,6 +319,24 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-18",
+    "title": "Tidy Mall Together",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Tiny Dwellings",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
+    "title": "Toto's Journey",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-18",
     "title": "Vice: Magic City Mayhem",
     "platforms": ["PC", "Xbox Series X|S", "Switch", "PS5" ],
     "big": false
@@ -565,10 +349,184 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-19",
+    "title": "Axyn Adventure",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Beyond the Mist",
+    "platforms": ["Switch" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Crumple Toss",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "CyberKitty: Neon Merge",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Disco Ball Simulator 2000",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Dungeon of Departure",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Flick",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "G.E.M. Grab & Exit",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Goat Simulator 3: Ticket to Dizzyworld",
+    "platforms": ["PC", "Xbox Series X|S", "PS5" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
     "title": "Grand Theft Auto VI",
     "platforms": ["PS5", "Xbox Series X|S" ],
     "big": true,
     "href": "/gta-6/"
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Grand Theft Auto VI: Ultimate Edition",
+    "platforms": ["PS5", "Xbox Series X|S" ],
+    "big": true
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Grand Theft Auto VI: Vintage Vice City Pack",
+    "platforms": ["PS5", "Xbox Series X|S" ],
+    "big": true
+  },
+  {
+    "date": "2026-11-19",
+    "title": "IconyX",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Iona's Island",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Kuroshio: Neon Blood",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Lord of Undead",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Neo Light",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Phantom Streets",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Psycasso",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Salt of the Earth",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Shrike",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Spinful",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Tavern Clicker",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "The Binding of Isaac: Repentance+",
+    "platforms": ["PS5", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "The House of Tesla: Definitive Edition",
+    "platforms": ["PS5" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "The Legend of the 4 Elements",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Tilemancer",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Volvy’s Adventure: Reslimed",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Widget Idle",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-19",
+    "title": "Witch the Showdown",
+    "platforms": ["PC" ],
+    "big": false
   },
   {
     "date": "2026-12-01",
