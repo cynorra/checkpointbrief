@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-17";
+export const CHECKED = "2026-11-18";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -46,126 +46,6 @@ export const RELEASES = [
     "date": "2026-11-12",
     "title": "Sonic Pico Park",
     "platforms": ["PC", "PS5", "Xbox Series X|S", "Switch 2", "Switch" ]
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Bank Vault: Tidy Up Together",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Bomb Them Ores",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Dark Rail",
-    "platforms": ["PC", "PS5", "Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Disney Dreamlight Valley: The Keepsake Sea",
-    "platforms": ["Switch", "PC", "PS5", "Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Don Memo",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Eletta",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Frog Collector",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Frog is Crime",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Graveyard Orbit",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "KYC: K Stands for Killing",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Let Me Die",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Marque & Reprisal",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Please Confirm the Deceased",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Space Station Designer",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Strato Alto",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Tidy Mall Together",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Tiny Dwellings",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Toto's Journey",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Vice: Magic City Mayhem",
-    "platforms": ["PC", "Xbox Series X|S", "Switch", "PS5" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-18",
-    "title": "Whitopia",
-    "platforms": ["PC" ],
-    "big": false
   },
   {
     "date": "2026-11-19",
@@ -422,6 +302,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-20",
+    "title": "Friendly Pharmacy",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-20",
     "title": "Geo Book",
     "platforms": ["PC", "PS5" ],
     "big": false
@@ -530,6 +416,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-23",
+    "title": "ArcaneBound",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
     "title": "Blackout Route",
     "platforms": ["PC" ],
     "big": false
@@ -542,7 +434,157 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-23",
+    "title": "Command at Your Own Risk",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Demon Eye",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Goldbar In A Shitstack",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Heya! Sumo Manager",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
     "title": "Hoard",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Jaden Industries",
+    "platforms": ["PC", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Stellaris: Willpower",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "Terminus: Day Zero",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "The Spotter: Dig or Die",
+    "platforms": ["Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "VacBot Simulator",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "A Drop of Magenta",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Bungle Brawl: Couch Co-op Party",
+    "platforms": ["Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Chop Loop",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Derby Dynasty: Horse Racing RPG",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Escape the Baby Alarm",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Ezalm: Magic's Memory",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Gothic 3 Classic",
+    "platforms": ["PS5", "Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Jurassic Architect",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Karakara 3",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Light of Atlantis",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "No Asteroids",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "No Blink Allowed",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Paranormal Cleaner",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Rally Point: 3030",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Storage Hunter Simulator",
+    "platforms": ["Xbox Series X|S" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Zero Mass",
     "platforms": ["PC" ],
     "big": false
   },
