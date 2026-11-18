@@ -2,7 +2,7 @@
 title: "What Is GTA+? Rockstar's Subscription Explained"
 description: "GTA+ is Rockstar's monthly subscription for PS5 and Xbox Series X|S. What it includes today, the Games Library, the free month with GTA 6 and when to cancel."
 published: 2026-11-04
-updated: 2026-10-29
+updated: 2026-11-18
 tool: general
 ---
 
@@ -76,3 +76,9 @@ Turning off auto-renew keeps the benefits until the end of the paid or free peri
 
 - **Rockstar Games Support:** [Official GTA+ Membership Benefits and Terms](https://support.rockstargames.com/articles/21l14aEXmnyjFrnsqQ6eXG/gta-membership-benefits)
 - **Business Wire:** [Rockstar Pre-Order Announcement (Digital Pre-Order Free Month)](https://www.businesswire.com/news/home/20260624539426/en/Rockstar-Games-Announces-Pre-Orders-for-Grand-Theft-Auto-VI)
+
+For related coverage, see our guide on [How to Clear PS5 Storage for GTA 6 Without Losing Saves](/guides/how-to-free-up-ps5-storage-for-gta-6/).
+
+For related coverage, see our guide on [Best PS5 M.2 SSDs 2026: Speed, Heatsinks, and Value](/guides/best-ps5-ssd-nvme-2026-buyers-guide/).
+
+For related coverage, see our guide on [PS5 Pro PSSR vs Native 4K: GTA 6 AI Upscaling Explained](/guides/ps5-pro-pssr-gta-6-ai-upscaling-explained/).

@@ -2,7 +2,7 @@
 title: "Video Game Releases in November 2026: Confirmed Dates"
 description: "Confirmed November 2026 game release dates by platform, led by GTA 6 on November 19. Switch 2 versions, ports and what's worth watching, with sources."
 published: 2026-10-18
-updated: 2026-10-29
+updated: 2026-11-18
 tool: releases
 ---
 
@@ -65,3 +65,5 @@ Release dates change, sometimes in the last few weeks. We recheck the calendar r
 ## Official Sources and Verification
 
 - **Video Games Chronicle:** [Upcoming Video Game Release Dates Master Calendar](https://www.videogameschronicle.com/guide/upcoming-game-release-dates-schedule/)
+
+For related coverage, see our guide on [Video Game Releases in December 2026: Confirmed Dates](/guides/game-releases-december-2026/).

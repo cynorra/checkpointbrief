@@ -2,7 +2,7 @@
 title: "How to Add Storage to a PS5: M.2 SSD Requirements and Steps"
 description: "Sony's exact M.2 SSD requirements for PS5, the right size to buy, the heatsink rule and how to install one, plus what a USB drive can and can't do."
 published: 2026-10-22
-updated: 2026-10-29
+updated: 2026-11-18
 tool: general
 ---
 
@@ -81,3 +81,9 @@ If your free space is under 200 GB, yes, or at least clear space now. Rockstar s
 
 - **PlayStation Support:** [Official M.2 SSD Installation Guide and Speed Requirements](https://www.playstation.com/en-us/support/hardware/ps5-install-m2-ssd/)
 - **Sony Interactive Entertainment:** [Extended Storage on PS5](https://www.playstation.com/en-us/support/hardware/ps5-extended-storage/)
+
+For related coverage, see our guide on [What Is GTA+? Rockstar's Subscription Explained](/guides/what-is-gta-plus/).
+
+For related coverage, see our guide on [Best PS5 M.2 SSDs 2026: Speed, Heatsinks, and Value](/guides/best-ps5-ssd-nvme-2026-buyers-guide/).
+
+For related coverage, see our guide on [PS5 Pro PSSR vs Native 4K: GTA 6 AI Upscaling Explained](/guides/ps5-pro-pssr-gta-6-ai-upscaling-explained/).

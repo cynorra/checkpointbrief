@@ -2,7 +2,7 @@
 title: "GTA 6 Pre-Order Bonuses: Vintage Vice City Pack and GTA+ Month"
 description: "Pre-ordering GTA 6 gets you the Vintage Vice City Pack and, for digital orders, a free month of GTA+. What's in each, the deadline and whether it's worth it."
 published: 2026-10-18
-updated: 2026-10-29
+updated: 2026-11-18
 tool: gta6
 ---
 

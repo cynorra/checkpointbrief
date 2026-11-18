@@ -2,7 +2,7 @@
 title: "Is GTA 6 on PS4 or Xbox One? No, and Here's Why"
 description: "GTA 6 isn't coming to PS4 or Xbox One; it's PS5 and Xbox Series X|S only. Why, whether that could change and the cheapest way to play it on launch day."
 published: 2026-10-27
-updated: 2026-10-29
+updated: 2026-11-18
 tool: gta6
 ---
 
@@ -69,3 +69,11 @@ For how the two current platforms compare, see [GTA 6 on PS5 vs Xbox Series X|S]
 
 - **Rockstar Games:** [Official Platform Specification (PS5 and Xbox Series X|S Exclusive)](https://www.rockstargames.com/VI)
 - **Take-Two Interactive:** [SEC Form 10-K Filings Regarding Current-Gen Hardware Transition](https://ir.take2games.com/)
+
+For related coverage, see our guide on [What Rockstar Still Hasn't Confirmed About GTA 6](/guides/gta-6-what-we-dont-know/).
+
+For related coverage, see our guide on [GTA 6 Launch Checklist: 10 Things to Do Before November 19](/guides/gta-6-launch-checklist/).
+
+For related coverage, see our guide on [Every GTA 6 Trailer So Far, in Order, With Dates](/guides/gta-6-trailers/).
+
+For related coverage, see our guide on [GTA 6 Age Rating: ESRB Mature 17+ Explained for Parents](/guides/gta-6-age-rating/).

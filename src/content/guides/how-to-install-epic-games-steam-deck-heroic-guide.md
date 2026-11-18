@@ -3,7 +3,9 @@ title: "Play Epic Games on Steam Deck: Heroic Launcher Setup"
 description: "Detailed guide to install Epic Games Store free titles on Steam Deck using Heroic Games Launcher, including Proton GE setup and adding to Gaming Mode."
 published: 2026-11-16
 tool: deals
+updated: 2026-11-18
 ---
+
 **To play Epic Games Store free titles on Steam Deck, install the Heroic Games Launcher via Desktop Mode's Discover Software Center, then configure it with your Epic account, download games, and add them as non-Steam shortcuts to integrate into Gaming Mode for optimal controller support and performance.** This process requires navigating Linux environments and specific Proton compatibility layers, which are detailed in the step-by-step instructions below.
 
 ## Initial Setup: Accessing Desktop Mode and Installing Heroic
@@ -128,3 +130,5 @@ While it is technically possible to install the official Epic Games Launcher dir
 ## Official Sources and Verification
 - **[Heroic Games Launcher]:** [Heroic Games Launcher Official Documentation](https://heroicgameslauncher.com) – Provides installation instructions, troubleshooting, and feature overviews for the launcher.
 - **[Valve Steam Deck]:** [Steam Deck Proton Documentation](https://store.steampowered.com/steamdeck) – Details Valve's Proton compatibility layer and its role in running Windows games on Steam Deck.
+
+For related coverage, see our guide on [Epic Games Cloud Saves vs Steam: Cross-Progression Explained](/guides/epic-games-cloud-saves-vs-steam-cross-progression/).

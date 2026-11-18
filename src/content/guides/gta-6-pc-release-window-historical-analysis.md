@@ -3,6 +3,7 @@ title: "GTA 6 PC Release Window: What 217, 375 and 574 Days Predict"
 description: "Day-by-day math on how long Rockstar's last three big games took to reach PC, what that implies for GTA 6, and why the early 2027 rumor doesn't fit the pattern."
 published: 2026-11-06
 tool: gta6
+updated: 2026-11-18
 ---
 
 **If GTA 6 follows Rockstar's last three PC ports, the PC version lands between June 2027 and June 2028, with the middle of the range around the end of 2027.** That's a projection from past gaps, not an announcement. Rockstar has not announced a PC version or a date. For what has actually been said, see [what Take-Two has said about GTA 6 on PC](/guides/gta-6-pc-release/); this guide is only the arithmetic.
@@ -70,3 +71,11 @@ When Rockstar announces anything about PC, we'll update this guide and the [GTA 
 
 - **Take-Two Interactive Investor Relations:** [SEC Annual Reports and Historical Staggered Launch Disclosures](https://ir.take2games.com/)
 - **Rockstar Games NewsWire:** [Official Release Date Archives for GTA IV, GTA V, and RDR2 on PC](https://www.rockstargames.com/newswire)
+
+For related coverage, see our guide on [What Rockstar Still Hasn't Confirmed About GTA 6](/guides/gta-6-what-we-dont-know/).
+
+For related coverage, see our guide on [GTA 6 Launch Checklist: 10 Things to Do Before November 19](/guides/gta-6-launch-checklist/).
+
+For related coverage, see our guide on [Is GTA 6 on PS4 or Xbox One? No, and Here's Why](/guides/gta-6-ps4-xbox-one/).
+
+For related coverage, see our guide on [GTA 6 Age Rating: ESRB Mature 17+ Explained for Parents](/guides/gta-6-age-rating/).

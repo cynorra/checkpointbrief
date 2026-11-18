@@ -3,6 +3,7 @@ title: "Every GTA 6 Trailer So Far, in Order, With Dates"
 description: "Every official GTA 6 trailer and video from Rockstar, from Trailer 1 in December 2023 to the October 2026 launch trailer, with dates and what each one revealed."
 published: 2026-10-31
 tool: gta6
+updated: 2026-11-18
 ---
 
 **Rockstar has released four major GTA 6 videos: Trailer 1 (December 2023), Trailer 2 (May 6, 2025), an extended gameplay look (August 27, 2026) and the launch trailer (October 15, 2026).** All are on Rockstar's official YouTube channel and the [GTA VI site](https://www.rockstargames.com/VI). Here's what each one showed, in order.
@@ -61,3 +62,7 @@ Possibly short spots and TV ads before launch, but the "launch trailer" label us
 
 - **Rockstar Games Official YouTube Channel:** [Verified 4K Trailer Broadcasts and Cinematic Reveals](https://www.youtube.com/@RockstarGames)
 - **Rockstar Games:** [Official Media Gallery and High-Resolution Key Art](https://www.rockstargames.com/VI)
+
+For related coverage, see our guide on [Every Grand Theft Auto Game in Order of Release (1997–2026)](/guides/gta-series-timeline/).
+
+For related coverage, see our guide on [GTA 6 Early Access: New Zealand Trick Fails, Global Unlock Explained](/guides/can-you-play-gta-6-early-new-zealand-trick/).

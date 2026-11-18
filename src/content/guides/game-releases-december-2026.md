@@ -2,7 +2,7 @@
 title: "Video Game Releases in December 2026: Confirmed Dates"
 description: "Every game with a confirmed December 2026 release date, by platform: Dawn of War IV, Dragon Quest Monsters, Path of Exile 2's full release and more."
 published: 2026-11-07
-updated: 2026-10-29
+updated: 2026-11-18
 tool: releases
 ---
 

@@ -2,7 +2,7 @@
 title: "GTA 6 Age Rating: ESRB Mature 17+ Explained for Parents"
 description: "GTA 6 is rated M for Mature 17+ by the ESRB. What the content descriptors mean, how the rating compares to GTA V and how to use console parental controls."
 published: 2026-11-02
-updated: 2026-10-29
+updated: 2026-11-18
 tool: gta6
 ---
 
@@ -74,3 +74,5 @@ We cover GTA 6 because millions of adults will play it, but this site doesn't pu
 
 - **Entertainment Software Rating Board (ESRB):** [Mature 17+ Rating Assignment and Content Descriptors](https://www.esrb.org/)
 - **PEGI:** [European Age Rating Guidelines and Content Badges](https://pegi.info/)
+
+For related coverage, see our guide on [GTA 6 Early Access: New Zealand Trick Fails, Global Unlock Explained](/guides/can-you-play-gta-6-early-new-zealand-trick/).

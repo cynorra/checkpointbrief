@@ -2,7 +2,7 @@
 title: "Is GTA 6 Coming to PC? What Take-Two Has Said So Far"
 description: "GTA 6 has no PC version at launch and no announced PC date. What Take-Two has said, how long past Rockstar PC ports took, and what to do if you only play on PC."
 published: 2026-10-24
-updated: 2026-10-29
+updated: 2026-11-18
 tool: gta6
 ---
 
@@ -87,3 +87,5 @@ Rockstar usually announces PC versions with a specific date months ahead. When t
 
 - **Take-Two Interactive Investor Relations:** [Quarterly Earnings Call Statements Regarding PC Platform Strategy](https://ir.take2games.com/)
 - **Rockstar Games NewsWire:** [Historical Console-to-PC Port Announcements](https://www.rockstargames.com/newswire)
+
+For related coverage, see our guide on [Every GTA 6 Trailer So Far, in Order, With Dates](/guides/gta-6-trailers/).

@@ -2,7 +2,7 @@
 title: "How Epic Games Store Free Games Work: Times, Rules and Catches"
 description: "Epic gives away PC games every week. When the free games change, how to claim them, whether you keep them forever and the few catches worth knowing."
 published: 2026-10-18
-updated: 2026-10-29
+updated: 2026-11-18
 tool: deals
 ---
 
@@ -77,3 +77,7 @@ Epic's own page is the authority on what's free and until when. Our [free games 
 
 - **Epic Games Store:** [Official Weekly Free Games Promotion Hub and FAQ](https://store.epicgames.com/en-US/free-games)
 - **Epic Games Help Center:** [Cloud Saves and Account Entitlement Terms](https://www.epicgames.com/help)
+
+For related coverage, see our guide on [Epic Games Cloud Saves vs Steam: Cross-Progression Explained](/guides/epic-games-cloud-saves-vs-steam-cross-progression/).
+
+For related coverage, see our guide on [Play Epic Games on Steam Deck: Heroic Launcher Setup](/guides/how-to-install-epic-games-steam-deck-heroic-guide/).

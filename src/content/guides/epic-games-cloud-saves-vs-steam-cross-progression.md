@@ -3,7 +3,9 @@ title: "Epic Games Cloud Saves vs Steam: Cross-Progression Explained"
 description: "Understand the critical differences between Epic Games Store and Steam cloud saves, how cross-progression actually works, and manual save file management to."
 published: 2026-11-17
 tool: deals
+updated: 2026-11-18
 ---
+
 **Epic Games Store and Steam both offer cloud save synchronization, but their implementation, conflict resolution, and cross-platform compatibility vary significantly, directly impacting cross-progression between platforms.** Understanding these distinctions is crucial for players managing game saves across multiple PC launchers or attempting manual save transfers, as automatic synchronization between the two is rarely supported without specific developer integration.
 
 ## Cloud Save Mechanisms: Epic Games Store vs. Steam
@@ -137,3 +139,5 @@ For players interested in the broader history of the franchise, understanding ho
 ## Official Sources and Verification
 -   **[Epic Games Support]:** [Epic Games Store Cloud Save Support](https://www.epicgames.com/help) – Official documentation and troubleshooting for Epic Games Store cloud save features.
 -   **[PCGamingWiki]:** [PCGamingWiki Save Data Database](https://www.pcgamingwiki.com) – Community-maintained database providing detailed information on game save file locations, cloud save support, and compatibility across different PC storefronts.
+
+For related coverage, see our guide on [Play Epic Games on Steam Deck: Heroic Launcher Setup](/guides/how-to-install-epic-games-steam-deck-heroic-guide/).
