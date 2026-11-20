@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-19";
+export const CHECKED = "2026-11-20";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -55,140 +55,14 @@ export const RELEASES = [
     "href": "/gta-6/"
   },
   {
-    "date": "2026-11-20",
-    "title": "2 birds 1 stone",
+    "date": "2026-11-21",
+    "title": "Dad’s Gonna Be a Travel Influencer.",
     "platforms": ["PC" ],
     "big": false
   },
   {
-    "date": "2026-11-20",
-    "title": "Beat Ten",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Chigusa's Diary",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Crazy Chess",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Evil Maiden: The Noble Warrior and the Demon Armor",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Football Survivors",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Friendly Pharmacy",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Geo Book",
-    "platforms": ["PC", "PS5" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Kintsugi Cottage",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Meifu Kanshiki-Ka: The Underworld Forensics Division",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Mystery of the Mysterious Futayuri Mystery Dungeon",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Nightmare Conquest",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "ReactorX 4",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Resequence: The Orchard",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Resettle",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Ritebound",
-    "platforms": ["Xbox Series X|S", "PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Snarkle!",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Tanks Sweet Tanks",
-    "platforms": ["Xbox Series X|S" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "The Debtician",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Tidy Up the Flower Shop: Christmas",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Wand Keeper",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "We’re All In!",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-20",
-    "title": "Whispering Eclipsia",
+    "date": "2026-11-21",
+    "title": "Dummy House",
     "platforms": ["PC" ],
     "big": false
   },
@@ -201,6 +75,12 @@ export const RELEASES = [
   {
     "date": "2026-11-22",
     "title": "Zombie Police: Midsummer Unhappy New Year",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-23",
+    "title": "After Hue",
     "platforms": ["PC" ],
     "big": false
   },
@@ -298,6 +178,12 @@ export const RELEASES = [
     "date": "2026-11-24",
     "title": "Chop Loop",
     "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
+    "title": "Dead by Daylight: Terrifier",
+    "platforms": ["Switch", "PC", "PS5", "Xbox Series X|S" ],
     "big": false
   },
   {
@@ -500,7 +386,37 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-26",
+    "title": "Ashen Testament",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Azur Promilia",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
     "title": "Everlasting Flowers: First Press Limited Special Edition",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Face the Puzzle: Masked Journey",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Fearwoods",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Fishing Nooks: Beaver's Pond",
     "platforms": ["PC" ],
     "big": false
   },
@@ -520,6 +436,12 @@ export const RELEASES = [
     "date": "2026-11-26",
     "title": "Ghost Master: Resurrection - Sands of the Damned",
     "platforms": ["Switch" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Gravity Switch",
+    "platforms": ["Xbox Series X|S", "PC" ],
     "big": false
   },
   {
@@ -572,8 +494,26 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-26",
-    "title": "Reshine",
+    "title": "Night Concierge",
     "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Pet Pet Pet: Tidy Up!",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "QuizForge",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "Reshine",
+    "platforms": ["PC", "PS5" ],
     "big": false
   },
   {
@@ -584,8 +524,26 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-26",
+    "title": "Stealing Them Softly",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
     "title": "The Pogo Witch",
     "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "The Retrospection of Tomorrow",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-26",
+    "title": "The Spectrum Retreat: Redux",
+    "platforms": ["PS5" ],
     "big": false
   },
   {
