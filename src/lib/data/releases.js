@@ -4,7 +4,7 @@
 // entries here; past dates drop off the calendar automatically.
 // Auto-maintained by scripts/update-releases.mjs via Twitch IGDB API.
 
-export const CHECKED = "2026-11-21";
+export const CHECKED = "2026-11-22";
 
 const P = { PC: "PC", PS5: "PS5", XS: "Xbox Series X|S", NS: "Switch", NS2: "Switch 2" };
 
@@ -53,12 +53,6 @@ export const RELEASES = [
     "platforms": ["PS5", "Xbox Series X|S" ],
     "big": true,
     "href": "/gta-6/"
-  },
-  {
-    "date": "2026-11-22",
-    "title": "Zombie Police: Midsummer Unhappy New Year",
-    "platforms": ["PC" ],
-    "big": false
   },
   {
     "date": "2026-11-23",
@@ -326,6 +320,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-24",
+    "title": "Fish It!: Sort the Aquarium Shop",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
     "title": "Food Devils",
     "platforms": ["PC" ],
     "big": false
@@ -464,6 +464,12 @@ export const RELEASES = [
   },
   {
     "date": "2026-11-24",
+    "title": "Witchkeeping",
+    "platforms": ["PC" ],
+    "big": false
+  },
+  {
+    "date": "2026-11-24",
     "title": "Your Party Died Again",
     "platforms": ["PC" ],
     "big": false
@@ -531,12 +537,6 @@ export const RELEASES = [
   {
     "date": "2026-11-25",
     "title": "Fireworks Incremental",
-    "platforms": ["PC" ],
-    "big": false
-  },
-  {
-    "date": "2026-11-25",
-    "title": "Forge the Fates",
     "platforms": ["PC" ],
     "big": false
   },
