@@ -2,11 +2,11 @@
 import { pageDates } from "../../page-dates.js";
 import HubLayout from "../../layouts/HubLayout.astro";
 import Countdown from "../../components/widgets/Countdown.tsx";
-import { UPDATED, RELEASE_DATE, PRELOAD_DATE, PHYSICAL_DATE, countdownParts, daysUntil } from "../../lib/data/gta6.js";
+import { UPDATED, RELEASE_DATE, PRELOAD_DATE, PHYSICAL_DATE, countdownParts, daysUntil, buildNow } from "../../lib/data/gta6.js";
 import { src } from "../../lib/data/sources.js";
 
 const d = pageDates("/gta-6/countdown/");
-const now = new Date(`${UPDATED}T12:00:00`);
+const now = buildNow();
 const days = daysUntil(RELEASE_DATE, now);
 const preDays = daysUntil(PRELOAD_DATE, now);
 const physDays = daysUntil(PHYSICAL_DATE, now);

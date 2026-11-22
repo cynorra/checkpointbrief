@@ -2,7 +2,15 @@
 // sources.js. Rumors live in RUMORS, clearly separated, and pages must label
 // them. When a fact changes, change it here and bump UPDATED.
 
-export const UPDATED = new Date().toISOString().slice(0, 10);
+// The date the facts below were last checked against their sources. Change it only after a real check:
+// it was `new Date()` before, which stamped every build as "checked today" and, in CI, evaluated to 1970-01-01.
+export const UPDATED = "2026-11-11";
+
+/** "Now" for server-rendered pages. Guards against a frozen or invalid build clock (shows after-release state instead of a nonsense countdown). */
+export function buildNow() {
+  const n = new Date();
+  return Number.isNaN(n.getTime()) || n.getUTCFullYear() < 2026 ? new Date(`${RELEASE_DATE}T12:00:00`) : n;
+}
 
 /** Console launch day. Rockstar Support: releases at midnight local time on this date in all regions. */
 export const RELEASE_DATE = "2026-11-19";

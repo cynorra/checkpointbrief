@@ -1,7 +1,8 @@
 // Every external source the site cites, in one place, with the date it was
 // last checked. Pages cite by key so a moved URL is fixed once.
 
-const CURRENT_CHECKED = new Date().toISOString().slice(0, 10);
+// Last real check of these sources. Update only after re-reading them (it used to be the build date, which claimed a check on every build).
+const CURRENT_CHECKED = "2026-11-11";
 
 export const SOURCES = {
   rockstarVI: { label: "Rockstar Games: Grand Theft Auto VI official page", href: "https://www.rockstargames.com/VI", checked: CURRENT_CHECKED },
