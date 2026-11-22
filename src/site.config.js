@@ -19,7 +19,7 @@ export const SITE = {
   contactFormEndpoint: "",
 
   // Filled in when the site is added to the approved AdSense account.
-  adsensePublisherId: "",
+  adsensePublisherId: "ca-pub-4674211063760769",
 
   verification: {
     google: "ZXbBkYYd6WoI9LO49putdxLhcXIy10iFGsGSHb6uvnI",
