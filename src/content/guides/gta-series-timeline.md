@@ -2,7 +2,7 @@
 title: "Every Grand Theft Auto Game in Order of Release (1997–2026)"
 description: "A complete chronological timeline of every Grand Theft Auto release, expansion, and remaster over nearly 30 years, detailing eras, sales, and development gaps."
 published: 2026-11-06
-updated: 2026-11-06
+updated: 2026-11-22
 tool: gta6
 ---
 
@@ -84,6 +84,8 @@ Rather than rushing new entries, Rockstar bridged console generations with updat
 - **Grand Theft Auto: The Trilogy – The Definitive Edition (2021):** Unreal Engine 4 remaster of III, Vice City, and San Andreas for modern platforms.
 
 For a side-by-side comparison of how Vice City itself has evolved from its 2002 debut to modern Leonida, see our feature on [Vice City Then and Now](/guides/vice-city-then-and-now/).
+
+For a direct comparison of the last two mainline games, see [GTA 5 vs GTA 6](/guides/gta-5-vs-gta-6/).
 
 ## Official Sources and Verification
 

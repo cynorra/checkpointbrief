@@ -2,7 +2,7 @@
 title: "GTA 6 File Size: What's Known and How Much Space to Free"
 description: "GTA 6 needs up to 212 GB of free space to pre-load, says Rockstar. How much that is on each PS5 and Xbox, plus how to clear room."
 published: 2026-10-21
-updated: 2026-11-11
+updated: 2026-11-22
 tool: gta6
 ---
 
@@ -88,6 +88,8 @@ Also keep a few extra gigabytes free during the download. Consoles need working 
 No. The Standard and Ultimate editions use the same game files; the extra content in the Ultimate Edition is a small addition, not a separate install. See [price and editions](/guides/gta-6-price-and-editions/).
 
 If Rockstar changes the size, we'll update this page. For the download itself, see the [GTA 6 pre-load guide](/guides/gta-6-pre-load/), which also has download times by internet speed.
+
+For how GTA 6 compares with GTA V on size, price and platforms, see [GTA 5 vs GTA 6](/guides/gta-5-vs-gta-6/).
 
 ## Official Sources and Verification
 

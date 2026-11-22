@@ -2,7 +2,7 @@
 title: "GTA 6 Map: Every Leonida Location Rockstar Has Named"
 description: "GTA 6 is set in Leonida, Rockstar's version of Florida. Every named region, from Vice City to Mount Kalaga, what each is based on and what's known about map size."
 published: 2026-10-29
-updated: 2026-10-29
+updated: 2026-11-22
 tool: gta6
 ---
 
@@ -76,6 +76,8 @@ Trailers are edited to show highlights, so location names, signs and landmarks i
 ## Will more places be revealed?
 
 Very likely. Pre-launch marketing never shows everything, and Rockstar games usually hold back parts of the map for players to discover. We'll add new named locations to the [GTA 6 hub](/gta-6/) as Rockstar reveals them.
+
+Comparing the two maps and everything else? See [GTA 5 vs GTA 6](/guides/gta-5-vs-gta-6/).
 
 ## Official Sources and Verification
 
