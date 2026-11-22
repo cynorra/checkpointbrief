@@ -2,7 +2,7 @@
 title: "Is GTA 6 on PS4 or Xbox One? No, and Here's Why"
 description: "GTA 6 isn't coming to PS4 or Xbox One; it's PS5 and Xbox Series X|S only. Why, whether that could change and the cheapest way to play it on launch day."
 published: 2026-10-27
-updated: 2026-11-18
+updated: 2026-11-22
 tool: gta6
 ---
 
@@ -64,6 +64,12 @@ Rockstar hasn't announced a cloud version of GTA 6 on any service, so there's no
 Console bundles with big games are common around major launches. If one is announced for GTA 6, it will be listed by Sony or Microsoft and major retailers. Compare it against buying the console and game separately; bundles aren't always cheaper.
 
 For how the two current platforms compare, see [GTA 6 on PS5 vs Xbox Series X|S](/guides/gta-6-ps5-vs-xbox/).
+
+## What about the Nintendo Switch 2?
+
+There is no Switch 2 version, and none has been announced. Rockstar lists only PS5 and Xbox Series X|S for GTA VI on its [official GTA VI page](https://www.rockstargames.com/VI). Nintendo has not ruled it out, but it has not confirmed anything either: asked about it in an interview with Variety, Nintendo of America president Devon Pritchard said it is "going to be a conversation for Take-Two and Rockstar, but nothing to announce on my end at this time," as [GamingBolt reported on October 11, 2026](https://gamingbolt.com/gta-6-on-switch-2-is-a-conversation-for-take-two-and-rockstar-says-nintendo).
+
+Treat any Switch 2 date or release window you see as a rumor. We have not found an official Rockstar or Take-Two statement committing to one, and we will update this page if that changes. If you want to play at launch, PS5 or Xbox Series X|S is the only route.
 
 ## Official Sources and Verification
 
