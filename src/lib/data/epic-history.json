@@ -1,5 +1,21 @@
 [
   {
+    "title": "Bread and Fred",
+    "url": "https://store.epicgames.com/en-US/p/bread-and-fred-1db362",
+    "seller": "Atari",
+    "start": "2026-11-26T16:00:00.000Z",
+    "end": "2026-12-03T16:00:00.000Z",
+    "originalPrice": "$14.99"
+  },
+  {
+    "title": "Firestone – Idle Clicker Online RPG",
+    "url": "https://store.epicgames.com/en-US/p/firestone-online-idle-rpg-bfd04b",
+    "seller": "AM Holyday Studios Ltd",
+    "start": "2026-11-26T16:00:00.000Z",
+    "end": "2026-12-03T16:00:00.000Z",
+    "originalPrice": null
+  },
+  {
     "title": "Mark of the Deep",
     "url": "https://store.epicgames.com/en-US/p/mark-of-the-deep-f7dc08",
     "seller": "Light Up Games",
